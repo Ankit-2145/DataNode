@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import MagicButton from "@/components/ui/MagicButton";
+import { FaAnglesRight } from "react-icons/fa6";
 
-export default function Component() {
+export default function navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("Home");
 
@@ -70,27 +72,12 @@ export default function Component() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                  Log Innnnn
-                  <svg
-                    fill="none"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10.75 8.75L14.25 12L10.75 15.25"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                    />
-                  </svg>
-                </span>
-              </button>
+              <MagicButton
+                title="View Docs"
+                icon={<FaAnglesRight />}
+                position="right"
+                otherClasses="mt-5"
+              />
             </motion.div>
           </div>
           <div className="md:hidden">
@@ -156,7 +143,7 @@ export default function Component() {
                 </motion.a>
               ))}
             </div>
-            <div className="pt-4 pb-3 border-t border-gray-700">
+            <div className="pb-3 border-t border-gray-700">
               <div className="px-2">
                 <motion.div
                   className="relative mt-3"
@@ -164,25 +151,11 @@ export default function Component() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: 0.1 }}
                 >
-                  <input
-                    type="text"
-                    placeholder="Search documentation..."
-                    className="w-full bg-gray-900 text-white px-4 py-2 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-white"
+                  <MagicButton
+                    title="View Docs"
+                    icon={<FaAnglesRight />}
+                    position="right"
                   />
-                  <svg
-                    className="absolute right-3 top-2.5 h-5 w-5 text-gray-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    />
-                  </svg>
                 </motion.div>
               </div>
             </div>
