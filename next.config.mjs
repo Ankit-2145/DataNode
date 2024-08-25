@@ -1,12 +1,28 @@
+import nextra from "nextra";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "pbs.twimg.com",
-      "cdn-icons-png.flaticon.com",
-      "cdn.worldvectorlogo.com",
+    remotePatterns: [
+      {
+        hostname: "pbs.twimg.com",
+        protocol: "https",
+      },
+      {
+        hostname: "cdn-icons-png.flaticon.com",
+        protocol: "https",
+      },
+      {
+        hostname: "cdn.worldvectorlogo.com",
+        protocol: "https",
+      },
     ],
   },
 };
 
-export default nextConfig;
+const withNextra = nextra({
+  theme: "nextra-theme-docs",
+  themeConfig: "./theme.config.jsx",
+});
+
+export default withNextra(nextConfig);

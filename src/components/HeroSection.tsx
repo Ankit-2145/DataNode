@@ -3,12 +3,14 @@ import { Cover } from "@/components/ui/cover";
 import { Spotlight } from "@/components/ui/Spotlight";
 import MagicButton from "@/components/ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
+import GridGlobe from "./ui/GridGlobe";
 
 export default function HeroSection() {
   return (
     <>
       {" "}
       <div>
+        <GridGlobe/>
         <Spotlight
           className="hidden md:block left-80 top-28 h-[80vh] w-[50vw]"
           fill="white"
