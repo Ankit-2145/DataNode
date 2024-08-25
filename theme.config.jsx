@@ -16,6 +16,7 @@ export default {
       </a>
     ),
   },
+  docsRepositoryBase: 'https://github.com/Ankit-2145/DataNode/tree/main',
   footer: {
     text: (
       <span>
