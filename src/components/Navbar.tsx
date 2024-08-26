@@ -3,9 +3,11 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import MagicButton from "@/components/ui/MagicButton";
-import { FaAnglesRight } from "react-icons/fa6";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaArrowRightToBracket } from "react-icons/fa6";
+import Image from "next/image";
+import logoSvg from "./../../public/logo-svg.svg";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +31,7 @@ export default function Navigation() {
       setIsScrolled(window.scrollY > 10);
     };
 
-    const setActiveItemFromPath = (path:any) => {
+    const setActiveItemFromPath = (path: any) => {
       const currentItem = menuItems.find((item) => item.href === path);
       if (currentItem) {
         setActiveItem(currentItem.name);
@@ -49,19 +51,32 @@ export default function Navigation() {
   return (
     <motion.nav
       className="fixed top-0 left-0 right-0 z-50 text-white"
-      initial={{ backgroundColor: "rgba(0, 0, 0, 1)" }}
+      initial={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
       animate={{
-        backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.5)" : "rgba(0, 0, 0, 1)",
+        backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.5)" : "rgba(0, 0, 0, 0)",
         backdropFilter: isScrolled ? "blur(10px)" : "blur(0px)",
       }}
       transition={{ duration: 0.3 }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="flex-shrink-0">
+            <Link href="/" className="flex-shrink-0 flex items-center">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="mr-2"
+              >
+                <Image
+                  src={logoSvg}
+                  alt="DataNode Logo"
+                  width={60}
+                  height={60}
+                />
+              </motion.div>
               <motion.span
-                className="font-medium text-2xl"
+                className="font-medium text-xl"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -110,8 +125,8 @@ export default function Navigation() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <MagicButton
-                title="View Docs"
-                icon={<FaAnglesRight />}
+                title="Login"
+                icon={<FaArrowRightToBracket />}
                 position="right"
                 otherClasses="my-5"
               />
@@ -189,8 +204,8 @@ export default function Navigation() {
                   transition={{ duration: 0.3, delay: 0.1 }}
                 >
                   <MagicButton
-                    title="View Docs"
-                    icon={<FaAnglesRight />}
+                    title="Login"
+                    icon={<FaArrowRightToBracket />}
                     position="right"
                   />
                 </motion.div>

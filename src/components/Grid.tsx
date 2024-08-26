@@ -14,18 +14,24 @@ import Image from "next/image";
 
 export default function featuresGird() {
   return (
-    <BentoGrid className="max-w-6xl my-20 mx-auto md:auto-rows-[20rem]">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          className={cn("[&>p:text-lg]", item.className)}
-          icon={item.icon}
-        />
-      ))}
-    </BentoGrid>
+    <>
+      <h4 className="text-3xl lg:text-4xl lg:leading-tight max-w-5xl text-transparent bg-clip-text bg-custom-gradient mx-auto text-center tracking-tight font-semibold text-black dark:text-">
+        What You Can Expect ?
+      </h4>
+
+      <BentoGrid className="max-w-6xl my-20 mx-auto md:auto-rows-[20rem]">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            className={cn("[&>p:text-lg]", item.className)}
+            icon={item.icon}
+          />
+        ))}
+      </BentoGrid>
+    </>
   );
 }
 
@@ -197,7 +203,7 @@ const SkeletonFour = () => {
           JavaScript
         </p>
         <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          We love it
+          Our Love
         </p>
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
@@ -280,7 +286,7 @@ const SkeletonFive = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="text-xs text-neutral-500">
-         We are here to let you know that you are not alone ....
+          We are here to let you know that you are not alone ....
         </p>
       </motion.div>
       <motion.div
@@ -298,7 +304,7 @@ const items = [
     title: "Articles and Resources",
     description: (
       <span className="text-sm">
-        A collection of articles related to the BCA course, providing insights,
+        A collection of articles related to the course, providing insights,
         tutorials, and explanations on various topics relevant to the
         curriculum.
       </span>
@@ -311,8 +317,8 @@ const items = [
     title: "Comprehensive Syllabus Notes",
     description: (
       <span className="text-sm">
-        Detailed notes covering the entire BCA syllabus, organized by subject
-        and semester, to help students with their studies.
+        Detailed notes covering the entire syllabus, organized by subject and
+        semester, to help students with their studies.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -348,8 +354,8 @@ const items = [
     title: "Community Engagement",
     description: (
       <span className="text-sm">
-        The site aims to foster a sense of community among BCA students,
-        providing a platform where they can find valuable academic resources.
+        The site aims to foster a sense of community among students, providing a
+        platform where they can find valuable academic resources.
       </span>
     ),
     header: <SkeletonFive />,
