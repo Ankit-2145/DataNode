@@ -16,6 +16,10 @@ const nextConfig = {
         hostname: "cdn.worldvectorlogo.com",
         protocol: "https",
       },
+      {
+        hostname: "api.microlink.io",
+        protocol: "https",
+      },
     ],
   },
 };

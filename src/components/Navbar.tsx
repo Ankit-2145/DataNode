@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import MagicButton from "@/components/ui/MagicButton";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaArrowRightToBracket } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 import Image from "next/image";
 import logoSvg from "./../../public/logo-svg.svg";
 
@@ -22,8 +22,6 @@ export default function Navigation() {
     { name: "Academics", href: "/BCA/getting-started" },
     { name: "Careers", href: "/careers" },
     { name: "Resources", href: "/resources" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
   ];
 
   useEffect(() => {
@@ -71,8 +69,8 @@ export default function Navigation() {
                 <Image
                   src={logoSvg}
                   alt="DataNode Logo"
-                  width={60}
-                  height={60}
+                  width={50}
+                  height={50}
                 />
               </motion.div>
               <motion.span
@@ -124,12 +122,15 @@ export default function Navigation() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <MagicButton
+              <Link href="https://github.com/Ankit-2145/DataNode" target="_blank">
+                {/* <MagicButton
                 title="Login"
                 icon={<FaArrowRightToBracket />}
                 position="right"
                 otherClasses="my-5"
-              />
+              /> */}
+                <FaGithub size={28} />
+              </Link>
             </motion.div>
           </div>
           <div className="md:hidden">
@@ -198,16 +199,19 @@ export default function Navigation() {
             <div className="pb-3 border-t border-gray-700">
               <div className="px-2">
                 <motion.div
-                  className="relative mt-3"
+                  className="relative mt-3 px-3"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: 0.1 }}
                 >
-                  <MagicButton
+                  <Link href="https://github.com/Ankit-2145/DataNode">
+                    {/* <MagicButton
                     title="Login"
-                    icon={<FaArrowRightToBracket />}
+                    icon={<FaGithub />}
                     position="right"
-                  />
+                  /> */}
+                    <FaGithub size={28} />
+                  </Link>
                 </motion.div>
               </div>
             </div>

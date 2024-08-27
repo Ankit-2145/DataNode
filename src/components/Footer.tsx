@@ -3,6 +3,7 @@
 import Link from "next/link";
 import logoSvg from "./../../public/logo-svg.svg";
 import Image from "next/image";
+import { FaGithub, FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -15,14 +16,22 @@ const Footer = () => {
                 <Image
                   src={logoSvg}
                   alt="DataNode Logo"
-                  width={60}
-                  height={60}
+                  width={50}
+                  height={50}
                 />
               </div>
-              <span className="font-medium text-xl">DataNode</span>
+              <span className="font-medium text-2xl">DataNode</span>
             </Link>
+            <div className="flex items-center gap-6 my-8 mx-2">
+              <Link href="">
+                <FaSquareXTwitter size={32} />
+              </Link>
+              <Link href="https://github.com/Ankit-2145/DataNode">
+                <FaGithub size={32} />
+              </Link>
+            </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 my-5">
             <div>
               <h2 className="mb-6 text-base font-medium dark:text-white">
                 Resources
@@ -53,24 +62,23 @@ const Footer = () => {
             </div>
             <div>
               <h2 className="mb-6 text-base font-medium dark:text-white">
-                About DataNode
+                Company
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-white text-sm font-normal">
                 <li className="mb-4">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
-                    className="hover:underline "
-                  >
-                    Github
-                  </a>
+                  <Link href="/about" className="hover:underline">
+                    About Us
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link href="/contact" className="hover:underline">
+                    Contact Us
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
-                    Discord
-                  </a>
+                  <Link href="/blog" className="hover:underline">
+                    Blog
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -78,7 +86,7 @@ const Footer = () => {
               <h2 className="mb-6 text-base font-medium dark:text-white">
                 Legal
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-white text-sm font-normal">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Privacy Policy
@@ -94,11 +102,11 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between py-6">
-          <span className="text-sm text-center dark:text-white">
+        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between md:py-6">
+          <span className="text-sm text-center mt-4 md:mt-0 dark:text-white">
             DataNode © {new Date().getFullYear()} | All rights reserved
           </span>
-          <div className="flex mt-4 text-sm sm:justify-center sm:mt-0">
+          <div className="flex mt-4 md:mt-0 text-sm sm:justify-center sm:mt-0">
             <Link href="https://sspinnacle.com" target="_blank">
               Powered By Pinnacle Smart solutions
             </Link>

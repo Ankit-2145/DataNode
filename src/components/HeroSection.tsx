@@ -16,7 +16,7 @@ export default function HeroSection() {
           fill="white"
         />
       </div>
-      <div className="flex justify-center relative my-20 md:my-24 z-10 antialiased">
+      <div className="flex justify-center relative my-24 z-10 antialiased">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="bg-custom-gradient-129 border p-2 rounded-full tracking-wider text-xs text-center text-blue-100 max-w-80">
             🚀 New version v1.0.0
