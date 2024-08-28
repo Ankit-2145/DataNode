@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import Grid from "@/components/Grid";
 import WhoWeAre from "@/components/WhoWeAre";
+import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
       <HeroSection />
       <WhoWeAre />
       <Grid />
+      <div className="h-[20rem] md:h-[28rem] flex items-center justify-center text-white">
+        <TextHoverEffect text="DataNode" />
+      </div>
     </main>
   );
 }

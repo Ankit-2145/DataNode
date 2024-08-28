@@ -22,6 +22,8 @@ export default function Navigation() {
     { name: "Academics", href: "/BCA/getting-started" },
     { name: "Careers", href: "/careers" },
     { name: "Resources", href: "/resources" },
+    { name: "About Us", href: "/about" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   useEffect(() => {
@@ -122,7 +124,10 @@ export default function Navigation() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Link href="https://github.com/Ankit-2145/DataNode" target="_blank">
+              <Link
+                href="https://github.com/Ankit-2145/DataNode"
+                target="_blank"
+              >
                 {/* <MagicButton
                 title="Login"
                 icon={<FaArrowRightToBracket />}

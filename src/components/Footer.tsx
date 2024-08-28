@@ -3,7 +3,7 @@
 import Link from "next/link";
 import logoSvg from "./../../public/logo-svg.svg";
 import Image from "next/image";
-import { FaGithub, FaSquareXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -23,11 +23,14 @@ const Footer = () => {
               <span className="font-medium text-2xl">DataNode</span>
             </Link>
             <div className="flex items-center gap-6 my-8 mx-2">
-              <Link href="">
+              <Link href="https://x.com/Ankit__46">
                 <FaSquareXTwitter size={32} />
               </Link>
               <Link href="https://github.com/Ankit-2145/DataNode">
                 <FaGithub size={32} />
+              </Link>
+              <Link href="https://www.linkedin.com/in/ankit-sharma-03a680218/">
+                <FaLinkedin size={32} />
               </Link>
             </div>
           </div>
@@ -44,18 +47,32 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <Link
+                    href="BCA/semesters/Syllabus-1"
+                    className="hover:underline"
+                  >
+                    BCA Syllabus
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
                     href="BCA/semesters/Semester-1"
                     className="hover:underline"
                   >
                     BCA Semesters
                   </Link>
                 </li>
-                <li>
+                <li className="mb-4">
                   <Link
-                    href="BCA/semesters/Syllabus-1"
+                    href="https://bcacommunity.netlify.app/"
+                    target="_blank"
                     className="hover:underline"
                   >
-                    BCA Syllabus
+                    BCA Community
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link href="" target="_blank" className="hover:underline">
+                    Previous Year's Question Papers
                   </Link>
                 </li>
               </ul>
