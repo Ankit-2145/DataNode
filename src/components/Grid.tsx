@@ -15,8 +15,8 @@ import logoSvg from "./../../public/logo-svg.svg";
 
 export default function featuresGird() {
   return (
-    <>
-      <h4 className="text-3xl lg:text-4xl lg:leading-tight max-w-5xl text-transparent bg-clip-text bg-custom-gradient mx-auto text-center tracking-tight font-semibold text-black dark:text-">
+    <section className="p-5">
+      <h4 className="text-3xl lg:text-4xl lg:leading-tight max-w-5xl text-transparent bg-clip-text bg-custom-gradient mx-auto text-center tracking-tight font-semibold text-black">
         What You Can Expect ?
       </h4>
 
@@ -32,7 +32,7 @@ export default function featuresGird() {
           />
         ))}
       </BentoGrid>
-    </>
+    </section>
   );
 }
 

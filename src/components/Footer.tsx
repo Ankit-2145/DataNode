@@ -1,137 +1,119 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import logoSvg from "./../../public/logo-svg.svg";
-import Image from "next/image";
-import { FaGithub, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { FaGithub, FaLinkedin, FaSquareXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear()
+
+  const footerLinks = [
+    {
+      title: 'Resources',
+      links: [
+        { name: 'Academics', href: '/BCA/getting-started' },
+        { name: 'BCA Syllabus', href: '/BCA/semesters/Syllabus-1' },
+        { name: 'BCA Semesters', href: '/BCA/semesters/Semester-1' },
+        { name: 'BCA Community', href: 'https://bcacommunity.netlify.app/', external: true },
+        { name: "Previous Year's Question Papers", href: '#' },
+      ],
+    },
+    {
+      title: 'Company',
+      links: [
+        { name: 'About Us', href: '/about' },
+        { name: 'Contact Us', href: '/contact' },
+        { name: 'Blog', href: '/blog' },
+      ],
+    },
+    {
+      title: 'Legal',
+      links: [
+        { name: 'Privacy Policy', href: '#' },
+        { name: 'Terms & Conditions', href: '/BCA/Training' },
+      ],
+    },
+  ]
+
+  const socialLinks = [
+    { name: 'Twitter', href: 'https://x.com/Ankit__46', icon: FaSquareXTwitter },
+    { name: 'GitHub', href: 'https://github.com/Ankit-2145/DataNode', icon: FaGithub },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/ankit-sharma-03a680218/', icon: FaLinkedin },
+  ]
+
   return (
-    <footer className="bg-custom-gradient">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-0">
-        <div className="md:flex md:justify-between lg:py-8">
+    <footer className=" text-white">
+      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <Link href="/" className="flex items-center">
-              <div className="mr-2">
-                <Image
-                  src={logoSvg}
-                  alt="DataNode Logo"
-                  width={50}
-                  height={50}
-                />
-              </div>
+            <Link href="/" className="flex items-center group">
+              <Image 
+                src="/logo-svg.svg" 
+                alt="DataNode Logo" 
+                width={50} 
+                height={50} 
+                className="mr-2 transition-transform duration-300" 
+              />
               <span className="font-medium text-2xl">DataNode</span>
             </Link>
-            <div className="flex items-center gap-6 my-8 mx-2">
-              <Link href="https://x.com/Ankit__46">
-                <FaSquareXTwitter size={32} />
-              </Link>
-              <Link href="https://github.com/Ankit-2145/DataNode">
-                <FaGithub size={32} />
-              </Link>
-              <Link href="https://www.linkedin.com/in/ankit-sharma-03a680218/">
-                <FaLinkedin size={32} />
-              </Link>
+            <div className="flex items-center gap-6 my-8 pl-3">
+              {socialLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all duration-300 hover:scale-110"
+                  aria-label={`Visit our ${link.name} page`}
+                >
+                  <link.icon size={32} />
+                </Link>
+              ))}
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 my-5">
-            <div>
-              <h2 className="mb-6 text-base font-medium dark:text-white">
-                Resources
-              </h2>
-              <ul className="text-white text-sm font-normal">
-                <li className="mb-4">
-                  <Link href="BCA/getting-started" className="hover:underline">
-                    Academics
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link
-                    href="BCA/semesters/Syllabus-1"
-                    className="hover:underline"
-                  >
-                    BCA Syllabus
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link
-                    href="BCA/semesters/Semester-1"
-                    className="hover:underline"
-                  >
-                    BCA Semesters
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link
-                    href="https://bcacommunity.netlify.app/"
-                    target="_blank"
-                    className="hover:underline"
-                  >
-                    BCA Community
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link href="" target="_blank" className="hover:underline">
-                    Previous Year's Question Papers
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-base font-medium dark:text-white">
-                Company
-              </h2>
-              <ul className="text-white text-sm font-normal">
-                <li className="mb-4">
-                  <Link href="/about" className="hover:underline">
-                    About Us
-                  </Link>
-                </li>
-                <li className="mb-4">
-                  <Link href="/contact" className="hover:underline">
-                    Contact Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog" className="hover:underline">
-                    Blog
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-base font-medium dark:text-white">
-                Legal
-              </h2>
-              <ul className="text-white text-sm font-normal">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="/BCA/Training" className="hover:underline">
-                    Terms &amp; Conditions
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            {footerLinks.map((section) => (
+              <div key={section.title}>
+                <h2 className="mb-6 text-base font-medium">{section.title}</h2>
+                <ul className="text-sm font-normal">
+                  {section.links.map((link) => (
+                    <li key={link.name} className="mb-4">
+                      <Link
+                        href={link.href}
+                        className="transition-all duration-300 relative group"
+                        {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                      >
+                        {link.name}
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-custom-gradient transition-all duration-300 group-hover:w-full"></span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
-        <hr />
-        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between md:py-6">
-          <span className="text-sm text-center mt-4 md:mt-0 dark:text-white">
-            DataNode © {new Date().getFullYear()} | All rights reserved
+        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div className="flex flex-col sm:flex-row items-center sm:justify-between">
+          <span className="text-sm text-center sm:text-left">
+            DataNode © {currentYear} | All rights reserved
           </span>
-          <div className="flex mt-4 md:mt-0 text-sm sm:justify-center sm:mt-0">
-            <Link href="https://sspinnacle.com" target="_blank">
-              Powered By Pinnacle Smart solutions
+          <div className="mt-4 sm:mt-0">
+            <Link
+              href="https://sspinnacle.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm transition-all duration-300 relative group"
+            >
+              Powered By Pinnacle Smart Solutions
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-custom-gradient transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
