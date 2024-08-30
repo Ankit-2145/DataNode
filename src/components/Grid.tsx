@@ -16,7 +16,7 @@ import logoSvg from "./../../public/logo-svg.svg";
 export default function featuresGird() {
   return (
     <section className="p-5">
-      <h4 className="text-3xl lg:text-4xl lg:leading-tight max-w-5xl text-transparent bg-clip-text bg-custom-gradient mx-auto text-center tracking-tight font-semibold text-black">
+      <h4 className="text-3xl lg:text-4xl lg:leading-tight max-w-5xl text-transparent bg-clip-text bg-custom-gradient mx-auto text-center tracking-tight font-semibold">
         What You Can Expect ?
       </h4>
 

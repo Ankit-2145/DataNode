@@ -1,5 +1,6 @@
-import React from "react";
-import { FaArrowRight, FaLocationArrow } from "react-icons/fa6";
+"use client";
+
+import { FaArrowRight } from "react-icons/fa6";
 import MagicButton from "@/components/ui/MagicButton";
 import Link from "next/link";
 
