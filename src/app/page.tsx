@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import Grid from "@/components/Grid";
 import WhoWeAre from "@/components/WhoWeAre";
 import Feedbacks from "@/components/Feedbacks";
-import ReviewUs from "@/components/ReviewUs";
+import FAQs from "@/components/FAQs";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <WhoWeAre />
       <Grid />
       <Feedbacks />
-      <ReviewUs />
+      <FAQs />
     </main>
   );
 }
