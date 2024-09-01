@@ -3,6 +3,7 @@ import Grid from "@/components/Grid";
 import WhoWeAre from "@/components/WhoWeAre";
 import Feedbacks from "@/components/Feedbacks";
 import FAQs from "@/components/FAQs";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <WhoWeAre />
       <Grid />
+      <WhyChooseUs />
       <Feedbacks />
       <FAQs />
     </main>
