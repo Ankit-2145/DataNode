@@ -78,7 +78,7 @@ const Footer = () => {
                 <h2 className="mb-6 text-base font-medium">{section.title}</h2>
                 <ul className="text-sm font-normal">
                   {section.links.map((link) => (
-                    <li key={link.name} className="mb-4">
+                    <li key={link.name} className="mb-4 font-medium text-gray-500 hover:text-white transition-all duration-150">
                       <Link
                         href={link.href}
                         className="transition-all duration-300 relative group"

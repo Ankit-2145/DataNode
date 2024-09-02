@@ -72,7 +72,9 @@ const AccordionItem = memo<AccordionItemProps>(
               }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              <div className="px-6 py-4 text-gray-100 bg-custom-gradient rounded-md">{answer}</div>
+              <div className="px-6 py-4 mx-3 text-gray-100 bg-custom-gradient rounded-md">
+                {answer}
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
@@ -90,9 +92,17 @@ export default function faq() {
 
   return (
     <div className="w-full max-w-3xl mx-auto px-4 py-12">
-      <h2 className="text-3xl lg:text-4xl lg:leading-tight max-w-5xl text-transparent bg-clip-text bg-custom-gradient mx-auto text-center tracking-tight font-semibold">
-        Frequently Asked Questions
-      </h2>
+      <h4 className="text-3xl lg:text-5xl lg:leading-tight mt-5 max-w-5xl text-white mx-auto text-center tracking-tight font-semibold">
+        Frequently{" "}
+        <span className="text-transparent bg-clip-text bg-custom-gradient">
+          Asked
+        </span>{" "}
+        Questions
+      </h4>
+      <p className="text-sm lg:text-lg max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-700">
+        Find answers to common questions and get the information you need to
+        make the most of our platform.
+      </p>
       <div className="my-14 rounded-lg shadow-md overflow-hidden">
         <AnimatePresence initial={false}>
           {faqs.map((faq, index) => (

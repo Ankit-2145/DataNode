@@ -16,9 +16,16 @@ import logoSvg from "./../../public/logo-svg.svg";
 export default function featuresGird() {
   return (
     <section className="p-5">
-      <h4 className="text-3xl lg:text-4xl lg:leading-tight max-w-5xl text-transparent bg-clip-text bg-custom-gradient mx-auto text-center tracking-tight font-semibold">
-        What You Can Expect ?
+      <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl text-white mx-auto text-center tracking-tight font-semibold">
+        What you can{" "}
+        <span className="text-transparent bg-clip-text bg-custom-gradient">
+          expect ?
+        </span>
       </h4>
+      <p className="text-sm lg:text-lg max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-700">
+        Explore the range of features and resources that will enhance your
+        learning journey and help you achieve your goals.
+      </p>
 
       <BentoGrid className="max-w-6xl my-14 mx-auto md:auto-rows-[20rem]">
         {items.map((item, i) => (
