@@ -1,121 +1,37 @@
 "use client";
 import React from "react";
+import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 
-import { AnimatePresence, motion } from "framer-motion";
-import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
-
-export default function CanvasRevealEffectDemo2() {
+export default function WhyChooseUs() {
   return (
-    <>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
-        <div className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem]">
-          <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-          <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-          <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-          <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-          <AnimatePresence>
-            <div className="h-full w-full absolute inset-0">
-              <CanvasRevealEffect
-                animationSpeed={3}
-                containerClassName="bg-black"
-                colors={[
-                  [236, 72, 153],
-                  [232, 121, 249],
-                ]}
-                dotSize={2}
-              />
-            </div>
-          </AnimatePresence>
-          <div className="relative z-20">
-            <h2 className="text-white text-center transition duration-200 w-full  mx-auto flex items-center justify-center">
-              I&apos;m static and I know it.
-            </h2>
-          </div>
-        </div>
+    <section className="my-14">
+      <h4 className="text-4xl lg:leading-tight max-w-5xl text-white mx-auto text-center tracking-tight font-semibold">
+        Why{" "}
+        <span className="text-transparent bg-clip-text bg-custom-gradient">
+          choose
+        </span>{" "}
+        us ?
+      </h4>
+      <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-700">
+        Trusted by students for delivering top-notch educational support.
+      </p>
+      <div className="py-16 flex flex-col lg:flex-row items-center max-w-6xl justify-center bg-black w-full my-14 gap-4">
+        <NeonGradientCard className="max-w-sm items-center justify-center text-center">
+          <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-6xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
+            life.status = Growth
+          </span>
+        </NeonGradientCard>
+        <NeonGradientCard className="max-w-sm items-center justify-center text-center">
+          <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-6xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
+            life.status = Growth
+          </span>
+        </NeonGradientCard>
+        <NeonGradientCard className="max-w-sm items-center justify-center text-center">
+          <span className="pointer-events-none z-10 h-full whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-6xl font-bold leading-none tracking-tighter text-transparent dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
+            life.status = Growth
+          </span>
+        </NeonGradientCard>
       </div>
-    </>
+    </section>
   );
 }
-
-const Card = ({
-  title,
-  icon,
-  children,
-}: {
-  title: string;
-  icon: React.ReactNode;
-  children?: React.ReactNode;
-}) => {
-  const [hovered, setHovered] = React.useState(false);
-  return (
-    <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem]"
-    >
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
-
-      <AnimatePresence>
-        {hovered && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="h-full w-full absolute inset-0"
-          >
-            {children}
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <div className="relative z-20">
-        <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
-          {icon}
-        </div>
-        <h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
-          {title}
-        </h2>
-      </div>
-    </div>
-  );
-};
-
-const AceternityIcon = () => {
-  return (
-    <svg
-      width="66"
-      height="65"
-      viewBox="0 0 66 65"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-10 w-10 text-black dark:text-white group-hover/canvas-card:text-white "
-    >
-      <path
-        d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-        stroke="currentColor"
-        strokeWidth="15"
-        strokeMiterlimit="3.86874"
-        strokeLinecap="round"
-        style={{ mixBlendMode: "darken" }}
-      />
-    </svg>
-  );
-};
-
-export const Icon = ({ className, ...rest }: any) => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      className={className}
-      {...rest}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
-    </svg>
-  );
-};

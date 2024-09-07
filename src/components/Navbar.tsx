@@ -48,8 +48,8 @@ export default function Navigation() {
 
   useEffect(() => {
     controls.start({
-      backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.8)" : "rgba(0, 0, 0, 0)",
-      backdropFilter: isScrolled ? "blur(10px)" : "blur(0px)",
+      backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.4)" : "rgba(0, 0, 0, 0)",
+      backdropFilter: isScrolled ? "blur(16px)" : "blur(0px)",
       transition: { duration: 0.3 },
     });
   }, [isScrolled, controls]);

@@ -53,7 +53,7 @@ const AccordionItem = memo<AccordionItemProps>(
           onClick={onClick}
           aria-expanded={isOpen}
         >
-          <span className="text-gray-500 font-medium text-lg">{question}</span>
+          <span className="text-gray-500 font-medium text-base">{question}</span>
           <ChevronDown
             className={`w-5 h-5 transition-transform duration-300 text-gray-500 ${
               isOpen ? "transform rotate-180" : ""
@@ -72,7 +72,7 @@ const AccordionItem = memo<AccordionItemProps>(
               }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              <div className="px-6 py-4 mx-3 text-gray-100 bg-custom-gradient rounded-md">
+              <div className="px-6 py-4 mx-3 text-gray-100 bg-custom-gradient text-base rounded-md">
                 {answer}
               </div>
             </motion.div>
@@ -92,14 +92,14 @@ export default function faq() {
 
   return (
     <div className="w-full max-w-3xl mx-auto px-4 py-12">
-      <h4 className="text-3xl lg:text-5xl lg:leading-tight mt-5 max-w-5xl text-white mx-auto text-center tracking-tight font-semibold">
+      <h4 className="text-4xl lg:leading-tight mt-5 max-w-5xl text-white mx-auto text-center tracking-tight font-semibold">
         Frequently{" "}
         <span className="text-transparent bg-clip-text bg-custom-gradient">
           Asked
         </span>{" "}
         Questions
       </h4>
-      <p className="text-sm lg:text-lg max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-700">
+      <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-700">
         Find answers to common questions and get the information you need to
         make the most of our platform.
       </p>

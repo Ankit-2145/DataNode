@@ -29,6 +29,9 @@ const config: Config = {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        orbit: "orbit calc(var(--duration)*1s) linear infinite",
+        backgroundPositionSpin:
+          "background-position-spin 3000ms infinite alternate",
       },
       keyframes: {
         spotlight: {
@@ -45,6 +48,20 @@ const config: Config = {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
           },
+        },
+        orbit: {
+          "0%": {
+            transform:
+              "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
+          },
+          "100%": {
+            transform:
+              "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
+          },
+        },
+        "background-position-spin": {
+          "0%": { backgroundPosition: "top center" },
+          "100%": { backgroundPosition: "bottom center" },
         },
       },
     },

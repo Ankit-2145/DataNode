@@ -25,11 +25,11 @@ export default function HeroSection() {
             className="bg-dark text-white flex items-center"
           >
             <span className="text-xs tracking-wider">
-              🚀 New version v1.0.0
+              ⭐ Star us on Github
             </span>
           </HoverBorderGradient>
 
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
+          <h1 className="text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
             Connecting{" "}
             <Cover>
               {" "}
@@ -41,7 +41,7 @@ export default function HeroSection() {
             <br />
             Node at a time
           </h1>
-          <p className="text-gray-500 text-center md:tracking-wider mb-4 text-sm md:text-base">
+          <p className="text-gray-500 text-center md:tracking-wider leading-8 mb-4 text-base">
             Get the latest insights on emerging tech trends, detailed syllabus
             notes, past papers, and expert tips to give you a competitive edge.
             Stay informed, stay ahead!
