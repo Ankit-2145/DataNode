@@ -89,7 +89,7 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
 const AccessAnywhere = ({ className }: { className?: string }) => {
   return (
     <section className="max-w-6xl">
-      <div className="flex flex-col-reverse md:flex-row-reverse items-center gap-8 my-14 p-5 md:p-0">
+      <div className="flex flex-col-reverse lg:flex-row-reverse items-center gap-8 my-14 p-5 lg:p-0">
         <div>
           <HoverBorderGradient
             containerClassName="rounded-full"

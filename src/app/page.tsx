@@ -3,7 +3,6 @@ import Grid from "@/components/Grid";
 import WhoWeAre from "@/components/WhoWeAre";
 import Feedbacks from "@/components/Feedbacks";
 import FAQs from "@/components/FAQs";
-import WhyChooseUs from "@/components/WhyChooseUs";
 import BuiltBy from "@/components/BuiltBy";
 import AccessAnywhere from "@/components/AccessAnywhere";
 
@@ -15,7 +14,6 @@ export default function Home() {
       <BuiltBy />
       <Grid />
       <AccessAnywhere />
-      <WhyChooseUs />
       <Feedbacks />
       <FAQs />
     </main>
