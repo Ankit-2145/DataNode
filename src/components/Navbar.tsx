@@ -17,7 +17,7 @@ export default function Navigation() {
 
   const menuItems = [
     { name: "Home", href: "/" },
-    { name: "Academics", href: "/BCA/getting-started" },
+    { name: "Academics", href: "/academics" },
     { name: "Careers", href: "/careers" },
     { name: "Resources", href: "/resources" },
     { name: "About Us", href: "/about" },
