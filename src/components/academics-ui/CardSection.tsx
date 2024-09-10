@@ -19,6 +19,7 @@ interface CardProps {
   author: string;
   date: string;
   description: string;
+  url: string;
 }
 
 const DifficultyColors = {
@@ -35,9 +36,10 @@ const Cards: React.FC<CardProps> = ({
   author,
   date,
   description,
+  url,
 }) => (
   <Link
-    href="/"
+    href={url}
     className="group snap-center focus:outline-none sm:w-[330px] xl:w-[333px]"
   >
     <Card className="group/card rounded-3xl bg-card relative overflow-hidden duration-300 sm:min-w-[300px] xl:min-w-[333px] hover:shadow-[0_0_10px_rgba(56,189,248)] focus:shadow-[0_0_10px_rgba(56,189,248)] dark:hover:shadow-[0_0_10px_rgba(56,189,248)] dark:focus:shadow-[0_0_10px_rgba(56,189,248)] border border-rgba(56,189,248) dark:hover:border-sky-400 my-4">
@@ -88,13 +90,14 @@ const Cards: React.FC<CardProps> = ({
 
 const cardData: CardProps[] = [
   {
-    title: "Generic function",
+    title: "Introduction to BCA",
     difficulty: "Intermediate",
     comments: 50,
     likes: 100,
     author: "DataNode",
     date: "2 days ago",
     description: "Introduction to DBMS",
+    url: "/BCA/getting-started",
   },
   {
     title: "Data Structures",
@@ -104,6 +107,7 @@ const cardData: CardProps[] = [
     author: "CodeMaster",
     date: "1 week ago",
     description: "Advanced sorting algorithms",
+    url: "/BCA/getting-started",
   },
   {
     title: "Web Development",
@@ -113,6 +117,7 @@ const cardData: CardProps[] = [
     author: "WebWizard",
     date: "3 days ago",
     description: "HTML and CSS basics",
+    url: "/BCA/getting-started",
   },
   {
     title: "Machine Learning",
@@ -122,6 +127,7 @@ const cardData: CardProps[] = [
     author: "AIExpert",
     date: "5 days ago",
     description: "Introduction to Neural Networks",
+    url: "/BCA/getting-started",
   },
   {
     title: "Data Structures",
@@ -131,6 +137,7 @@ const cardData: CardProps[] = [
     author: "StructureGuru",
     date: "1 day ago",
     description: "Trees and Graphs",
+    url: "/BCA/getting-started",
   },
   {
     title: "Python Programming",
@@ -140,6 +147,7 @@ const cardData: CardProps[] = [
     author: "PythonPro",
     date: "4 days ago",
     description: "Python fundamentals",
+    url: "/BCA/getting-started",
   },
 ];
 
@@ -191,13 +199,11 @@ export default function CardSection() {
 
   return (
     <section
-      className={`relative w-full ${
-        showLeftShadow ? "mx-0" : "mx-5"
-      }`}
+      className={`relative w-full pt-6 ${showLeftShadow ? "mx-0" : "mx-5"}`}
     >
       <div className="relative">
         <div
-          className={`hidden md:block absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none transition-opacity duration-300 ${
+          className={`absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none transition-opacity duration-300 ${
             showLeftShadow ? "opacity-100" : "opacity-0"
           }`}
         ></div>
@@ -217,7 +223,7 @@ export default function CardSection() {
       </div>
       <Button
         onClick={() => scroll("left")}
-        className={`hidden md:block absolute left-2 top-1/2 bg-neutral-200/50 dark:bg-neutral-800/50 border border-neutral-300 dark:border-neutral-700 backdrop-blur-sm -translate-y-1/2 rounded-full p-2 md:left-4 lg:left-8 z-20 transition-opacity duration-300 ${
+        className={`hidden md:block absolute left-2 top-1/2 bg-neutral-200/50 dark:bg-neutral-800/50 border border-neutral-300 dark:border-neutral-700 backdrop-blur-sm -translate-y-1/2 mx-40 rounded-full p-2 md:left-4 lg:left-8 z-20 transition-opacity duration-300 ${
           showLeftShadow ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         aria-label="Scroll carousel left"
@@ -227,7 +233,7 @@ export default function CardSection() {
       </Button>
       <Button
         onClick={() => scroll("right")}
-        className={`hidden md:block absolute right-2 top-1/2 bg-neutral-200/50 dark:bg-neutral-800/50 border border-neutral-300 dark:border-neutral-700 backdrop-blur-sm -translate-y-1/2 rounded-full p-2 md:right-4 lg:right-8 z-20 transition-opacity duration-300 ${
+        className={`hidden md:block absolute right-2 top-1/2 bg-neutral-200/50 dark:bg-neutral-800/50 border border-neutral-300 dark:border-neutral-700 backdrop-blur-sm -translate-y-1/2 mx-40 rounded-full p-2 md:right-4 lg:right-8 z-20 transition-opacity duration-300 ${
           showRightShadow ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         aria-label="Scroll carousel right"
