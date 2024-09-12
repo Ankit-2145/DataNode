@@ -1,47 +1,6 @@
-"use client";
-
-import React from "react";
-import dynamic from "next/dynamic";
-// import { academicsSections, SectionData } from "@/data/academicsData";
-import CardsHeading from "@/components/academics-ui/CardsHeading";
-import CardSection from "@/components/academics-ui/CardSection";
 import { Circle, LucideIcon, Square, Triangle } from "lucide-react";
-// const CardSection = dynamic(() => import("@/components/academics-ui/CardSection"), {
-//   ssr: false,
-// });
 
-export default function Academics() {
-  return (
-    <main className="overflow-hidden">
-      <div className="flex flex-col items-center">
-        <h1 className="text-4xl md:text-6xl leading-normal mt-28 text-transparent bg-clip-text bg-custom-gradient tracking-tight text-center font-semibold">
-          Academics
-        </h1>
-        <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-gray-500">
-          Welcome to your academic hub! Access syllabus notes, past papers,
-          study guides and more to help you excel in your exams.
-        </p>
-      </div>
-      {academicsSections.map((section: SectionData, index: number) => (
-        <React.Fragment key={section.title}>
-          <CardsHeading
-            title={section.title}
-            url="/view-more"
-            text="view more"
-            otherClasses={section.otherClasses}
-            buttonClasses={section.buttonClasses}
-          />
-          <CardSection
-            key={`${section.title}-${index}`}
-            cardData={section.cardData}
-          />
-        </React.Fragment>
-      ))}
-    </main>
-  );
-}
-
-interface CardData {
+export interface CardData {
   title: string;
   difficulty: "Beginner" | "Intermediate" | "Advanced";
   comments: number;
@@ -57,14 +16,14 @@ interface CardData {
   shadow: string;
 }
 
-interface SectionData {
+export interface SectionData {
   title: string;
   otherClasses: string;
   buttonClasses: string;
   cardData: CardData[];
 }
 
-const academicsSections: SectionData[] = [
+export const academicsSections: SectionData[] = [
   {
     title: "Courses we offer",
     otherClasses: "dark:bg-sky-300 dark:from-sky-500 dark:to-sky-200",
@@ -87,7 +46,8 @@ const academicsSections: SectionData[] = [
           "absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] duration-300 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
         icon2Color:
           "absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] duration-500 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        shadow: "skyBlue",
+        shadow:
+          "dark:hover:shadow-[0_0_10px_rgba(56,189,248)] dark:hover:border-sky-400",
       },
       {
         title: "Advanced Data Structures",
@@ -104,7 +64,8 @@ const academicsSections: SectionData[] = [
           "absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] duration-300 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
         icon2Color:
           "absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] duration-500 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        shadow: "skyBlue",
+        shadow:
+          "dark:hover:shadow-[0_0_10px_rgba(56,189,248)] dark:hover:border-sky-400",
       },
       {
         title: "Advanced Data Structures",
@@ -121,7 +82,8 @@ const academicsSections: SectionData[] = [
           "absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] duration-300 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
         icon2Color:
           "absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] duration-500 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        shadow: "skyBlue",
+        shadow:
+          "dark:hover:shadow-[0_0_10px_rgba(56,189,248)] dark:hover:border-sky-400",
       },
       {
         title: "Advanced Data Structures",
@@ -138,7 +100,8 @@ const academicsSections: SectionData[] = [
           "absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] duration-300 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
         icon2Color:
           "absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] duration-500 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        shadow: "skyBlue",
+        shadow:
+          "dark:hover:shadow-[0_0_10px_rgba(56,189,248)] dark:hover:border-sky-400",
       },
       {
         title: "Advanced Data Structures",
@@ -155,7 +118,8 @@ const academicsSections: SectionData[] = [
           "absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] duration-300 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
         icon2Color:
           "absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] duration-500 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        shadow: "skyBlue",
+        shadow:
+          "dark:hover:shadow-[0_0_10px_rgba(56,189,248)] dark:hover:border-sky-400",
       },
       {
         title: "Advanced Data Structures",
@@ -172,7 +136,8 @@ const academicsSections: SectionData[] = [
           "absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] duration-300 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
         icon2Color:
           "absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] duration-500 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        shadow: "skyBlue",
+        shadow:
+          "dark:hover:shadow-[0_0_10px_rgba(56,189,248)] dark:hover:border-sky-400",
       },
       // Add more course cards here...
     ],
@@ -198,7 +163,8 @@ const academicsSections: SectionData[] = [
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
           "dark:group-hover/card:text-green-300 absolute -right-6 -top-12 h-36 w-36 rotate-12 stroke-[0.44] duration-500 group-hover/card:-translate-y-2 group-hover/card:translate-x-3 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
-        shadow: "green",
+        shadow:
+          "dark:hover:shadow-[0_0_10px_rgba(134, 239, 172)] dark:hover:border-green-300",
       },
       {
         title: "Semester 2 Notes",
@@ -216,7 +182,7 @@ const academicsSections: SectionData[] = [
         icon2Color:
           "dark:group-hover/card:text-green-300 absolute -right-6 -top-12 h-36 w-36 rotate-12 stroke-[0.44] duration-500 group-hover/card:-translate-y-2 group-hover/card:translate-x-3 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         shadow:
-          "green",
+          "dark:hover:shadow-[0_0_10px_rgba(134, 239, 172)] dark:hover:border-green-300",
       },
       // Add more syllabus note cards here...
     ],

@@ -5,6 +5,7 @@ import {
   MessageCircle,
   ThumbsUp,
   Circle,
+  LucideIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -20,12 +21,23 @@ interface CardProps {
   date: string;
   description: string;
   url: string;
+  BackgroundIcon1: LucideIcon;
+  BackgroundIcon2: LucideIcon;
+  icon1Color: string;
+  icon2Color: string;
+  shadow: string;
 }
 
 const DifficultyColors = {
   Beginner: "bg-green-600",
   Intermediate: "bg-yellow-600",
   Advanced: "bg-red-600",
+};
+
+const customShadows = {
+  skyBlue: "hover:shadow-[0_0px_10px_rgba(56,189,248,1)] hover:border-sky-400",
+  green: "hover:shadow-[0_0px_10px_rgba(134,239,172,1)] hover:border-green-300",
+  purple: "hover:shadow-[0_6px_20px_rgba(128,0,128,0.23)] hover:border-yellow-300",
 };
 
 const Cards: React.FC<CardProps> = ({
@@ -37,14 +49,23 @@ const Cards: React.FC<CardProps> = ({
   date,
   description,
   url,
+  BackgroundIcon1,
+  BackgroundIcon2,
+  icon1Color,
+  icon2Color,
+  shadow,
 }) => (
   <Link
     href={url}
     className="group snap-center focus:outline-none sm:w-[330px] xl:w-[333px]"
   >
-    <Card className="group/card rounded-3xl bg-card relative overflow-hidden duration-300 sm:min-w-[300px] xl:min-w-[333px] hover:shadow-[0_0_10px_rgba(56,189,248)] focus:shadow-[0_0_10px_rgba(56,189,248)] dark:hover:shadow-[0_0_10px_rgba(56,189,248)] dark:focus:shadow-[0_0_10px_rgba(56,189,248)] border border-rgba(56,189,248) dark:hover:border-sky-400 my-4">
-      <Circle className="group-hover/card:text-sky-400 dark:group-hover/card:text-sky-400 absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] text-neutral-200 duration-300 group-hover/card:scale-90 dark:text-neutral-700" />
-      <Circle className="group-hover/card:text-sky-400 dark:group-hover/card:text-sky-400 absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] text-neutral-200 duration-500 group-hover/card:scale-90 dark:text-neutral-700" />
+    <Card
+      className={`group/card rounded-3xl bg-card relative overflow-hidden transition-all duration-300 sm:min-w-[300px] xl:min-w-[333px] border my-2 ${
+        customShadows[shadow as keyof typeof customShadows] || shadow
+      }`}
+    >
+      <BackgroundIcon1 className={icon1Color} />
+      <BackgroundIcon2 className={icon2Color} />
 
       <CardHeader className="space-y-1.5 p-6 relative flex flex-col items-start gap-1 py-5">
         <CardTitle className="font-semibold tracking-tight max-w-[75%] truncate text-2xl duration-300">
@@ -72,7 +93,7 @@ const Cards: React.FC<CardProps> = ({
 
       <CardContent className="relative flex flex-col justify-between gap-2 rounded-xl p-6 pb-0 duration-300">
         <div className="flex items-center gap-2">
-          <div className="-ml-[0.33rem] flex h-auto w-fit items-center whitespace-nowrap rounded-full bg-transparent py-1 pl-[0.33rem] pr-2 text-xs font-bold text-neutral-700 duration-300 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-800">
+          <div className="-ml-[0.33rem] flex h-auto w-fit items-center whitespace-nowrap rounded-full bg-transparent py-1 pl-[0.33rem] pr-2 text-xs font-bold text-neutral-700 duration-300 dark:text-neutral-200">
             {author}
           </div>
           <div className="text-muted-foreground whitespace-nowrap text-sm">
@@ -88,70 +109,11 @@ const Cards: React.FC<CardProps> = ({
   </Link>
 );
 
-const cardData: CardProps[] = [
-  {
-    title: "Introduction to BCA",
-    difficulty: "Intermediate",
-    comments: 50,
-    likes: 100,
-    author: "DataNode",
-    date: "2 days ago",
-    description: "Introduction to DBMS",
-    url: "/BCA/getting-started",
-  },
-  {
-    title: "Data Structures",
-    difficulty: "Advanced",
-    comments: 75,
-    likes: 150,
-    author: "CodeMaster",
-    date: "1 week ago",
-    description: "Advanced sorting algorithms",
-    url: "/BCA/getting-started",
-  },
-  {
-    title: "Web Development",
-    difficulty: "Beginner",
-    comments: 30,
-    likes: 80,
-    author: "WebWizard",
-    date: "3 days ago",
-    description: "HTML and CSS basics",
-    url: "/BCA/getting-started",
-  },
-  {
-    title: "Machine Learning",
-    difficulty: "Intermediate",
-    comments: 60,
-    likes: 120,
-    author: "AIExpert",
-    date: "5 days ago",
-    description: "Introduction to Neural Networks",
-    url: "/BCA/getting-started",
-  },
-  {
-    title: "Data Structures",
-    difficulty: "Intermediate",
-    comments: 45,
-    likes: 90,
-    author: "StructureGuru",
-    date: "1 day ago",
-    description: "Trees and Graphs",
-    url: "/BCA/getting-started",
-  },
-  {
-    title: "Python Programming",
-    difficulty: "Beginner",
-    comments: 40,
-    likes: 110,
-    author: "PythonPro",
-    date: "4 days ago",
-    description: "Python fundamentals",
-    url: "/BCA/getting-started",
-  },
-];
+interface CardSectionProps {
+  cardData: CardProps[];
+}
 
-export default function CardSection() {
+export default function CardSection({ cardData }: CardSectionProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [showLeftShadow, setShowLeftShadow] = useState(false);
   const [showRightShadow, setShowRightShadow] = useState(true);
@@ -199,7 +161,7 @@ export default function CardSection() {
 
   return (
     <section
-      className={`relative w-full pt-6 ${showLeftShadow ? "mx-0" : "mx-5"}`}
+      className={`relative w-full pt-4 ${showLeftShadow ? "mx-0" : "mx-5"}`}
     >
       <div className="relative">
         <div
@@ -214,7 +176,7 @@ export default function CardSection() {
         ></div>
         <div
           ref={scrollContainerRef}
-          className="flex w-full snap-x gap-4 overflow-x-auto scroll-smooth pb-6 hide-scrollbar pl-0 md:pl-40"
+          className="flex w-full snap-x gap-4 overflow-x-auto scroll-smooth pb-10 hide-scrollbar pl-0 md:pl-40"
         >
           {cardData.map((card, index) => (
             <Cards key={index} {...card} />
