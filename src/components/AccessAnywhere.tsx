@@ -7,6 +7,64 @@ import { AnimatedList } from "@/components/magicui/animated-list";
 import MagicButton from "@/components/ui/MagicButton";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
+const AccessAnywhere = ({ className }: { className?: string }) => {
+  return (
+    <section className="max-w-7xl p-5">
+      <div className="flex flex-col-reverse lg:flex-row-reverse items-center gap-8 my-14 lg:p-0">
+        <div>
+          <HoverBorderGradient
+            containerClassName="rounded-full"
+            as="button"
+            className="bg-dark text-white flex items-center"
+          >
+            <span className="flex items-center gap-2 text-xs tracking-wider">
+              <FaUnlock className="text-pink-600" /> Unlock Knowledge, Anytime,
+              Anywhere
+            </span>
+          </HoverBorderGradient>
+          <h4 className="text-4xl leading-normal mt-5 text-white tracking-tight font-semibold">
+            Your{" "}
+            <span className="text-transparent bg-clip-text bg-custom-gradient">
+              Learning,{" "}
+            </span>
+            <br />
+            Always Within{" "}
+            <span className="text-transparent bg-clip-text bg-custom-gradient">
+              Reach!
+            </span>
+          </h4>
+          <p className="text-base tracking-wider leading-8 mt-5 mb-10 text-gray-500">
+            No matter where you are or what time it is, DataNode makes learning
+            accessible. With our platform, you can dive into valuable resources,
+            study notes, and tech trends from any device, whenever you need
+            them. Whether you&apos;re on the go or at your desk, we ensure that your
+            academic journey remains uninterrupted.
+          </p>
+          <MagicButton
+            title="Read More"
+            icon={<FaArrowRight />}
+            position="right"
+          />
+        </div>
+        <div
+          className={cn(
+            "relative flex h-[500px] w-full flex-col p-6 overflow-hidden rounded-lg mb-14 md:mb-0 bg-background md:shadow-xl",
+            className
+          )}
+        >
+          <AnimatedList>
+            {notifications.map((item, idx) => (
+              <Notification {...item} key={idx} />
+            ))}
+          </AnimatedList>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AccessAnywhere;
+
 interface Item {
   name: string;
   description: string;
@@ -85,61 +143,3 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
     </figure>
   );
 };
-
-const AccessAnywhere = ({ className }: { className?: string }) => {
-  return (
-    <section className="max-w-6xl">
-      <div className="flex flex-col-reverse lg:flex-row-reverse items-center gap-8 my-14 p-5 lg:p-0">
-        <div>
-          <HoverBorderGradient
-            containerClassName="rounded-full"
-            as="button"
-            className="bg-dark text-white flex items-center"
-          >
-            <span className="flex items-center gap-2 text-xs tracking-wider">
-              <FaUnlock className="text-pink-600" /> Unlock Knowledge,
-              Anytime, Anywhere
-            </span>
-          </HoverBorderGradient>
-          <h4 className="text-4xl leading-normal mt-5 text-white tracking-tight font-semibold">
-            Your{" "}
-            <span className="text-transparent bg-clip-text bg-custom-gradient">
-              Learning,{" "}
-            </span>
-            <br />
-            Always Within{" "}
-            <span className="text-transparent bg-clip-text bg-custom-gradient">
-              Reach!
-            </span>
-          </h4>
-          <p className="text-base tracking-wider leading-8 mt-5 mb-10 text-gray-500">
-            No matter where you are or what time it is, DataNode makes learning
-            accessible. With our platform, you can dive into valuable resources,
-            study notes, and tech trends from any device, whenever you need
-            them. Whether you're on the go or at your desk, we ensure that your
-            academic journey remains uninterrupted.
-          </p>
-          <MagicButton
-            title="Read More"
-            icon={<FaArrowRight />}
-            position="right"
-          />
-        </div>
-        <div
-          className={cn(
-            "relative flex h-[500px] w-full flex-col p-6 overflow-hidden rounded-lg mb-14 md:mb-0 bg-background md:shadow-xl",
-            className
-          )}
-        >
-          <AnimatedList>
-            {notifications.map((item, idx) => (
-              <Notification {...item} key={idx} />
-            ))}
-          </AnimatedList>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default AccessAnywhere;

@@ -4,7 +4,6 @@ import {
   ChevronLeft,
   MessageCircle,
   ThumbsUp,
-  Circle,
   LucideIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -26,6 +25,7 @@ interface CardProps {
   icon1Color: string;
   icon2Color: string;
   shadow: string;
+  className?: string;
 }
 
 const DifficultyColors = {
@@ -37,7 +37,11 @@ const DifficultyColors = {
 const customShadows = {
   skyBlue: "hover:shadow-[0_0px_10px_rgba(56,189,248,1)] hover:border-sky-400",
   green: "hover:shadow-[0_0px_10px_rgba(134,239,172,1)] hover:border-green-300",
-  purple: "hover:shadow-[0_6px_20px_rgba(128,0,128,0.23)] hover:border-yellow-300",
+  yellow:
+    "hover:shadow-[0_0px_10px_rgba(241,156,65,1)] hover:border-yellow-300",
+  red: "hover:shadow-[0_0px_10px_rgba(248,114,114,1)] hover:border-red-300",
+  purple:
+    "hover:shadow-[0_0px_10px_rgba(216,180,254,1)] hover:border-purple-300",
 };
 
 const Cards: React.FC<CardProps> = ({
@@ -54,14 +58,15 @@ const Cards: React.FC<CardProps> = ({
   icon1Color,
   icon2Color,
   shadow,
+  className,
 }) => (
   <Link
     href={url}
-    className="group snap-center focus:outline-none sm:w-[330px] xl:w-[333px]"
+    className={`group snap-center focus:outline-none sm:w-[330px] xl:w-[333px] ${className}`}
   >
     <Card
       className={`group/card rounded-3xl bg-card relative overflow-hidden transition-all duration-300 sm:min-w-[300px] xl:min-w-[333px] border my-2 ${
-        customShadows[shadow as keyof typeof customShadows] || shadow
+        customShadows[shadow as keyof typeof customShadows]
       }`}
     >
       <BackgroundIcon1 className={icon1Color} />
@@ -165,12 +170,12 @@ export default function CardSection({ cardData }: CardSectionProps) {
     >
       <div className="relative">
         <div
-          className={`absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none transition-opacity duration-300 ${
+          className={`hidden 2xl:block absolute left-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none transition-opacity duration-300 ${
             showLeftShadow ? "opacity-100" : "opacity-0"
           }`}
         ></div>
         <div
-          className={`absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none transition-opacity duration-300 ${
+          className={`absolute right-0 top-0 bottom-0 w-8 md:w-16 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none transition-opacity duration-300 ${
             showRightShadow ? "opacity-100" : "opacity-0"
           }`}
         ></div>
@@ -179,7 +184,11 @@ export default function CardSection({ cardData }: CardSectionProps) {
           className="flex w-full snap-x gap-4 overflow-x-auto scroll-smooth pb-10 hide-scrollbar pl-0 md:pl-40"
         >
           {cardData.map((card, index) => (
-            <Cards key={index} {...card} />
+            <Cards
+              key={index}
+              {...card}
+              className={`${index === cardData.length - 1 && "mr-40 md:mr-10"}`}
+            />
           ))}
         </div>
       </div>

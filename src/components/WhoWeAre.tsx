@@ -17,11 +17,11 @@ const WhoWeAre = () => {
             team
           </h4>
           <p className="text-base max-w-7xl tracking-wider mt-5 mb-10 mx-auto text-gray-500 text-center">
-            At DataNode, we're mentors and problem-solvers dedicated to
+            At DataNode, we&apos;re mentors and problem-solvers dedicated to
             empowering future tech professionals. Inspired by our own
             experiences, we built DataNode to provide the support we wish we
             had. Join us in navigating studies, staying ahead in tech, and
-            connecting with a passionate community. Let's grow together.
+            connecting with a passionate community. Let&apos;s grow together.
           </p>
         </div>
         <Link href="/about">

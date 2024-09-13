@@ -20,7 +20,7 @@ const CardsHeading: React.FC<CardsHeadingProps> = ({
   buttonClasses = "",
 }) => {
   return (
-    <div className="flex justify-between items-center md:max-w-6xl px-4 mt-6 mx-auto md:px-0 gap-3">
+    <div className="flex justify-between items-center md:max-w-6xl px-4 mt-6 mx-auto md:px-8 xl:px-0 gap-3">
       <div>
         <h2
           className={`relative text-3xl font-bold tracking-tight bg-clip-text text-transparent select-none bg-gradient-to-r ${otherClasses}`}

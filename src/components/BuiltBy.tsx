@@ -6,8 +6,8 @@ import MagicButton from "@/components/ui/MagicButton";
 
 const BuiltBy = () => {
   return (
-    <section className="max-w-6xl">
-      <div className="flex flex-col lg:flex-row items-center gap-8 md:mb-14 p-5 lg:p-0">
+    <section className="max-w-6xl p-5">
+      <div className="flex flex-col lg:flex-row items-center gap-8 md:mb-14 lg:p-0">
         <div>
           <HoverBorderGradient
             containerClassName="rounded-full"
@@ -26,9 +26,9 @@ const BuiltBy = () => {
             </span>
           </h4>
           <p className="text-base text-left tracking-wider leading-8 mt-5 mb-10 text-gray-500">
-            At DataNode, we've walked the developer's path. Crafted by developers for developers, offers the tools, tips, and
+            At DataNode, we&apos;ve walked the developer&apos;s path. Crafted by developers for developers, offers the tools, tips, and
             insights to help you excel. From coding advice to real-world project
-            experiences, whether you're a beginner or a pro, you'll find
+            experiences, whether you&apos;re a beginner or a pro, you&apos;ll find
             valuable resources for your development journey.
           </p>
           <MagicButton

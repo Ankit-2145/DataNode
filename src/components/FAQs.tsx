@@ -83,7 +83,7 @@ const AccordionItem = memo<AccordionItemProps>(
   }
 );
 
-export default function faq() {
+export default function FAQs() {
   const [openItem, setOpenItem] = useState<number | null>(null);
 
   const toggleItem = useCallback((index: number) => {
