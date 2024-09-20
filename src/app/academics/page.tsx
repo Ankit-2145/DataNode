@@ -53,7 +53,7 @@ export default function Academics() {
 
 interface CardData {
   title: string;
-  difficulty: "Beginner" | "Intermediate" | "Advanced";
+  difficulty: "Beginner" | "Intermediate" | "Advanced" | "BCA";
   comments: number;
   likes: number;
   author: string;
@@ -76,107 +76,22 @@ interface SectionData {
 
 const academicsSections: SectionData[] = [
   {
-    title: "Courses we offer",
+    title: "Courses Guide",
     otherClasses: "dark:bg-sky-300 dark:from-sky-500 dark:to-sky-200",
     buttonClasses:
       "bg-sky-500/10 text-sky-700 hover:text-sky-700 dark:text-sky-300 dark:bg-sky-300/10 hover:bg-sky-500/20 dark:hover:bg-sky-300/20",
 
     cardData: [
       {
-        title: "Introduction to BCA",
+        title: "BCA",
         difficulty: "Beginner",
         comments: 50,
         likes: 100,
         author: "DataNode",
         date: "2 days ago",
         description:
-          "Get started with the basics of BCA,Get started with the basics of BCA,Get started with the basics of BCA,Get started with the basics of BCA",
-        url: "/courses/intro-to-bca",
-        BackgroundIcon1: Circle,
-        BackgroundIcon2: Circle,
-        icon1Color:
-          "absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] duration-300 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        icon2Color:
-          "absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] duration-500 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        shadow: "skyBlue",
-      },
-      {
-        title: "Advanced Data Structures",
-        difficulty: "Advanced",
-        comments: 30,
-        likes: 80,
-        author: "CodeMaster",
-        date: "1 week ago",
-        description: "Dive deep into complex data structures",
-        url: "/courses/advanced-data-structures",
-        BackgroundIcon1: Circle,
-        BackgroundIcon2: Circle,
-        icon1Color:
-          "absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] duration-300 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        icon2Color:
-          "absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] duration-500 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        shadow: "skyBlue",
-      },
-      {
-        title: "Advanced Data Structures",
-        difficulty: "Advanced",
-        comments: 30,
-        likes: 80,
-        author: "CodeMaster",
-        date: "1 week ago",
-        description: "Dive deep into complex data structures",
-        url: "/courses/advanced-data-structures",
-        BackgroundIcon1: Circle,
-        BackgroundIcon2: Circle,
-        icon1Color:
-          "absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] duration-300 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        icon2Color:
-          "absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] duration-500 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        shadow: "skyBlue",
-      },
-      {
-        title: "Advanced Data Structures",
-        difficulty: "Advanced",
-        comments: 30,
-        likes: 80,
-        author: "CodeMaster",
-        date: "1 week ago",
-        description: "Dive deep into complex data structures",
-        url: "/courses/advanced-data-structures",
-        BackgroundIcon1: Circle,
-        BackgroundIcon2: Circle,
-        icon1Color:
-          "absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] duration-300 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        icon2Color:
-          "absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] duration-500 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        shadow: "skyBlue",
-      },
-      {
-        title: "Advanced Data Structures",
-        difficulty: "Advanced",
-        comments: 30,
-        likes: 80,
-        author: "CodeMaster",
-        date: "1 week ago",
-        description: "Dive deep into complex data structures",
-        url: "/courses/advanced-data-structures",
-        BackgroundIcon1: Circle,
-        BackgroundIcon2: Circle,
-        icon1Color:
-          "absolute -right-4 -top-8 h-24 w-24 origin-top-right stroke-[0.5] duration-300 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        icon2Color:
-          "absolute -right-4 -top-8 h-32 w-32 origin-top-right stroke-[0.4] duration-500 group-hover/card:scale-90 text-white/10 dark:group-hover/card:text-sky-400",
-        shadow: "skyBlue",
-      },
-      {
-        title: "Advanced Data Structures",
-        difficulty: "Advanced",
-        comments: 30,
-        likes: 80,
-        author: "CodeMaster",
-        date: "1 week ago",
-        description: "Dive deep into complex data structures",
-        url: "/courses/advanced-data-structures",
+          "Get started with the basics of Bachelor of Computer Applications (currently only for students of Himachal Pradesh)",
+        url: "/BCA/getting-started",
         BackgroundIcon1: Circle,
         BackgroundIcon2: Circle,
         icon1Color:
@@ -195,7 +110,7 @@ const academicsSections: SectionData[] = [
       "bg-green-500/10 text-green-700 hover:text-green-700 dark:text-green-300 dark:bg-green-300/10 hover:bg-green-500/20 dark:hover:bg-green-300/20",
     cardData: [
       {
-        title: "Semester 1 Notes",
+        title: "Semester 1 Notes (BCA)",
         difficulty: "Beginner",
         comments: 40,
         likes: 90,
@@ -306,14 +221,14 @@ const academicsSections: SectionData[] = [
       "bg-yellow-500/10 text-yellow-700 hover:text-yellow-700 dark:text-yellow-300 dark:bg-yellow-300/10 hover:bg-yellow-500/20 dark:hover:bg-yellow-300/20",
     cardData: [
       {
-        title: "2022 Final Exam Papers",
-        difficulty: "Advanced",
-        comments: 60,
-        likes: 120,
-        author: "ExamPro",
+        title: "Semester 1 Papers",
+        difficulty: "BCA",
+        comments: 0,
+        likes: 0,
+        author: "DataNode",
         date: "1 month ago",
-        description: "Collection of all 2022 final exam papers",
-        url: "/papers/2022-finals",
+        description: "Collection of all BCA 2021, 2022 final exam papers",
+        url: "academics/papers/semester1-finals-bca",
         BackgroundIcon1: Triangle,
         BackgroundIcon2: Triangle,
         icon1Color:
@@ -323,14 +238,31 @@ const academicsSections: SectionData[] = [
         shadow: "yellow",
       },
       {
-        title: "2021 Mid-term Papers",
-        difficulty: "Intermediate",
-        comments: 45,
-        likes: 95,
-        author: "PaperArchive",
+        title: "Semester 3 Papers",
+        difficulty: "BCA",
+        comments: 0,
+        likes: 0,
+        author: "DataNode",
         date: "2 months ago",
-        description: "Mid-term question papers from 2021",
-        url: "/papers/2021-midterms",
+        description: "Collection of all BCA 2021, 2022 final exam papers",
+        url: "academics/papers/semester3-finals-bca",
+        BackgroundIcon1: Triangle,
+        BackgroundIcon2: Triangle,
+        icon1Color:
+          "dark:group-hover/card:text-yellow-300 absolute -right-5 -top-5 h-16 w-16 rotate-0 stroke-[0.75] duration-500 group-hover/card:-translate-x-10 group-hover/card:translate-y-10 group-hover/card:rotate-[90deg] dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-yellow-400 absolute -right-14 -top-16 h-36 w-36 rotate-12 stroke-[0.4] duration-300 group-hover/card:translate-x-3 group-hover/card:rotate-[30deg] group-hover/card:scale-50 group-hover/card:stroke-[0.66] dark:text-white/10",
+        shadow: "yellow",
+      },
+      {
+        title: "Semester 5 Papers",
+        difficulty: "BCA",
+        comments: 0,
+        likes: 0,
+        author: "DataNode",
+        date: "2 months ago",
+        description: "Collection of all BCA 2021, 2022 final exam papers",
+        url: "academics/papers/semester5-finals-bca",
         BackgroundIcon1: Triangle,
         BackgroundIcon2: Triangle,
         icon1Color:

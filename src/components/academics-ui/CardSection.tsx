@@ -32,6 +32,7 @@ const DifficultyColors = {
   Beginner: "bg-green-600",
   Intermediate: "bg-yellow-600",
   Advanced: "bg-red-600",
+  BCA: "bg-sky-600"
 };
 
 const customShadows = {

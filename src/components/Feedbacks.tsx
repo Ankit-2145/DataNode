@@ -40,28 +40,4 @@ const testimonials = [
     name: "Piyush Sewal",
     title: "Assistant Professor",
   },
-  {
-    quote:
-      "Thankyou so much...this website its very helpful to me...all study material, pdf, and youtube lectures are very important....again thanks",
-    name: "Kartik",
-    title: "Student",
-  },
-  {
-    quote:
-      "A very useful and innovative website that can help many students in different ways. A good source of useful information and resource sharing. kudos to student developers. Well done. keep it up.",
-    name: "Piyush Sewal",
-    title: "Assistant Professor",
-  },
-  {
-    quote:
-      "Thankyou so much...this website its very helpful to me...all study material, pdf, and youtube lectures are very important....again thanks",
-    name: "Kartik",
-    title: "Student",
-  },
-  {
-    quote:
-      "A very useful and innovative website that can help many students in different ways. A good source of useful information and resource sharing. kudos to student developers. Well done. keep it up.",
-    name: "Piyush Sewal",
-    title: "Assistant Professor",
-  },
 ];
