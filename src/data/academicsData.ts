@@ -9,7 +9,7 @@ import {
 
 export interface CardData {
   title: string;
-  difficulty: "Beginner" | "Intermediate" | "Advanced";
+  difficulty: "Beginner" | "Intermediate" | "Advanced" | "BCA";
   comments: number;
   likes: number;
   author: string;
@@ -46,7 +46,7 @@ export const academicsSections: SectionData[] = [
         author: "DataNode",
         date: "2 days ago",
         description:
-          "Get started with the basics of Bachelor of Computer Applications (currently only for students of Himachal Pradesh)",
+          "Get started with the basics of Bachelor of Computer Applications.",
         url: "/BCA/getting-started",
         BackgroundIcon1: Circle,
         BackgroundIcon2: Circle,
@@ -73,7 +73,7 @@ export const academicsSections: SectionData[] = [
         author: "StudyGuru",
         date: "3 days ago",
         description: "Comprehensive notes for Semester 1 subjects",
-        url: "/notes/semester-1",
+        url: "academics/notes",
         BackgroundIcon1: Square,
         BackgroundIcon2: Square,
         icon1Color:
@@ -177,14 +177,14 @@ export const academicsSections: SectionData[] = [
       "bg-yellow-500/10 text-yellow-700 hover:text-yellow-700 dark:text-yellow-300 dark:bg-yellow-300/10 hover:bg-yellow-500/20 dark:hover:bg-yellow-300/20",
     cardData: [
       {
-        title: "2022 Final Exam Papers",
-        difficulty: "Advanced",
-        comments: 60,
-        likes: 120,
-        author: "ExamPro",
+        title: "Semester 1 Papers",
+        difficulty: "BCA",
+        comments: 0,
+        likes: 0,
+        author: "DataNode",
         date: "1 month ago",
-        description: "Collection of all 2022 final exam papers",
-        url: "/papers/2022-finals",
+        description: "Collection of all BCA 2021, 2022 final exam papers",
+        url: "academics/papers/semester1-finals-bca",
         BackgroundIcon1: Triangle,
         BackgroundIcon2: Triangle,
         icon1Color:
@@ -194,14 +194,31 @@ export const academicsSections: SectionData[] = [
         shadow: "yellow",
       },
       {
-        title: "2021 Mid-term Papers",
-        difficulty: "Intermediate",
-        comments: 45,
-        likes: 95,
-        author: "PaperArchive",
+        title: "Semester 3 Papers",
+        difficulty: "BCA",
+        comments: 0,
+        likes: 0,
+        author: "DataNode",
         date: "2 months ago",
-        description: "Mid-term question papers from 2021",
-        url: "/papers/2021-midterms",
+        description: "Collection of all BCA 2021, 2022 final exam papers",
+        url: "academics/papers/semester3-finals-bca",
+        BackgroundIcon1: Triangle,
+        BackgroundIcon2: Triangle,
+        icon1Color:
+          "dark:group-hover/card:text-yellow-300 absolute -right-5 -top-5 h-16 w-16 rotate-0 stroke-[0.75] duration-500 group-hover/card:-translate-x-10 group-hover/card:translate-y-10 group-hover/card:rotate-[90deg] dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-yellow-400 absolute -right-14 -top-16 h-36 w-36 rotate-12 stroke-[0.4] duration-300 group-hover/card:translate-x-3 group-hover/card:rotate-[30deg] group-hover/card:scale-50 group-hover/card:stroke-[0.66] dark:text-white/10",
+        shadow: "yellow",
+      },
+      {
+        title: "Semester 5 Papers",
+        difficulty: "BCA",
+        comments: 0,
+        likes: 0,
+        author: "DataNode",
+        date: "2 months ago",
+        description: "Collection of all BCA 2021, 2022 final exam papers",
+        url: "academics/papers/semester5-finals-bca",
         BackgroundIcon1: Triangle,
         BackgroundIcon2: Triangle,
         icon1Color:

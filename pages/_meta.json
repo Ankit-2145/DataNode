@@ -1,3 +1,12 @@
 {
-  "BCA": { "title": "BCA", "type": "page", "display": "hidden" }
+  "BCA": { 
+    "title": "BCA", 
+    "type": "page", 
+    "display": "hidden" 
+  },
+  "c-programming": {
+    "title": "c-programming",
+    "type": "page",
+    "display": "hidden"
+  }
 }

@@ -9,10 +9,10 @@ export default {
     link: "https://github.com/Ankit-2145/DataNode",
   },
   banner: {
-    key: "1.0.0-release",
+    key: "3.0-release",
     text: (
       <a href="https://github.com/Ankit-2145/DataNode" target="_blank">
-        🎉 DataNode v1.0 is released. Don't forget to give us a ⭐ on github →
+        🎉 Don't forget to give us a ⭐ on github →
       </a>
     ),
   },

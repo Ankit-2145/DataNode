@@ -38,25 +38,28 @@ export default function Component() {
   );
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-6 text-white rounded-lg shadow-lg my-28">
-      <div className="flex flex-col items-center mb-8">
-        <h1 className="text-4xl md:text-6xl leading-normal text-transparent bg-clip-text bg-custom-gradient tracking-tight text-center font-semibold">
-          Semester 3 Papers
-        </h1>
-        <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-gray-500">
-        A curated set of questions papers from past exams to help you
-        prepare effectively.
-        </p>
-      </div>
+    <div className="w-full dark:bg-black dark:bg-dot-white/[0.2] relative flex items-center justify-center">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_40%,black)]"></div>
+      <div className="w-full max-w-4xl mx-auto p-6 text-white rounded-lg shadow-lg my-28 relative z-10">
+        <div className="flex flex-col items-center mb-8">
+          <h1 className="text-4xl md:text-6xl leading-normal text-transparent bg-clip-text bg-custom-gradient tracking-tight text-center font-semibold">
+            Semester 3 Papers
+          </h1>
+          <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-gray-500">
+            A curated set of questions papers from past exams to help you
+            prepare effectively.
+          </p>
+        </div>
 
-      <Tabs defaultValue="2022" onValueChange={setActiveYear}>
-        <TabsList className="grid w-full grid-cols-2 mb-8">
-          <TabsTrigger value="2022">2022 Papers</TabsTrigger>
-          <TabsTrigger value="2021">2021 Papers</TabsTrigger>
-        </TabsList>
-        <TabsContent value="2022">{renderPapers(pyqsSem32022)}</TabsContent>
-        <TabsContent value="2021">{renderPapers(pyqsSem32021)}</TabsContent>
-      </Tabs>
+        <Tabs defaultValue="2022" onValueChange={setActiveYear}>
+          <TabsList className="grid w-full grid-cols-2 mb-8">
+            <TabsTrigger value="2022">2022 Papers</TabsTrigger>
+            <TabsTrigger value="2021">2021 Papers</TabsTrigger>
+          </TabsList>
+          <TabsContent value="2022">{renderPapers(pyqsSem32022)}</TabsContent>
+          <TabsContent value="2021">{renderPapers(pyqsSem32021)}</TabsContent>
+        </Tabs>
+      </div>
     </div>
   );
 }
