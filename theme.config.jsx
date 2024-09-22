@@ -16,15 +16,21 @@ export default {
       </a>
     ),
   },
-  docsRepositoryBase: 'https://github.com/Ankit-2145/DataNode/tree/main',
+  docsRepositoryBase: "https://github.com/Ankit-2145/DataNode/tree/main",
   footer: {
     text: (
       <span>
         DataNode © {new Date().getFullYear()}{" "}
         <a href="https://sspinnacle.com" target="_blank">
-         | Powered by Pinnacle Smart Solutions
+          | Powered by Pinnacle Smart Solutions
         </a>
       </span>
     ),
+  },
+  sidebar: {
+    toggleButton: true,
+  },
+  sidebar: {
+    autoCollapse: true,
   },
 };

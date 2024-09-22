@@ -12,7 +12,7 @@ export const semesterOne = [
   },
   {
     id: 2,
-    url: "/BCA/c-programming/intro",
+    url: "/BBA",
     name: "C Programming",
     icon: Code,
     description:
@@ -21,7 +21,7 @@ export const semesterOne = [
   },
   {
     id: 3,
-    url: "office-automation-tools",
+    url: "/c-programing",
     name: "Office Automation Tools",
     icon: Presentation,
     description:
