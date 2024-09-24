@@ -21,7 +21,7 @@ export default function About() {
           <LinkPreview url="https://sspinnacle.com" className="text-white">
             DataNode
           </LinkPreview>{" "}
-          isn't just another educational platform; it's a project born out of my
+          isn&apos;t just another educational platform: it&apos;s a project born out of my
           real struggles and experiences as someone who once stood where you are
           now. While pursuing my BCA, I built the{" "}
           <LinkPreview

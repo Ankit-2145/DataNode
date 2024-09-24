@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { pyqsSem32021, pyqsSem32022, PYQ } from "@/data/papers";
 
-export default function Component() {
+export default function SemesterThreeFinals() {
   const [activeYear, setActiveYear] = useState("2022");
 
   const renderPapers = useMemo(
