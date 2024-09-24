@@ -83,6 +83,8 @@ const AccordionItem = memo<AccordionItemProps>(
   }
 );
 
+AccordionItem.displayName = "AccordionItem";
+
 export default function FAQs() {
   const [openItem, setOpenItem] = useState<number | null>(null);
 

@@ -9,33 +9,58 @@ import { pyqsSem52021, pyqsSem52022, PYQ } from "@/data/papers";
 export default function SemesterFiveFinals() {
   const [activeYear, setActiveYear] = useState("2022");
 
-  const renderPapers = useMemo(
-    () => (papers: PYQ[]) =>
-      (
-        <div className="space-y-4">
-          {papers.map((pyq) => (
-            <div
-              key={pyq.id}
-              className="flex items-center gap-4 p-4 bg-[#0A0A0A] rounded-lg"
-            >
-              <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0" />
-              <div className="flex-grow">
-                <h2 className="text-lg font-semibold">{pyq.title}</h2>
-              </div>
-              <div className="flex items-center gap-2 flex-shrink-0">
-                <Button variant="link" size="sm" asChild>
-                  <a href={pyq.downloadUrl} download>
-                    <Download className="w-4 h-4 mr-2" />
-                    Download
-                  </a>
-                </Button>
-              </div>
-            </div>
-          ))}
+  // const renderPapers = useMemo(
+  //   () => (papers: PYQ[]) =>
+  //     (
+  //       <div className="space-y-4">
+  //         {papers.map((pyq) => (
+  //           <div
+  //             key={pyq.id}
+  //             className="flex items-center gap-4 p-4 bg-[#0A0A0A] rounded-lg"
+  //           >
+  //             <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0" />
+  //             <div className="flex-grow">
+  //               <h2 className="text-lg font-semibold">{pyq.title}</h2>
+  //             </div>
+  //             <div className="flex items-center gap-2 flex-shrink-0">
+  //               <Button variant="link" size="sm" asChild>
+  //                 <a href={pyq.downloadUrl} download>
+  //                   <Download className="w-4 h-4 mr-2" />
+  //                   Download
+  //                 </a>
+  //               </Button>
+  //             </div>
+  //           </div>
+  //         ))}
+  //       </div>
+  //     ),
+  //   []
+  // );
+
+  const renderPapers = (papers: PYQ[]) => (
+    <div className="space-y-4">
+      {papers.map((pyq) => (
+        <div
+          key={pyq.id}
+          className="flex items-center gap-4 p-4 bg-[#0A0A0A] rounded-lg"
+        >
+          <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0" />
+          <div className="flex-grow">
+            <h2 className="text-base font-semibold">{pyq.title}</h2>
+          </div>
+          <div className="flex items-center gap-2 flex-shrink-0">
+            <Button variant="link" size="sm" asChild>
+              <a href={pyq.downloadUrl} download>
+                <Download className="w-4 h-4 mr-2" />
+                Download
+              </a>
+            </Button>
+          </div>
         </div>
-      ),
-    []
+      ))}
+    </div>
   );
+
 
   return (
     <div className="w-full dark:bg-black dark:bg-dot-white/[0.2] relative flex items-center justify-center">
