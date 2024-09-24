@@ -11,14 +11,20 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { semesterOne } from "@/data/syllabusNotes";
+import { semesterData, SemesterKey } from "@/data/syllabusNotes";
 import Link from "next/link";
 import { Search } from "lucide-react";
 
-export default function SubjectsPage() {
+interface SubjectsPageProps {
+  semester: SemesterKey;
+}
+
+export default function SubjectsCards({ semester }: SubjectsPageProps) {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredSubjects = semesterOne.filter(
+  const subjects = semesterData[semester];
+
+  const filteredSubjects = subjects.filter(
     (subject) =>
       subject.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       subject.description.toLowerCase().includes(searchTerm.toLowerCase())
@@ -30,7 +36,7 @@ export default function SubjectsPage() {
       <div className="w-full max-w-7xl mx-auto p-6 text-white rounded-lg shadow-lg my-28 relative z-10">
         <div className="flex flex-col items-center mb-8">
           <h1 className="text-4xl md:text-6xl leading-normal text-transparent bg-clip-text bg-custom-gradient tracking-tight text-center font-semibold">
-            Semester 1 Notes
+            Semester {semester.charAt(0).toUpperCase() + semester.slice(1)} Notes
           </h1>
           <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-gray-500">
             Explore concise, easy-to-understand notes for all core subjects,
@@ -71,7 +77,7 @@ export default function SubjectsPage() {
                   <div className="flex justify-between items-center">
                     <Badge variant="outline">{subject.difficulty}</Badge>
                     <Link href={subject.url}>
-                      <Button variant="outline">Learn More</Button>
+                      <Button variant="outline">Start Learning</Button>
                     </Link>
                   </div>
                 </CardContent>

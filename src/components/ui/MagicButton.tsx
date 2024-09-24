@@ -6,16 +6,20 @@ const MagicButton = ({
   position,
   handleClick,
   otherClasses,
+  ButtonType,
 }: {
   title: string;
   icon: React.ReactNode;
-  position: string;
+  position: "left" | "right";
   handleClick?: () => void;
   otherClasses?: string;
+  ButtonType?: "submit" | "reset" | "button";
 }) => {
   return (
     <button
-      className={`px-8 py-3 rounded-lg relative bg-custom-gradient-129 text-white text-sm hover:shadow-2xl transition duration-200 border border-slate-600 group ${otherClasses} ${handleClick}`}
+      type={ButtonType || "button"} // Default to "button"
+      className={`px-8 py-3 rounded-lg relative bg-custom-gradient-129 text-white text-sm hover:shadow-2xl transition duration-200 border border-slate-600 group ${otherClasses}`}
+      onClick={handleClick} 
     >
       <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
       <span className="relative z-20">

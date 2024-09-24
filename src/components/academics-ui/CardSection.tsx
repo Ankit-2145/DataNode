@@ -32,7 +32,7 @@ const DifficultyColors = {
   Beginner: "bg-green-600",
   Intermediate: "bg-yellow-600",
   Advanced: "bg-red-600",
-  BCA: "bg-sky-600"
+  BCA: "bg-cyan-600"
 };
 
 const customShadows = {
@@ -86,14 +86,14 @@ const Cards: React.FC<CardProps> = ({
           >
             {difficulty}
           </Badge>
-          <div className="flex items-center gap-2 text-sm">
+          {/* <div className="flex items-center gap-2 text-sm">
             <MessageCircle size={18} />
             {comments}
           </div>
           <div className="flex items-center gap-2 text-sm">
             <ThumbsUp size={18} />
             {likes}
-          </div>
+          </div> */}
         </div>
       </CardHeader>
 

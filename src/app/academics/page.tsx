@@ -25,7 +25,7 @@ export default function Academics() {
         <React.Fragment key={section.title}>
           <CardsHeading
             title={section.title}
-            url="/view-more"
+            url=""
             text="view more"
             otherClasses={section.otherClasses}
             buttonClasses={section.buttonClasses}

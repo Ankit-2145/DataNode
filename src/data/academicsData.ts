@@ -9,7 +9,7 @@ import {
 
 export interface CardData {
   title: string;
-  difficulty: "Beginner" | "Intermediate" | "Advanced" | "BCA";
+  difficulty: "Beginner" | "Intermediate" | "Advanced" | "BCA" |"ComingSoon";
   comments: number;
   likes: number;
   author: string;
@@ -73,7 +73,7 @@ export const academicsSections: SectionData[] = [
         author: "StudyGuru",
         date: "3 days ago",
         description: "Comprehensive notes for Semester 1 subjects",
-        url: "academics/notes",
+        url: "academics/notes/semester-one",
         BackgroundIcon1: Square,
         BackgroundIcon2: Square,
         icon1Color:
@@ -84,13 +84,13 @@ export const academicsSections: SectionData[] = [
       },
       {
         title: "Semester 2 Notes",
-        difficulty: "Intermediate",
+        difficulty: "ComingSoon",
         comments: 35,
         likes: 85,
         author: "NotesMaster",
         date: "5 days ago",
         description: "Detailed notes covering Semester 2 topics",
-        url: "/notes/semester-2",
+        url: "academics/notes/semester-two",
         BackgroundIcon1: Square,
         BackgroundIcon2: Square,
         icon1Color:
@@ -101,13 +101,13 @@ export const academicsSections: SectionData[] = [
       },
       {
         title: "Semester 3 Notes",
-        difficulty: "Intermediate",
+        difficulty: "Beginner",
         comments: 28,
         likes: 75,
         author: "EduNotes",
         date: "1 week ago",
         description: "Essential notes for Semester 3 courses",
-        url: "/notes/semester-3",
+        url: "academics/notes/semester-three",
         BackgroundIcon1: Square,
         BackgroundIcon2: Square,
         icon1Color:
@@ -118,13 +118,13 @@ export const academicsSections: SectionData[] = [
       },
       {
         title: "Semester 4 Notes",
-        difficulty: "Advanced",
+        difficulty: "ComingSoon",
         comments: 50,
         likes: 120,
         author: "ProLearn",
         date: "2 weeks ago",
         description: "In-depth notes for advanced Semester 4 topics",
-        url: "/notes/semester-4",
+        url: "academics/notes/semester-four",
         BackgroundIcon1: Square,
         BackgroundIcon2: Square,
         icon1Color:
@@ -135,13 +135,13 @@ export const academicsSections: SectionData[] = [
       },
       {
         title: "Semester 5 Notes",
-        difficulty: "Advanced",
+        difficulty: "Beginner",
         comments: 60,
         likes: 130,
         author: "MasterEdu",
         date: "3 weeks ago",
         description: "Advanced notes for specialized Semester 5 subjects",
-        url: "/notes/semester-5",
+        url: "academics/notes/semester-five",
         BackgroundIcon1: Square,
         BackgroundIcon2: Square,
         icon1Color:
@@ -152,13 +152,13 @@ export const academicsSections: SectionData[] = [
       },
       {
         title: "Semester 6 Notes",
-        difficulty: "Beginner",
+        difficulty: "ComingSoon",
         comments: 75,
         likes: 145,
         author: "FinalYearNotes",
         date: "1 month ago",
         description: "Comprehensive notes for final year Semester 6",
-        url: "/notes/semester-6",
+        url: "academics/notes/semester-six",
         BackgroundIcon1: Square,
         BackgroundIcon2: Square,
         icon1Color:
@@ -194,6 +194,23 @@ export const academicsSections: SectionData[] = [
         shadow: "yellow",
       },
       {
+        title: "Semester 2 Papers",
+        difficulty: "ComingSoon",
+        comments: 0,
+        likes: 0,
+        author: "DataNode",
+        date: "1 month ago",
+        description: "Collection of all BCA 2021, 2022 final exam papers",
+        url: "academics/papers/semester2-finals-bca",
+        BackgroundIcon1: Triangle,
+        BackgroundIcon2: Triangle,
+        icon1Color:
+          "dark:group-hover/card:text-yellow-300 absolute -right-5 -top-5 h-16 w-16 rotate-0 stroke-[0.75] duration-500 group-hover/card:-translate-x-10 group-hover/card:translate-y-10 group-hover/card:rotate-[90deg] dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-yellow-400 absolute -right-14 -top-16 h-36 w-36 rotate-12 stroke-[0.4] duration-300 group-hover/card:translate-x-3 group-hover/card:rotate-[30deg] group-hover/card:scale-50 group-hover/card:stroke-[0.66] dark:text-white/10",
+        shadow: "yellow",
+      },
+      {
         title: "Semester 3 Papers",
         difficulty: "BCA",
         comments: 0,
@@ -202,6 +219,23 @@ export const academicsSections: SectionData[] = [
         date: "2 months ago",
         description: "Collection of all BCA 2021, 2022 final exam papers",
         url: "academics/papers/semester3-finals-bca",
+        BackgroundIcon1: Triangle,
+        BackgroundIcon2: Triangle,
+        icon1Color:
+          "dark:group-hover/card:text-yellow-300 absolute -right-5 -top-5 h-16 w-16 rotate-0 stroke-[0.75] duration-500 group-hover/card:-translate-x-10 group-hover/card:translate-y-10 group-hover/card:rotate-[90deg] dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-yellow-400 absolute -right-14 -top-16 h-36 w-36 rotate-12 stroke-[0.4] duration-300 group-hover/card:translate-x-3 group-hover/card:rotate-[30deg] group-hover/card:scale-50 group-hover/card:stroke-[0.66] dark:text-white/10",
+        shadow: "yellow",
+      },
+      {
+        title: "Semester 4 Papers",
+        difficulty: "ComingSoon",
+        comments: 0,
+        likes: 0,
+        author: "DataNode",
+        date: "2 months ago",
+        description: "Collection of all BCA 2021, 2022 final exam papers",
+        url: "academics/papers/semester4-finals-bca",
         BackgroundIcon1: Triangle,
         BackgroundIcon2: Triangle,
         icon1Color:
@@ -227,103 +261,120 @@ export const academicsSections: SectionData[] = [
           "dark:group-hover/card:text-yellow-400 absolute -right-14 -top-16 h-36 w-36 rotate-12 stroke-[0.4] duration-300 group-hover/card:translate-x-3 group-hover/card:rotate-[30deg] group-hover/card:scale-50 group-hover/card:stroke-[0.66] dark:text-white/10",
         shadow: "yellow",
       },
-      // Add more question paper cards here...
+      {
+        title: "Semester 6 Papers",
+        difficulty: "ComingSoon",
+        comments: 0,
+        likes: 0,
+        author: "DataNode",
+        date: "2 months ago",
+        description: "Collection of all BCA 2021, 2022 final exam papers",
+        url: "academics/papers/semester6-finals-bca",
+        BackgroundIcon1: Triangle,
+        BackgroundIcon2: Triangle,
+        icon1Color:
+          "dark:group-hover/card:text-yellow-300 absolute -right-5 -top-5 h-16 w-16 rotate-0 stroke-[0.75] duration-500 group-hover/card:-translate-x-10 group-hover/card:translate-y-10 group-hover/card:rotate-[90deg] dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-yellow-400 absolute -right-14 -top-16 h-36 w-36 rotate-12 stroke-[0.4] duration-300 group-hover/card:translate-x-3 group-hover/card:rotate-[30deg] group-hover/card:scale-50 group-hover/card:stroke-[0.66] dark:text-white/10",
+        shadow: "yellow",
+      },
+      
     ],
   },
-  {
-    title: "Articles",
-    otherClasses: "dark:bg-red-300 dark:from-red-300 dark:to-red-100",
-    buttonClasses:
-      "bg-red-500/10 text-red-700 hover:text-red-700 dark:text-red-300 dark:bg-red-300/10 hover:bg-red-500/20 dark:hover:bg-red-300/20",
-    cardData: [
-      {
-        title: "2022 Final Exam Papers",
-        difficulty: "Advanced",
-        comments: 60,
-        likes: 120,
-        author: "ExamPro",
-        date: "1 month ago",
-        description: "Collection of all 2022 final exam papers",
-        url: "/papers/2022-finals",
-        BackgroundIcon1: Plus,
-        BackgroundIcon2: Plus,
-        icon1Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-        icon2Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-        shadow: "red",
-      },
-      {
-        title: "2022 Final Exam Papers",
-        difficulty: "Advanced",
-        comments: 60,
-        likes: 120,
-        author: "ExamPro",
-        date: "1 month ago",
-        description: "Collection of all 2022 final exam papers",
-        url: "/papers/2022-finals",
-        BackgroundIcon1: Plus,
-        BackgroundIcon2: Plus,
-        icon1Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-        icon2Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-        shadow: "red",
-      },
-      {
-        title: "2022 Final Exam Papers",
-        difficulty: "Advanced",
-        comments: 60,
-        likes: 120,
-        author: "ExamPro",
-        date: "1 month ago",
-        description: "Collection of all 2022 final exam papers",
-        url: "/papers/2022-finals",
-        BackgroundIcon1: Plus,
-        BackgroundIcon2: Plus,
-        icon1Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-        icon2Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-        shadow: "red",
-      },
-      {
-        title: "2022 Final Exam Papers",
-        difficulty: "Advanced",
-        comments: 60,
-        likes: 120,
-        author: "ExamPro",
-        date: "1 month ago",
-        description: "Collection of all 2022 final exam papers",
-        url: "/papers/2022-finals",
-        BackgroundIcon1: Plus,
-        BackgroundIcon2: Plus,
-        icon1Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-        icon2Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-        shadow: "red",
-      },
-      {
-        title: "2022 Final Exam Papers",
-        difficulty: "Advanced",
-        comments: 60,
-        likes: 120,
-        author: "ExamPro",
-        date: "1 month ago",
-        description: "Collection of all 2022 final exam papers",
-        url: "/papers/2022-finals",
-        BackgroundIcon1: Plus,
-        BackgroundIcon2: Plus,
-        icon1Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-        icon2Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-        shadow: "red",
-      },
-      // Add more exam preparation guide cards here...
-    ],
-  },
+  // {
+  //   title: "Articles",
+  //   otherClasses: "dark:bg-red-300 dark:from-red-300 dark:to-red-100",
+  //   buttonClasses:
+  //     "bg-red-500/10 text-red-700 hover:text-red-700 dark:text-red-300 dark:bg-red-300/10 hover:bg-red-500/20 dark:hover:bg-red-300/20",
+  //   cardData: [
+  //     {
+  //       title: "2022 Final Exam Papers",
+  //       difficulty: "Advanced",
+  //       comments: 60,
+  //       likes: 120,
+  //       author: "ExamPro",
+  //       date: "1 month ago",
+  //       description: "Collection of all 2022 final exam papers",
+  //       url: "/papers/2022-finals",
+  //       BackgroundIcon1: Plus,
+  //       BackgroundIcon2: Plus,
+  //       icon1Color:
+  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+  //       icon2Color:
+  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+  //       shadow: "red",
+  //     },
+  //     {
+  //       title: "2022 Final Exam Papers",
+  //       difficulty: "Advanced",
+  //       comments: 60,
+  //       likes: 120,
+  //       author: "ExamPro",
+  //       date: "1 month ago",
+  //       description: "Collection of all 2022 final exam papers",
+  //       url: "/papers/2022-finals",
+  //       BackgroundIcon1: Plus,
+  //       BackgroundIcon2: Plus,
+  //       icon1Color:
+  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+  //       icon2Color:
+  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+  //       shadow: "red",
+  //     },
+  //     {
+  //       title: "2022 Final Exam Papers",
+  //       difficulty: "Advanced",
+  //       comments: 60,
+  //       likes: 120,
+  //       author: "ExamPro",
+  //       date: "1 month ago",
+  //       description: "Collection of all 2022 final exam papers",
+  //       url: "/papers/2022-finals",
+  //       BackgroundIcon1: Plus,
+  //       BackgroundIcon2: Plus,
+  //       icon1Color:
+  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+  //       icon2Color:
+  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+  //       shadow: "red",
+  //     },
+  //     {
+  //       title: "2022 Final Exam Papers",
+  //       difficulty: "Advanced",
+  //       comments: 60,
+  //       likes: 120,
+  //       author: "ExamPro",
+  //       date: "1 month ago",
+  //       description: "Collection of all 2022 final exam papers",
+  //       url: "/papers/2022-finals",
+  //       BackgroundIcon1: Plus,
+  //       BackgroundIcon2: Plus,
+  //       icon1Color:
+  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+  //       icon2Color:
+  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+  //       shadow: "red",
+  //     },
+  //     {
+  //       title: "2022 Final Exam Papers",
+  //       difficulty: "Advanced",
+  //       comments: 60,
+  //       likes: 120,
+  //       author: "ExamPro",
+  //       date: "1 month ago",
+  //       description: "Collection of all 2022 final exam papers",
+  //       url: "/papers/2022-finals",
+  //       BackgroundIcon1: Plus,
+  //       BackgroundIcon2: Plus,
+  //       icon1Color:
+  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+  //       icon2Color:
+  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+  //       shadow: "red",
+  //     },
+  //     // Add more exam preparation guide cards here...
+  //   ],
+  // },
   {
     title: "Exam Preparation Guides",
     otherClasses: "dark:bg-purple-300 dark:from-purple-400 dark:to-purple-100",
