@@ -64,7 +64,7 @@ export default function SemesterThreeFinals() {
 
   return (
     <div className="w-full dark:bg-black dark:bg-dot-white/[0.2] relative flex items-center justify-center">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_40%,black)]"></div>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_80%,black)]"></div>
       <div className="w-full max-w-4xl mx-auto p-6 text-white rounded-lg shadow-lg my-28 relative z-10">
         <div className="flex flex-col items-center mb-8">
           <h1 className="text-4xl md:text-6xl leading-normal text-transparent bg-clip-text bg-custom-gradient tracking-tight text-center font-semibold">

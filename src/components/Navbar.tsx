@@ -30,38 +30,33 @@ import logoSvg from "./../../public/logo-svg.svg";
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Tech Trends & Updates",
-    href: "/docs/primitives/alert-dialog",
+    title: "Master the Fundamentals",
+    href: "/resources/master-the-fundamentals",
     description:
-      "Articles on Emerging Technologies.",
+      "Explore essential guides and resources to strengthen your understanding of core subjects and concepts.",
   },
   {
-    title: "Project Ideas & Case Studies",
-    href: "/docs/primitives/hover-card",
+    title: "Tech Trends & Industry Insights",
+    href: "/resources/tech-trends-industry-insights",
     description:
-      "Real-world Case Studies & Ideas for you to build.",
+      "Discover the latest trends shaping the tech world and prepare yourself for a dynamic career landscape.",
   },
   {
-    title: "Programming Resources",
-    href: "/docs/primitives/progress",
+    title: "Boost Your Skills",
+    href: "/resources/boost-your-skills",
     description:
-      "Code Snippets & Programming Challenges",
-  },
-  {
-    title: "Certifications",
-    href: "/docs/primitives/scroll-area",
-    description: "Certifications That Open Doors to New Opportunities.",
+      "Access top platforms, tools, and certifications to enhance your technical expertise and stay competitive.",
   },
   {
     title: "Success Stories",
-    href: "/docs/primitives/tabs",
+    href: "/resources/success-stories",
     description: "Real-Life Success Stories of Career Growth and Achievements.",
   },
-  {
-    title: "Resume & Interview Tips",
-    href: "/docs/primitives/tooltip",
-    description: "Craft a Winning Resume and Ace Your Interviews.",
-  },
+  // {
+  //   title: "Resume & Interview Tips",
+  //   href: "/docs/primitives/tooltip",
+  //   description: "Craft a Winning Resume and Ace Your Interviews.",
+  // },
 ];
 
 export default function Navbar() {
@@ -100,20 +95,16 @@ export default function Navbar() {
         </Link>
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
-          <NavigationMenuItem>
+            <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                >
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Home
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-          <NavigationMenuItem>
+            <NavigationMenuItem>
               <Link href="/academics" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                >
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Academics
                 </NavigationMenuLink>
               </Link>
@@ -127,8 +118,8 @@ export default function Navbar() {
                   <li className="row-span-3">
                     <NavigationMenuLink asChild>
                       <a
-                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                        href="/"
+                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-custom-gradient-129 p-6 no-underline outline-none focus:shadow-md"
+                        href="/careers/career-pathways"
                       >
                         <div className="mb-2 mt-4 text-lg font-medium">
                           Career Pathways
@@ -139,17 +130,17 @@ export default function Navbar() {
                       </a>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem href="/docs" title="Skill Development">
+                  {/* <ListItem href="/docs" title="Skill Development">
                     Master the Skills Needed to Succeed in the Industry
-                  </ListItem>
-                  <ListItem
-                    href="/docs/installation"
+                  </ListItem> */}
+                  {/* <ListItem
+                    href="/careers/resume-tips"
                     title="Resume & Interview Tips"
                   >
                     Craft a Winning Resume and Ace Your Interviews
-                  </ListItem>
+                  </ListItem> */}
                   <ListItem
-                    href="/docs/primitives/typography"
+                    href="/careers/master-programs"
                     title="Master's Programs"
                   >
                     Discover Top Master&apos;s Programs in Your Field
@@ -177,9 +168,7 @@ export default function Navbar() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                >
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   About Us
                 </NavigationMenuLink>
               </Link>
@@ -214,19 +203,29 @@ export default function Navbar() {
                 >
                   Home
                 </Link>
+                <Link
+                  href="/academics"
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-primary",
+                    pathname === "/" ? "text-primary" : "text-muted-foreground"
+                  )}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Academics
+                </Link>
                 <div className="space-y-2">
-                  <h4 className="text-sm font-medium">Getting Started</h4>
+                  <h4 className="text-sm font-medium">Careers</h4>
                   <Link
-                    href="/docs"
+                    href="/careers/career-pathways"
                     className={cn(
                       "block text-sm transition-colors hover:text-primary",
-                      pathname === "/docs"
+                      pathname === "/careers/career-pathways"
                         ? "text-primary"
                         : "text-muted-foreground"
                     )}
                     onClick={() => setIsOpen(false)}
                   >
-                    Introduction
+                    Career Pathways
                   </Link>
                   <Link
                     href="/docs/installation"
@@ -238,7 +237,7 @@ export default function Navbar() {
                     )}
                     onClick={() => setIsOpen(false)}
                   >
-                    Installation
+                    Skill Development
                   </Link>
                   <Link
                     href="/docs/primitives/typography"
@@ -250,11 +249,23 @@ export default function Navbar() {
                     )}
                     onClick={() => setIsOpen(false)}
                   >
-                    Typography
+                    Resume & Interview tips
+                  </Link>
+                  <Link
+                    href="/careers/master-programs"
+                    className={cn(
+                      "block text-sm transition-colors hover:text-primary",
+                      pathname === "/careers/master-programs"
+                        ? "text-primary"
+                        : "text-muted-foreground"
+                    )}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Master&apos;s Programs
                   </Link>
                 </div>
                 <div className="space-y-2">
-                  <h4 className="text-sm font-medium">Components</h4>
+                  <h4 className="text-sm font-medium">Resources</h4>
                   {components.map((component) => (
                     <Link
                       key={component.title}
@@ -271,18 +282,6 @@ export default function Navbar() {
                     </Link>
                   ))}
                 </div>
-                <Link
-                  href="/docs"
-                  className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary",
-                    pathname === "/docs"
-                      ? "text-primary"
-                      : "text-muted-foreground"
-                  )}
-                  onClick={() => setIsOpen(false)}
-                >
-                  Documentation
-                </Link>
                 <Link
                   href="/contact"
                   className={cn(
