@@ -22,7 +22,7 @@ export default function featuresGird() {
           expect ?
         </span>
       </h4>
-      <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-700">
+      <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-500">
         Explore the range of features and resources that will enhance your
         learning journey and help you achieve your goals.
       </p>

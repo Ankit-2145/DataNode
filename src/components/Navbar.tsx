@@ -130,15 +130,6 @@ export default function Navbar() {
                       </a>
                     </NavigationMenuLink>
                   </li>
-                  {/* <ListItem href="/docs" title="Skill Development">
-                    Master the Skills Needed to Succeed in the Industry
-                  </ListItem> */}
-                  {/* <ListItem
-                    href="/careers/resume-tips"
-                    title="Resume & Interview Tips"
-                  >
-                    Craft a Winning Resume and Ace Your Interviews
-                  </ListItem> */}
                   <ListItem
                     href="/careers/master-programs"
                     title="Master's Programs"
@@ -227,7 +218,7 @@ export default function Navbar() {
                   >
                     Career Pathways
                   </Link>
-                  <Link
+                  {/* <Link
                     href="/docs/installation"
                     className={cn(
                       "block text-sm transition-colors hover:text-primary",
@@ -250,7 +241,7 @@ export default function Navbar() {
                     onClick={() => setIsOpen(false)}
                   >
                     Resume & Interview tips
-                  </Link>
+                  </Link> */}
                   <Link
                     href="/careers/master-programs"
                     className={cn(

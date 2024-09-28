@@ -12,7 +12,7 @@ export default function Feedbacks() {
               shoutouts
             </span>
           </h4>
-        <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-700">
+        <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-500">
           Hear from our satisfied users and see how DataNode has made a
           difference in their educational journey.
         </p>

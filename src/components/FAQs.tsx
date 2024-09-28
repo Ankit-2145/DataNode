@@ -101,7 +101,7 @@ export default function FAQs() {
         </span>{" "}
         Questions
       </h4>
-      <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-700">
+      <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-500">
         Find answers to common questions and get the information you need to
         make the most of our platform.
       </p>
