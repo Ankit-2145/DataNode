@@ -16,7 +16,7 @@ const Footer = () => {
         { name: 'BCA Syllabus', href: '/BCA/semesters/Syllabus-1' },
         { name: 'BCA Semesters', href: '/BCA/semesters/Semester-1' },
         { name: 'BCA Community', href: 'https://bcacommunity.netlify.app/', external: true },
-        { name: "Previous Year's Question Papers", href: '#' },
+        { name: "Previous Year's Question Papers", href: '/academics' },
       ],
     },
     {

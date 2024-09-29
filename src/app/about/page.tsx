@@ -2,7 +2,6 @@
 
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
-import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 
 export default function About() {
   return (
@@ -18,7 +17,7 @@ export default function About() {
       </div>
       <div className="max-w-4xl mx-auto mb-14">
         <p className="text-gray-500 px-4 md:px-0 md:tracking-wider text-left text-sm md:text-base">
-          <LinkPreview url="https://sspinnacle.com" className="text-white">
+          <LinkPreview url="https://data-node.vercel.app" className="text-white">
             DataNode
           </LinkPreview>{" "}
           isn&apos;t just another educational platform: it&apos;s a project born out of my

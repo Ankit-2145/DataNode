@@ -9,7 +9,7 @@ import {
 
 export interface CardData {
   title: string;
-  difficulty: "Beginner" | "Intermediate" | "Advanced" | "BCA" |"ComingSoon";
+  difficulty: "Beginner" | "Intermediate" | "Advanced" | "BCA" | "ComingSoon";
   comments: number;
   likes: number;
   author: string;
@@ -28,6 +28,7 @@ export interface SectionData {
   otherClasses: string;
   buttonClasses: string;
   cardData: CardData[];
+  id?: string;
 }
 
 export const academicsSections: SectionData[] = [
@@ -278,7 +279,6 @@ export const academicsSections: SectionData[] = [
           "dark:group-hover/card:text-yellow-400 absolute -right-14 -top-16 h-36 w-36 rotate-12 stroke-[0.4] duration-300 group-hover/card:translate-x-3 group-hover/card:rotate-[30deg] group-hover/card:scale-50 group-hover/card:stroke-[0.66] dark:text-white/10",
         shadow: "yellow",
       },
-      
     ],
   },
   // {

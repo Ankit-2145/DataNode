@@ -17,8 +17,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="w-full dark:bg-black dark:bg-dot-white/[0.2] relative flex items-center justify-center">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_40%,black)]"></div>
+    <div className="w-full dark:bg-black dark:bg-dot-white/[0.2] relative">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_80%,black)]"></div>
       <div className="container mx-auto px-4 max-w-6xl">
         <header className="flex flex-col items-center">
           <h1 className="text-4xl md:text-6xl leading-normal mt-28 text-transparent bg-clip-text bg-custom-gradient tracking-tight text-center font-semibold">
@@ -30,7 +30,7 @@ export default function Contact() {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-6 mb-28">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 my-6">
           {/* Contact Form */}
           <div className="bg-card rounded-lg p-8 shadow-lg transition-all duration-300">
             <h2 className="text-2xl font-semibold mb-6 text-white">
@@ -108,7 +108,7 @@ export default function Contact() {
             </div>
             <div className="bg-card rounded-lg p-8 shadow-lg transition-all duration-300">
               <h2 className="text-2xl font-semibold mb-4 text-white">
-              Hangout hours
+                Hangout hours
               </h2>
               <p className="text-white leading-8">
                 Monday - Friday: 11:00 AM - 3:00 PM
