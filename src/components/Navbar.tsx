@@ -218,30 +218,6 @@ export default function Navbar() {
                   >
                     Career Pathways
                   </Link>
-                  {/* <Link
-                    href="/docs/installation"
-                    className={cn(
-                      "block text-sm transition-colors hover:text-primary",
-                      pathname === "/docs/installation"
-                        ? "text-primary"
-                        : "text-muted-foreground"
-                    )}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Skill Development
-                  </Link>
-                  <Link
-                    href="/docs/primitives/typography"
-                    className={cn(
-                      "block text-sm transition-colors hover:text-primary",
-                      pathname === "/docs/primitives/typography"
-                        ? "text-primary"
-                        : "text-muted-foreground"
-                    )}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Resume & Interview tips
-                  </Link> */}
                   <Link
                     href="/careers/master-programs"
                     className={cn(
@@ -285,7 +261,7 @@ export default function Navbar() {
                 >
                   Contact Us
                 </Link>
-                <Link
+                {/* <Link
                   href="/login"
                   className={cn(
                     "text-sm font-medium transition-colors hover:text-primary",
@@ -296,14 +272,14 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                 >
                   Login
-                </Link>
+                </Link> */}
                 <Link
                   href="https://github.com/Ankit-2145/DataNode"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors duration-300"
                 >
-                  <FaGithub size={28} />
+                <FaGithub size={28} />
                 </Link>
               </nav>
             </SheetContent>
@@ -313,16 +289,16 @@ export default function Navbar() {
           <Button variant="ghost" asChild>
             <Link href="/contact">Contact Us</Link>
           </Button>
-          <Button variant="outline" asChild>
+          {/* <Button variant="outline" asChild>
             <Link href="/login">Login</Link>
-          </Button>
+          </Button> */}
           <Link
             href="https://github.com/Ankit-2145/DataNode"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors duration-300"
           >
-            <FaGithub size={28} />
+          <FaGithub size={28} />
           </Link>
         </div>
       </div>

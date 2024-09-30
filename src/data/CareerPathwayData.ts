@@ -42,12 +42,6 @@ export const categories: Category[] = [
     description:
       "Focus on mastering individual technologies and programming languages. These roadmaps offer detailed learning paths to help you become proficient in specific technical skills.",
   },
-  {
-    id: "tools",
-    name: "Essential Tools",
-    description:
-      "Discover the key tools and software used in modern development workflows. These guides will help you become familiar with the essential utilities that enhance productivity and collaboration.",
-  },
 ];
 
 export const roadmaps: Record<string, RoadmapItem[]> = {
@@ -165,57 +159,6 @@ export const roadmaps: Record<string, RoadmapItem[]> = {
       link: "https://roadmap.sh/docker",
       description:
         "Master containerization to simplify application deployment and scaling.",
-    },
-  ],
-  tools: [
-    {
-      name: "UI/UX Tools",
-      icon: Paintbrush,
-      link: "/tool/uiux",
-      description:
-        "Explore design tools like Figma, Sketch, and Adobe XD for creating stunning user interfaces.",
-    },
-    {
-      name: "Code Editor",
-      icon: Code,
-      link: "/tool/code-editor",
-      description:
-        "Find the perfect code editor to enhance your productivity and coding experience.",
-    },
-    {
-      name: "Version Control System",
-      icon: Terminal,
-      link: "/tool/vcs",
-      description:
-        "Learn Git and other VCS tools to manage and track changes in your codebase.",
-    },
-    {
-      name: "Command Line Interface",
-      icon: Terminal,
-      link: "/tool/cli",
-      description:
-        "Master the command line to efficiently navigate and control your development environment.",
-    },
-    {
-      name: "Package Managers",
-      icon: PackageOpen,
-      link: "/tool/package-managers",
-      description:
-        "Understand tools like npm and yarn for managing project dependencies.",
-    },
-    {
-      name: "Debugging Tools",
-      icon: Bug,
-      link: "/tool/debugging",
-      description:
-        "Discover tools and techniques for efficiently identifying and fixing bugs in your code.",
-    },
-    {
-      name: "Integrated Development Environment (IDE)",
-      icon: Laptop,
-      link: "/tool/ide",
-      description:
-        "Explore full-featured IDEs that provide comprehensive development capabilities.",
     },
   ],
 };

@@ -58,7 +58,7 @@ export default function CareerGuidance() {
                     <p className="text-sm text-muted-foreground mb-4 flex-grow">
                       {item.description}
                     </p>
-                    <div className="mt-auto flex items-center text-primary group-hover:text-primary-foreground transition-colors duration-300">
+                    <div className="mt-auto flex items-center text-primary group-hover:text-primary-foreground transition-colors duration-300 group-hover:text-white">
                       <span className="text-sm font-medium">Learn More</span>
                       <ChevronRight className="ml-1 h-4 w-4" />
                     </div>

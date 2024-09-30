@@ -20,6 +20,10 @@ const nextConfig = {
         hostname: "api.microlink.io",
         protocol: "https",
       },
+      {
+        hostname: "vercel.com",
+        protocol: "https",
+      },
     ],
   },
 };
