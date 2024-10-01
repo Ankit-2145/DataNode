@@ -32,7 +32,7 @@ export default function About() {
               DataNode{" "}
             </LinkPreview>{" "}
             is not just another educational platform; it&apos;s a product of
-            real struggles and experiences we've all encountered as students. As
+            real struggles and experiences we&apos;ve all encountered as students. As
             a team of passionate developers who have been in your shoes,
             we&apos;ve turned those challenges into solutions. <br /> <br /> The
             journey began with the{" "}
