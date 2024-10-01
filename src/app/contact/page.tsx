@@ -30,7 +30,7 @@ export default function Contact() {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 my-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pb-14">
           {/* Contact Form */}
           <div className="bg-card rounded-lg p-8 shadow-lg transition-all duration-300">
             <h2 className="text-2xl font-semibold mb-6 text-white">

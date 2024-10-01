@@ -66,7 +66,7 @@ export default function Academics() {
 // const academicsSections: SectionData[] = [
 //   {
 //     title: "Courses Guide",
-//     otherClasses: "dark:bg-sky-300 dark:from-sky-500 dark:to-sky-200",
+//     otherClasses: "dark:bg-violet-300 dark:from-violet-300 dark:to-violet-100",
 //     buttonClasses:
 //       "bg-sky-500/10 text-sky-700 hover:text-sky-700 dark:text-sky-300 dark:bg-sky-300/10 hover:bg-sky-500/20 dark:hover:bg-sky-300/20",
 

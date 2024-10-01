@@ -24,14 +24,13 @@ const Footer = () => {
       links: [
         { name: 'About Us', href: '/about' },
         { name: 'Contact Us', href: '/contact' },
-        { name: 'Blog', href: '/blog' },
       ],
     },
     {
       title: 'Legal',
       links: [
-        { name: 'Privacy Policy', href: '#' },
-        { name: 'Terms & Conditions', href: '/BCA/Training' },
+        { name: 'Privacy Policy', href: '/legal/privacy-policy' },
+        { name: 'Terms & Conditions', href: '/legal/terms-and-conditions' },
       ],
     },
   ]

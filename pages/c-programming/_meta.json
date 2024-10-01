@@ -1,4 +1,9 @@
 {
-    "index": "Intro"
-  }
-  
+  "index": "Introduction to C",
+  "datatypesinC": "Data Types in C",
+  "variable&constants": "Variables and Constants",
+  "operatorsinC": "Operators in C",
+  "input-outputfunctions": "Input Output Functions",
+  "controlstructures": "Control Structures",
+  "functions": "Functions in C"
+}

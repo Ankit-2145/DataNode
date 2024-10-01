@@ -12,7 +12,7 @@ export default function ComingSoon() {
   const [text, setText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
   const fullText =
-    "cd datanode\ncd app\nlayout.jsx package.json README.md\nnpm run dev\n\n> Initializing...\n> Loading dependencies...\n> Starting development server...\n> Adding caffeine...\n\nError: Project not ready yet!\nComing Soon...";
+    "cd datanode\ncd app\nlayout.jsx package.json README.md\nnpm run dev\n\n> Initializing...\n> Loading dependencies...\n> Starting development server...\n> Adding caffeine...\n\nError: Page not ready yet!\nComing Soon...";
 
   useEffect(() => {
     let i = 0;

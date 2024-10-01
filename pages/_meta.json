@@ -4,13 +4,8 @@
     "type": "page",
     "display": "hidden"
   },
-  "BBA": {
-    "title": "BBA",
-    "type": "page",
-    "display": "hidden"
-  },
   "c-programming": {
-    "title": "C Codes",
+    "title": "C Programming",
     "type": "page",
     "display": "hidden"
   }

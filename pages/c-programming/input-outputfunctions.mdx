@@ -1,0 +1,196 @@
+# Input/Output Functions in C
+
+Input and output functions are essential for interacting with users in C programming. They allow you to display information on the screen and receive input from the keyboard.
+
+## 1. `printf()` Function
+
+The `printf()` function is used to print formatted output to the standard output (usually the console).
+
+### Syntax
+```c
+int printf(const char *format, ...);
+```
+
+### Parameters
+- **`format`**: A string that specifies the format of the output.
+- **`...`**: Additional arguments that are formatted according to the format specifiers in the format string.
+
+### Common Format Specifiers
+| Specifier | Description                       | Example           |
+|-----------|-----------------------------------|--------------------|
+| `%d`      | Integer                           | `printf("%d", a);` |
+| `%f`      | Floating-point number             | `printf("%f", b);` |
+| `%c`      | Character                         | `printf("%c", ch);` |
+| `%s`      | String                            | `printf("%s", str);` |
+| `%x`      | Hexadecimal                       | `printf("%x", num);` |
+| `%%`      | Prints a percent sign             | `printf("100%%");`  |
+
+### Example
+```c copy
+#include <stdio.h>
+
+int main() {
+    int a = 10;
+    float b = 20.5;
+    char ch = 'A';
+    char str[] = "Hello, World!";
+
+    printf("Integer: %d\n", a);
+    printf("Float: %.2f\n", b);
+    printf("Character: %c\n", ch);
+    printf("String: %s\n", str);
+
+    return 0;
+}
+```
+
+### Output
+```
+Integer: 10
+Float: 20.50
+Character: A
+String: Hello, World!
+```
+
+## 2. `scanf()` Function
+
+The `scanf()` function is used to read formatted input from the standard input (usually the keyboard).
+
+### Syntax
+```c
+int scanf(const char *format, ...);
+```
+
+### Parameters
+- **`format`**: A string that specifies the expected input format.
+- **`...`**: Pointers to variables where the input will be stored.
+
+### Common Format Specifiers
+| Specifier | Description                       | Example              |
+|-----------|-----------------------------------|-----------------------|
+| `%d`      | Reads an integer                  | `scanf("%d", &a);`    |
+| `%f`      | Reads a floating-point number      | `scanf("%f", &b);`    |
+| `%c`      | Reads a character                 | `scanf("%c", &ch);`   |
+| `%s`      | Reads a string                    | `scanf("%s", str);`   |
+
+### Example
+```c copy
+#include <stdio.h>
+
+int main() {
+    int a;
+    float b;
+    char ch;
+    char str[100];
+
+    printf("Enter an integer: ");
+    scanf("%d", &a);
+    printf("Enter a float: ");
+    scanf("%f", &b);
+    printf("Enter a character: ");
+    scanf(" %c", &ch); // Note the space before %c to consume newline
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    printf("\nYou entered:\n");
+    printf("Integer: %d\n", a);
+    printf("Float: %.2f\n", b);
+    printf("Character: %c\n", ch);
+    printf("String: %s\n", str);
+
+    return 0;
+}
+```
+
+### Output
+```
+Enter an integer: 42
+Enter a float: 3.14
+Enter a character: C
+Enter a string: Hello
+
+You entered:
+Integer: 42
+Float: 3.14
+Character: C
+String: Hello
+```
+
+## 3. `getchar()` Function
+
+The `getchar()` function reads a single character from standard input.
+
+### Syntax
+```c
+int getchar(void);
+```
+
+### Description
+- Returns the next character from the input buffer.
+- It reads characters one by one until the Enter key is pressed.
+
+### Example
+```c copy
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    printf("Enter a character: ");
+    ch = getchar(); // Read a single character
+    printf("You entered: %c\n", ch);
+
+    return 0;
+}
+```
+
+### Output
+```
+Enter a character: A
+You entered: A
+```
+
+## 4. `putchar()` Function
+
+The `putchar()` function writes a single character to standard output.
+
+### Syntax
+```c
+int putchar(int ch);
+```
+
+### Description
+- Writes the specified character to the output.
+
+### Example
+```c copy
+#include <stdio.h>
+
+int main() {
+    char ch = 'A';
+
+    printf("Character to output: ");
+    putchar(ch); // Output the character
+    putchar('\n'); // Print a new line
+
+    return 0;
+}
+```
+
+### Output
+```
+Character to output: A
+```
+
+## Summary of Input/Output Functions in C
+
+- **`printf()`**: Used for formatted output.
+- **`scanf()`**: Used for formatted input.
+- **`getchar()`**: Reads a single character from input.
+- **`putchar()`**: Outputs a single character to the screen.
+
+Understanding these functions is crucial for effective interaction with users in C programs.
+
+### Key Points:
+- **`printf()`** is for displaying output, while **`scanf()`** is for receiving input.
+- **`getchar()`** and **`putchar()`** are simpler functions for single-character input/output.
