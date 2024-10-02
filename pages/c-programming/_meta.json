@@ -1,9 +1,13 @@
 {
   "index": "Introduction to C",
-  "datatypesinC": "Data Types in C",
+  "datatypesinC": "Data Types",
   "variable&constants": "Variables and Constants",
-  "operatorsinC": "Operators in C",
-  "input-outputfunctions": "Input Output Functions",
+  "operatorsinC": "Operators",
+  "input-outputfunctions": "Input/Output Functions",
   "controlstructures": "Control Structures",
-  "functions": "Functions in C"
+  "functions": "Functions",
+  "Arrays&strings": "Arrays and Strings",
+  "pointers": "Pointers",
+  "structure&unions": "Structure and Unions",
+  "dynamicmemoryallocation": "Dynamic Memory Allocation"
 }
