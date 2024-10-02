@@ -9,5 +9,6 @@
   "Arrays&strings": "Arrays and Strings",
   "pointers": "Pointers",
   "structure&unions": "Structure and Unions",
-  "dynamicmemoryallocation": "Dynamic Memory Allocation"
+  "dynamicmemoryallocation": "Dynamic Memory Allocation",
+  "filehandling": "File Handling"
 }
