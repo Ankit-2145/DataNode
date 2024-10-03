@@ -1,10 +1,10 @@
 import {
+  Award,
   Circle,
   LucideIcon,
   Plus,
   Sparkle,
-  Square,
-  Triangle,
+  StickyNote,
 } from "lucide-react";
 
 export interface CardData {
@@ -61,22 +61,23 @@ export const academicsSections: SectionData[] = [
     ],
   },
   {
-    title: "Syllabus Notes by Semester",
+    title: "Unlock Your Learning Path",
     otherClasses: "dark:bg-green-300 dark:from-green-300 dark:to-green-100",
     buttonClasses:
       "bg-green-500/10 text-green-700 hover:text-green-700 dark:text-green-300 dark:bg-green-300/10 hover:bg-green-500/20 dark:hover:bg-green-300/20",
     cardData: [
       {
-        title: "Semester 1 Notes",
-        difficulty: "BCA",
+        title: "C Programming",
+        difficulty: "Beginner",
         comments: 40,
         likes: 90,
         author: "DataNode",
         date: "3 days ago",
-        description: "Comprehensive notes for Semester 1 subjects",
-        url: "academics/notes/semester-one",
-        BackgroundIcon1: Square,
-        BackgroundIcon2: Square,
+        description:
+          "Unlock the foundation of programming with C. Learn how to write efficient code, master control structures, work with arrays, pointers, and functions, and gain a solid grasp of algorithms and problem-solving techniques. This subject sets the stage for your journey into software development, offering hands-on experience with real-world applications.",
+        url: "/c-programming",
+        BackgroundIcon1: Award,
+        BackgroundIcon2: Award,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -84,16 +85,17 @@ export const academicsSections: SectionData[] = [
         shadow: "green",
       },
       {
-        title: "Semester 2 Notes",
+        title: "OOPs with C++",
         difficulty: "ComingSoon",
         comments: 35,
         likes: 85,
         author: "DataNode",
         date: "5 days ago",
-        description: "Detailed notes covering Semester 2 topics",
+        description:
+          "Dive into the world of Object-Oriented Programming with C++. Discover the principles of encapsulation, inheritance, polymorphism, and abstraction, all while developing robust and scalable applications. Master the art of designing reusable code and gain a deeper understanding of complex data structures and algorithms through C++.",
         url: "academics/notes/semester-two",
-        BackgroundIcon1: Square,
-        BackgroundIcon2: Square,
+        BackgroundIcon1: Award,
+        BackgroundIcon2: Award,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -101,16 +103,17 @@ export const academicsSections: SectionData[] = [
         shadow: "green",
       },
       {
-        title: "Semester 3 Notes",
-        difficulty: "BCA",
+        title: "Computer System Architecture",
+        difficulty: "ComingSoon",
         comments: 28,
         likes: 75,
         author: "DataNode",
         date: "1 week ago",
-        description: "Essential notes for Semester 3 courses",
+        description:
+          "Explore the inner workings of computers with Computer System Architecture. Understand how hardware components interact, learn about memory hierarchy, CPU operations, instruction cycles, and digital logic. This subject provides essential knowledge of how modern computing systems are designed and operated.",
         url: "academics/notes/semester-three",
-        BackgroundIcon1: Square,
-        BackgroundIcon2: Square,
+        BackgroundIcon1: Award,
+        BackgroundIcon2: Award,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -118,16 +121,17 @@ export const academicsSections: SectionData[] = [
         shadow: "green",
       },
       {
-        title: "Semester 4 Notes",
+        title: "Operating System",
         difficulty: "ComingSoon",
         comments: 50,
         likes: 120,
         author: "DataNode",
         date: "2 weeks ago",
-        description: "In-depth notes for advanced Semester 4 topics",
+        description:
+          "Uncover the core of computer systems with Operating Systems. From process management to memory allocation, this subject dives into the critical functions that allow hardware and software to work in harmony. Gain a deeper understanding of multitasking, file systems, and security as you explore the backbone of modern computing.",
         url: "academics/notes/semester-four",
-        BackgroundIcon1: Square,
-        BackgroundIcon2: Square,
+        BackgroundIcon1: Award,
+        BackgroundIcon2: Award,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -135,16 +139,17 @@ export const academicsSections: SectionData[] = [
         shadow: "green",
       },
       {
-        title: "Semester 5 Notes",
-        difficulty: "BCA",
+        title: "Asp.Net Technologies",
+        difficulty: "ComingSoon",
         comments: 60,
         likes: 130,
         author: "DataNode",
         date: "3 weeks ago",
-        description: "Advanced notes for specialized Semester 5 subjects",
+        description:
+          "Step into the world of dynamic web development with ASP.NET. Learn how to build interactive, scalable, and secure web applications using the .NET framework. This course will guide you through server-side programming, MVC architecture, and integration with databases, equipping you with the tools to create cutting-edge web solutions.",
         url: "academics/notes/semester-five",
-        BackgroundIcon1: Square,
-        BackgroundIcon2: Square,
+        BackgroundIcon1: Award,
+        BackgroundIcon2: Award,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -152,23 +157,41 @@ export const academicsSections: SectionData[] = [
         shadow: "green",
       },
       {
-        title: "Semester 6 Notes",
+        title: "Management Information System",
         difficulty: "ComingSoon",
         comments: 75,
         likes: 145,
         author: "DataNode",
         date: "1 month ago",
-        description: "Comprehensive notes for final year Semester 6",
+        description:
+          "Explore the strategic role of technology in business with Management Information Systems. Learn how organizations leverage data-driven systems to enhance decision-making, streamline operations, and gain a competitive edge. This subject bridges the gap between IT and management, highlighting the importance of technology in the business landscape.",
         url: "academics/notes/semester-six",
-        BackgroundIcon1: Square,
-        BackgroundIcon2: Square,
+        BackgroundIcon1: Award,
+        BackgroundIcon2: Award,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
           "dark:group-hover/card:text-green-300 absolute -right-6 -top-12 h-36 w-36 rotate-12 stroke-[0.44] duration-500 group-hover/card:-translate-y-2 group-hover/card:translate-x-3 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         shadow: "green",
       },
-      // Add more syllabus note cards here...
+      {
+        title: "E Commerce",
+        difficulty: "ComingSoon",
+        comments: 75,
+        likes: 145,
+        author: "DataNode",
+        date: "1 month ago",
+        description:
+          "Discover the digital marketplace with E-Commerce. From online storefronts to payment gateways, this subject explores the technology and strategies behind successful electronic business transactions. Learn how to design, launch, and optimize e-commerce platforms, while understanding the legal, ethical, and logistical challenges of online trade.",
+        url: "academics/notes/semester-six",
+        BackgroundIcon1: Award,
+        BackgroundIcon2: Award,
+        icon1Color:
+          "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-green-300 absolute -right-6 -top-12 h-36 w-36 rotate-12 stroke-[0.44] duration-500 group-hover/card:-translate-y-2 group-hover/card:translate-x-3 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
+        shadow: "green",
+      },
     ],
   },
   {
@@ -186,8 +209,8 @@ export const academicsSections: SectionData[] = [
         date: "1 month ago",
         description: "Collection of all BCA 2021, 2022 final exam papers",
         url: "academics/papers/semester1-finals-bca",
-        BackgroundIcon1: Triangle,
-        BackgroundIcon2: Triangle,
+        BackgroundIcon1: StickyNote,
+        BackgroundIcon2: StickyNote,
         icon1Color:
           "dark:group-hover/card:text-yellow-300 absolute -right-5 -top-5 h-16 w-16 rotate-0 stroke-[0.75] duration-500 group-hover/card:-translate-x-10 group-hover/card:translate-y-10 group-hover/card:rotate-[90deg] dark:text-white/10",
         icon2Color:
@@ -203,8 +226,8 @@ export const academicsSections: SectionData[] = [
         date: "1 month ago",
         description: "Collection of all BCA 2021, 2022 final exam papers",
         url: "academics/papers/semester2-finals-bca",
-        BackgroundIcon1: Triangle,
-        BackgroundIcon2: Triangle,
+        BackgroundIcon1: StickyNote,
+        BackgroundIcon2: StickyNote,
         icon1Color:
           "dark:group-hover/card:text-yellow-300 absolute -right-5 -top-5 h-16 w-16 rotate-0 stroke-[0.75] duration-500 group-hover/card:-translate-x-10 group-hover/card:translate-y-10 group-hover/card:rotate-[90deg] dark:text-white/10",
         icon2Color:
@@ -220,8 +243,8 @@ export const academicsSections: SectionData[] = [
         date: "2 months ago",
         description: "Collection of all BCA 2021, 2022 final exam papers",
         url: "academics/papers/semester3-finals-bca",
-        BackgroundIcon1: Triangle,
-        BackgroundIcon2: Triangle,
+        BackgroundIcon1: StickyNote,
+        BackgroundIcon2: StickyNote,
         icon1Color:
           "dark:group-hover/card:text-yellow-300 absolute -right-5 -top-5 h-16 w-16 rotate-0 stroke-[0.75] duration-500 group-hover/card:-translate-x-10 group-hover/card:translate-y-10 group-hover/card:rotate-[90deg] dark:text-white/10",
         icon2Color:
@@ -237,8 +260,8 @@ export const academicsSections: SectionData[] = [
         date: "2 months ago",
         description: "Collection of all BCA 2021, 2022 final exam papers",
         url: "academics/papers/semester4-finals-bca",
-        BackgroundIcon1: Triangle,
-        BackgroundIcon2: Triangle,
+        BackgroundIcon1: StickyNote,
+        BackgroundIcon2: StickyNote,
         icon1Color:
           "dark:group-hover/card:text-yellow-300 absolute -right-5 -top-5 h-16 w-16 rotate-0 stroke-[0.75] duration-500 group-hover/card:-translate-x-10 group-hover/card:translate-y-10 group-hover/card:rotate-[90deg] dark:text-white/10",
         icon2Color:
@@ -254,8 +277,8 @@ export const academicsSections: SectionData[] = [
         date: "2 months ago",
         description: "Collection of all BCA 2021, 2022 final exam papers",
         url: "academics/papers/semester5-finals-bca",
-        BackgroundIcon1: Triangle,
-        BackgroundIcon2: Triangle,
+        BackgroundIcon1: StickyNote,
+        BackgroundIcon2: StickyNote,
         icon1Color:
           "dark:group-hover/card:text-yellow-300 absolute -right-5 -top-5 h-16 w-16 rotate-0 stroke-[0.75] duration-500 group-hover/card:-translate-x-10 group-hover/card:translate-y-10 group-hover/card:rotate-[90deg] dark:text-white/10",
         icon2Color:
@@ -271,8 +294,8 @@ export const academicsSections: SectionData[] = [
         date: "2 months ago",
         description: "Collection of all BCA 2021, 2022 final exam papers",
         url: "academics/papers/semester6-finals-bca",
-        BackgroundIcon1: Triangle,
-        BackgroundIcon2: Triangle,
+        BackgroundIcon1: StickyNote,
+        BackgroundIcon2: StickyNote,
         icon1Color:
           "dark:group-hover/card:text-yellow-300 absolute -right-5 -top-5 h-16 w-16 rotate-0 stroke-[0.75] duration-500 group-hover/card:-translate-x-10 group-hover/card:translate-y-10 group-hover/card:rotate-[90deg] dark:text-white/10",
         icon2Color:
@@ -281,100 +304,100 @@ export const academicsSections: SectionData[] = [
       },
     ],
   },
-  // {
-  //   title: "Articles",
-  //   otherClasses: "dark:bg-red-300 dark:from-red-300 dark:to-red-100",
-  //   buttonClasses:
-  //     "bg-red-500/10 text-red-700 hover:text-red-700 dark:text-red-300 dark:bg-red-300/10 hover:bg-red-500/20 dark:hover:bg-red-300/20",
-  //   cardData: [
-  //     {
-  //       title: "2022 Final Exam Papers",
-  //       difficulty: "Advanced",
-  //       comments: 60,
-  //       likes: 120,
-  //       author: "ExamPro",
-  //       date: "1 month ago",
-  //       description: "Collection of all 2022 final exam papers",
-  //       url: "/papers/2022-finals",
-  //       BackgroundIcon1: Plus,
-  //       BackgroundIcon2: Plus,
-  //       icon1Color:
-  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-  //       icon2Color:
-  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-  //       shadow: "red",
-  //     },
-  //     {
-  //       title: "2022 Final Exam Papers",
-  //       difficulty: "Advanced",
-  //       comments: 60,
-  //       likes: 120,
-  //       author: "ExamPro",
-  //       date: "1 month ago",
-  //       description: "Collection of all 2022 final exam papers",
-  //       url: "/papers/2022-finals",
-  //       BackgroundIcon1: Plus,
-  //       BackgroundIcon2: Plus,
-  //       icon1Color:
-  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-  //       icon2Color:
-  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-  //       shadow: "red",
-  //     },
-  //     {
-  //       title: "2022 Final Exam Papers",
-  //       difficulty: "Advanced",
-  //       comments: 60,
-  //       likes: 120,
-  //       author: "ExamPro",
-  //       date: "1 month ago",
-  //       description: "Collection of all 2022 final exam papers",
-  //       url: "/papers/2022-finals",
-  //       BackgroundIcon1: Plus,
-  //       BackgroundIcon2: Plus,
-  //       icon1Color:
-  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-  //       icon2Color:
-  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-  //       shadow: "red",
-  //     },
-  //     {
-  //       title: "2022 Final Exam Papers",
-  //       difficulty: "Advanced",
-  //       comments: 60,
-  //       likes: 120,
-  //       author: "ExamPro",
-  //       date: "1 month ago",
-  //       description: "Collection of all 2022 final exam papers",
-  //       url: "/papers/2022-finals",
-  //       BackgroundIcon1: Plus,
-  //       BackgroundIcon2: Plus,
-  //       icon1Color:
-  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-  //       icon2Color:
-  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-  //       shadow: "red",
-  //     },
-  //     {
-  //       title: "2022 Final Exam Papers",
-  //       difficulty: "Advanced",
-  //       comments: 60,
-  //       likes: 120,
-  //       author: "ExamPro",
-  //       date: "1 month ago",
-  //       description: "Collection of all 2022 final exam papers",
-  //       url: "/papers/2022-finals",
-  //       BackgroundIcon1: Plus,
-  //       BackgroundIcon2: Plus,
-  //       icon1Color:
-  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-  //       icon2Color:
-  //         "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-  //       shadow: "red",
-  //     },
-  //     // Add more exam preparation guide cards here...
-  //   ],
-  // },
+  {
+    title: "Articles",
+    otherClasses: "dark:bg-red-300 dark:from-red-300 dark:to-red-100",
+    buttonClasses:
+      "bg-red-500/10 text-red-700 hover:text-red-700 dark:text-red-300 dark:bg-red-300/10 hover:bg-red-500/20 dark:hover:bg-red-300/20",
+    cardData: [
+      {
+        title: "2022 Final Exam Papers",
+        difficulty: "Advanced",
+        comments: 60,
+        likes: 120,
+        author: "ExamPro",
+        date: "1 month ago",
+        description: "Collection of all 2022 final exam papers",
+        url: "/papers/2022-finals",
+        BackgroundIcon1: Plus,
+        BackgroundIcon2: Plus,
+        icon1Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+        shadow: "red",
+      },
+      {
+        title: "2022 Final Exam Papers",
+        difficulty: "Advanced",
+        comments: 60,
+        likes: 120,
+        author: "ExamPro",
+        date: "1 month ago",
+        description: "Collection of all 2022 final exam papers",
+        url: "/papers/2022-finals",
+        BackgroundIcon1: Plus,
+        BackgroundIcon2: Plus,
+        icon1Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+        shadow: "red",
+      },
+      {
+        title: "2022 Final Exam Papers",
+        difficulty: "Advanced",
+        comments: 60,
+        likes: 120,
+        author: "ExamPro",
+        date: "1 month ago",
+        description: "Collection of all 2022 final exam papers",
+        url: "/papers/2022-finals",
+        BackgroundIcon1: Plus,
+        BackgroundIcon2: Plus,
+        icon1Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+        shadow: "red",
+      },
+      {
+        title: "2022 Final Exam Papers",
+        difficulty: "Advanced",
+        comments: 60,
+        likes: 120,
+        author: "ExamPro",
+        date: "1 month ago",
+        description: "Collection of all 2022 final exam papers",
+        url: "/papers/2022-finals",
+        BackgroundIcon1: Plus,
+        BackgroundIcon2: Plus,
+        icon1Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+        shadow: "red",
+      },
+      {
+        title: "2022 Final Exam Papers",
+        difficulty: "Advanced",
+        comments: 60,
+        likes: 120,
+        author: "ExamPro",
+        date: "1 month ago",
+        description: "Collection of all 2022 final exam papers",
+        url: "/papers/2022-finals",
+        BackgroundIcon1: Plus,
+        BackgroundIcon2: Plus,
+        icon1Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+        shadow: "red",
+      },
+      // Add more exam preparation guide cards here...
+    ],
+  },
   {
     title: "Exam Preparation Guides",
     otherClasses: "dark:bg-purple-300 dark:from-purple-400 dark:to-purple-100",
