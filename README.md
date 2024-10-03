@@ -1,7 +1,3 @@
-Here’s a draft for a README file for the DataNode GitHub repository:
-
----
-
 # DataNode
 
 **DataNode** is an all-in-one platform that provides academic resources, tech trends, and career guidance for students and learners. Initially built to assist students in the Bachelor of Computer Applications (BCA) program, the platform has grown to include additional courses and resources to help students solve common academic challenges.
@@ -115,7 +111,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 If you have any questions or issues, feel free to reach out via the repository or contact us directly through the DataNode platform.
-
----
-
-This draft can be customized with additional details as needed, such as updating the repo URL, contact information, and specific contribution guidelines.
