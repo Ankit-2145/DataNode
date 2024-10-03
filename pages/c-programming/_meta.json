@@ -10,5 +10,9 @@
   "pointers": "Pointers",
   "structure&unions": "Structure and Unions",
   "dynamicmemoryallocation": "Dynamic Memory Allocation",
-  "filehandling": "File Handling"
+  "filehandling": "File Handling",
+  "Preprocessors&macros": "Preprocessors and Macros",
+  "cla": "Command Line Arguments",
+  "advancedpointers": "Advanced Pointers Concepts",
+  "errorhandling&debugging": "Error Handling and Debugging"
 }

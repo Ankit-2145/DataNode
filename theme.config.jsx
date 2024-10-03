@@ -29,8 +29,7 @@ export default {
   },
   sidebar: {
     toggleButton: true,
-  },
-  sidebar: {
     autoCollapse: true,
+    defaultMenuCollapseLevel: 1,
   },
 };
