@@ -20,7 +20,7 @@ export default function SectionPage({
   }
 
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden min-h-screen">
       <div className="w-full dark:bg-black dark:bg-dot-white/[0.2] relative">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_80%,black)]"></div>
         <div className="flex flex-col items-center">
@@ -28,7 +28,7 @@ export default function SectionPage({
             {section.title}
           </h1>
         </div>
-        <div>
+        <div className="py-24">
           <CardSection cardData={section.cardData} />
         </div>
       </div>
