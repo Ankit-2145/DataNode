@@ -1,0 +1,122 @@
+# Operators, Expressions, and Data Input/Output
+
+## 1. Operators and Expressions
+
+### Arithmetic Operators
+Arithmetic operators are used to perform basic mathematical operations:
+
+- **`+`** (Addition): Adds two values.
+  - **Example**: `x + y` adds `x` and `y`.
+- **`-`** (Subtraction): Subtracts one value from another.
+  - **Example**: `x - y` subtracts `y` from `x`.
+- **`*`** (Multiplication): Multiplies two values.
+  - **Example**: `x * y` multiplies `x` and `y`.
+- **`/`** (Division): Divides one value by another.
+  - **Example**: `x / y` divides `x` by `y`.
+- **`%`** (Modulus): Returns the remainder of division.
+  - **Example**: `x % y` returns the remainder when `x` is divided by `y`.
+
+### Unary Operators
+Unary operators operate on a single operand to perform operations like incrementing or decrementing a value:
+
+- **`++`** (Increment): Increases a value by 1.
+  - **Example**: 
+  ```c
+  x++;  // Increment x by 1.
+  ```
+- **`--`** (Decrement): Decreases a value by 1.
+  - **Example**: 
+  ```c
+  x--;  // Decrement x by 1.
+  ```
+
+### Relational and Logical Operators
+These operators are used to compare values and combine conditions:
+
+- **Relational Operators**: Compare two values:
+  - `==` (Equal to): Returns true if both operands are equal.
+  - `!=` (Not equal to): Returns true if operands are not equal.
+  - `<` (Less than): Returns true if left operand is less than the right.
+  - `>` (Greater than): Returns true if left operand is greater than the right.
+- **Logical Operators**: Combine multiple boolean expressions:
+  - `&&` (Logical AND): True if both operands are true.
+  - `||` (Logical OR): True if at least one operand is true.
+  - `!` (Logical NOT): Inverts the truth value of the operand.
+
+### Assignment Operators
+Assignment operators are used to assign values to variables:
+
+- **`=`**: Assigns a value to a variable.
+  - **Example**: 
+  ```c
+  a = 5;  // Assigns 5 to a.
+  ```
+- **Shorthand Assignment**:
+  - `+=`, `-=`, `*=`: Update the value of a variable using the current value.
+  - **Example**: 
+  ```c
+  a += 5;  // Equivalent to a = a + 5;
+  ```
+
+### Conditional Operator (`?:`)
+The conditional operator is a shorthand for `if-else` statements:
+
+- **Example**:
+```c
+result = (a > b) ? a : b;  // If a > b, result = a; else, result = b.
+```
+
+### Library Functions
+Library functions are predefined functions provided by C to perform common tasks:
+
+- **Example**: 
+  - `printf()` for printing output to the console.
+  - `scanf()` for reading input from the user.
+
+---
+
+## 2. Data Input and Output
+
+### Single Character Input/Output
+Functions used for handling single characters in C:
+
+- **`getchar()`**: Reads a single character from standard input.
+  - **Example**: 
+  ```c
+  char c = getchar();  // Reads a character from input.
+  ```
+- **`putchar()`**: Outputs a single character to standard output.
+  - **Example**: 
+  ```c
+  putchar(c);  // Outputs the character c.
+  ```
+
+### Formatted Input/Output
+Functions for reading and writing formatted data:
+
+- **`scanf()`**: Reads formatted input from the user.
+  - **Example**:
+  ```c
+  scanf("%d", &x); // Reads an integer and stores it in x.
+  ```
+- **`printf()`**: Prints formatted output to the screen.
+  - **Example**:
+  ```c
+  printf("x = %d", x); // Prints the value of x.
+  ```
+
+### Gets and Puts Functions
+Functions for handling strings:
+
+- **`gets()`**: Reads a string from the user (Note: `gets()` is unsafe and has been removed in C11; use `fgets()` instead).
+  - **Example**:
+  ```c
+  gets(str);  // Reads a string into str.
+  ```
+- **`puts()`**: Outputs a string to the console.
+  - **Example**:
+  ```c
+  puts(str);  // Prints the string str.
+  ```
+
+---

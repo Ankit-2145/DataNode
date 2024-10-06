@@ -8,5 +8,10 @@
     "title": "C Programming",
     "type": "page",
     "display": "hidden"
+  },
+  "guides": {
+    "title": "guides",
+    "type": "page",
+    "display": "hidden"
   }
 }

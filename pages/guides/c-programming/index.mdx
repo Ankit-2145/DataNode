@@ -1,0 +1,75 @@
+# Introductory Concepts & C Fundamentals
+
+## 1. Introductory Concepts
+
+### Types of Programming Languages
+
+- **Low-Level Languages**: These languages are closer to machine code and are hardware-specific. Examples include:
+  - **Machine Language**: Consists of binary instructions (0s and 1s) that the computer understands directly.
+  - **Assembly Language**: Uses mnemonics (like `ADD`, `MOV`) and needs an assembler to convert to machine code.
+
+- **High-Level Languages**: These are closer to human language, making them easier to learn and use. Examples include C, Python, and Java.
+
+### Introduction to C
+- **C Language**: Created by **Dennis Ritchie** in 1972, C is a powerful general-purpose language used for system programming, developing operating systems, and other performance-critical applications. It provides low-level access to memory and is structured.
+
+### Some Simple C Programs
+- **Hello World Example**:
+
+```c
+#include <stdio.h>
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+- This program prints "Hello, World!" on the screen. The `#include` directive imports the standard input/output library, `main()` is the entry point, and `printf()` outputs the message.
+
+### Desirable Program Characteristics
+- **Readability**: Code should be easy to understand.
+- **Modularity**: Code is organized into reusable functions.
+- **Efficiency**: Programs should minimize resource usage (CPU, memory).
+- **Maintainability**: Code should be easy to update or modify.
+
+---
+
+## 2. C Fundamentals
+
+### C Character Set
+- **Letters**: A to Z, a to z.
+- **Digits**: 0 to 9.
+- **Special Characters**: `+`, `-`, `*`, `/`, `=`, `{`, `}`, etc.
+- **Whitespace**: Spaces, tabs, and newlines are used to separate tokens.
+
+### Identifiers and Keywords
+- **Identifiers**: Names for variables, functions, etc. Must begin with a letter or an underscore.
+  - Example: `int total;`, `float marks;`.
+- **Keywords**: Reserved words in C (e.g., `int`, `return`, `if`) that cannot be used as variable names.
+
+### Data Types
+- **Basic Data Types**:
+  - `int`: For integers (whole numbers), e.g., `int x = 5;`.
+  - `float`: For floating-point numbers (decimals), e.g., `float y = 3.14;`.
+  - `char`: For single characters, e.g., `char ch = 'A';`.
+  - `double`: For large floating-point numbers.
+
+- **Derived Data Types**: Arrays, pointers, structures.
+
+### Constants, Variables, and Arrays
+- **Constants**: Fixed values that do not change, defined using `#define` or the `const` keyword.
+  - Example: `#define PI 3.14159`.
+- **Variables**: Named storage locations in memory.
+  - Example: `int age = 21;`.
+- **Arrays**: A collection of variables of the same type stored sequentially in memory.
+  - Example: `int numbers[5] = {1, 2, 3, 4, 5};`.
+
+### Declarations, Expressions, and Statements
+- **Declarations**: Allocate memory for variables, e.g., `int a;`.
+- **Expressions**: Combine variables and operators to produce a result, e.g., `a + b`.
+- **Statements**: Instructions that perform an action, e.g., `a = 5;`.
+
+### Symbolic Constants
+- A symbolic name is given to a constant value using `#define`.
+  - Example: `#define MAX 100`.
+```

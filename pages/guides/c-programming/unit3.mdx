@@ -1,0 +1,116 @@
+# Control Statements and Arrays
+
+## 1. Control Statements
+
+### If-Else
+The `if-else` statement allows branching based on conditions, enabling different code paths depending on whether the condition evaluates to true or false.
+
+- **Example**:
+  ```c
+  if (a > b) {
+      printf("a is greater");
+  } else {
+      printf("b is greater");
+  }
+  ```
+
+### For Loop
+The `for` loop is used to repeat a block of code a fixed number of times. It consists of three parts: initialization, condition, and increment/decrement.
+
+- **Example**:
+  ```c
+  for (int i = 0; i < 5; i++) {
+      printf("%d", i); // Prints numbers from 0 to 4
+  }
+  ```
+
+### While Loop
+The `while` loop repeats a block of code as long as a specified condition is true. It checks the condition before each iteration.
+
+- **Example**:
+  ```c
+  int i = 0;
+  while (i < 5) {
+      printf("%d", i); // Prints numbers from 0 to 4
+      i++;
+  }
+  ```
+
+### Switch Statement
+The `switch` statement allows multiple conditional checks based on the value of a variable. It simplifies complex conditional structures.
+
+- **Example**:
+  ```c
+  switch(choice) {
+      case 1: 
+          printf("Option 1"); 
+          break;
+      case 2: 
+          printf("Option 2"); 
+          break;
+      default: 
+          printf("Invalid choice");
+  }
+  ```
+
+### Break and Continue
+- **`break`**: Exits the loop immediately, skipping any remaining iterations.
+- **`continue`**: Skips the current iteration of the loop and continues with the next iteration.
+
+---
+
+## 2. Arrays
+
+### Defining an Array
+Arrays are used to store multiple values of the same data type. They are defined with a specific size, which determines how many elements they can hold.
+
+- **Example**:
+  ```c
+  int arr[5] = {1, 2, 3, 4, 5}; // An array of integers with 5 elements.
+  ```
+
+### Multidimensional Arrays
+Multidimensional arrays are arrays with more than one dimension, allowing for the representation of matrices or tables.
+
+- **Example**:
+  ```c
+  int matrix[3][3] = {
+      {1, 2, 3}, 
+      {4, 5, 6}, 
+      {7, 8, 9}
+  }; // A 3x3 matrix of integers.
+  ```
+
+### Passing Arrays to Functions
+Arrays can be passed to functions for processing, allowing for the manipulation of multiple values without needing to return them individually.
+
+- **Example**:
+  ```c
+  void printArray(int arr[], int size) {
+      for (int i = 0; i < size; i++) {
+          printf("%d", arr[i]); // Prints each element of the array.
+      }
+  }
+  ```
+
+### Arrays and Strings
+In C, strings are treated as arrays of characters. A string is a character array that ends with a null character (`'\0'`).
+
+- **Defining a String**:
+  ```c
+  char str[10] = "Hello"; // An array of characters.
+  ```
+- **String Functions**: Common functions to manipulate strings include:
+  - **`strlen()`**: Returns the length of the string.
+  - **`strcpy()`**: Copies one string to another.
+  - **`strcat()`**: Concatenates two strings.
+  - **`strcmp()`**: Compares two strings.
+
+- **Example**:
+  ```c
+  char str1[20], str2[20];
+  strcpy(str1, "Hello");
+  strcat(str1, " World");
+  printf("%s", str1); // Outputs: Hello World
+  ```
+
