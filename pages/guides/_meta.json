@@ -1,6 +1,6 @@
 {
-    "c-programming": "C Programming",
-    "oops-with-cpp": "OOPS with C++",
-    "computer-fundamentals": "Computer Fundamentals",
-    "office-automation-tools": "Office Automation Tools"
+  "c-programming": "C Programming",
+  "oops-with-cpp": "OOPs with C++",
+  "computer-fundamentals": "Computer Fundamentals",
+  "computer-organization": "Computer Organization"
 }

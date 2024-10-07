@@ -77,7 +77,7 @@ export const academicsSections: SectionData[] = [
           "Unlock the foundation of programming with C. Learn how to write efficient code, master control structures, work with arrays, pointers, and functions, and gain a solid grasp of algorithms and problem-solving techniques. This subject sets the stage for your journey into software development, offering hands-on experience with real-world applications.",
         url: "/c-programming",
         BackgroundIcon1: Package,
-        BackgroundIcon2:Package,
+        BackgroundIcon2: Package,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -95,7 +95,7 @@ export const academicsSections: SectionData[] = [
           "Dive into the world of Object-Oriented Programming with C++. Discover the principles of encapsulation, inheritance, polymorphism, and abstraction, all while developing robust and scalable applications. Master the art of designing reusable code and gain a deeper understanding of complex data structures and algorithms through C++.",
         url: "/oops-with-cpp",
         BackgroundIcon1: Package,
-        BackgroundIcon2:Package,
+        BackgroundIcon2: Package,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -113,7 +113,7 @@ export const academicsSections: SectionData[] = [
           "Explore the inner workings of computers with Computer System Architecture. Understand how hardware components interact, learn about memory hierarchy, CPU operations, instruction cycles, and digital logic. This subject provides essential knowledge of how modern computing systems are designed and operated.",
         url: "/computer-system-Architecture",
         BackgroundIcon1: Package,
-        BackgroundIcon2:Package,
+        BackgroundIcon2: Package,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -131,7 +131,7 @@ export const academicsSections: SectionData[] = [
           "Uncover the core of computer systems with Operating Systems. From process management to memory allocation, this subject dives into the critical functions that allow hardware and software to work in harmony. Gain a deeper understanding of multitasking, file systems, and security as you explore the backbone of modern computing.",
         url: "/operating-system",
         BackgroundIcon1: Package,
-        BackgroundIcon2:Package,
+        BackgroundIcon2: Package,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -149,7 +149,7 @@ export const academicsSections: SectionData[] = [
           "Step into the world of dynamic web development with ASP.NET. Learn how to build interactive, scalable, and secure web applications using the .NET framework. This course will guide you through server-side programming, MVC architecture, and integration with databases, equipping you with the tools to create cutting-edge web solutions.",
         url: "/aspnet-technologies",
         BackgroundIcon1: Package,
-        BackgroundIcon2:Package,
+        BackgroundIcon2: Package,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -167,7 +167,7 @@ export const academicsSections: SectionData[] = [
           "Explore the strategic role of technology in business with Management Information Systems. Learn how organizations leverage data-driven systems to enhance decision-making, streamline operations, and gain a competitive edge. This subject bridges the gap between IT and management, highlighting the importance of technology in the business landscape.",
         url: "/management-information-system",
         BackgroundIcon1: Package,
-        BackgroundIcon2:Package,
+        BackgroundIcon2: Package,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -185,7 +185,7 @@ export const academicsSections: SectionData[] = [
           "Discover the digital marketplace with E-Commerce. From online storefronts to payment gateways, this subject explores the technology and strategies behind successful electronic business transactions. Learn how to design, launch, and optimize e-commerce platforms, while understanding the legal, ethical, and logistical challenges of online trade.",
         url: "/e-commerce",
         BackgroundIcon1: Package,
-        BackgroundIcon2:Package,
+        BackgroundIcon2: Package,
         icon1Color:
           "dark:group-hover/card:text-green-300 absolute -right-5 -top-10 h-24 w-24 origin-top-right stroke-[0.66] duration-300 group-hover/card:rotate-6 group-hover/card:scale-90 dark:text-white/10",
         icon2Color:
@@ -317,7 +317,8 @@ export const academicsSections: SectionData[] = [
         likes: 110,
         author: "DataNode",
         date: "1 week ago",
-        description: "Revise Important topics of C language, one night before your exam",
+        description:
+          "Revise Important topics of C language, one night before your exam",
         url: "/guides/c-programming",
         BackgroundIcon1: Clock,
         BackgroundIcon2: Clock,
@@ -334,7 +335,8 @@ export const academicsSections: SectionData[] = [
         likes: 110,
         author: "DataNode",
         date: "1 week ago",
-        description: "Revise Important topics of OOPS with C++, one night before your exam",
+        description:
+          "Revise Important topics of OOPS with C++, one night before your exam",
         url: "/guides/oops-with-cpp",
         BackgroundIcon1: Clock,
         BackgroundIcon2: Clock,
@@ -351,7 +353,8 @@ export const academicsSections: SectionData[] = [
         likes: 110,
         author: "DataNode",
         date: "1 week ago",
-        description: "Revise Important topics of Computer Fundamentals, one night before your exam",
+        description:
+          "Revise Important topics of Computer Fundamentals, one night before your exam",
         url: "/guides/computer-fundamentals",
         BackgroundIcon1: Clock,
         BackgroundIcon2: Clock,
@@ -361,7 +364,24 @@ export const academicsSections: SectionData[] = [
           "dark:group-hover/card:text-[#d8b4fe] absolute -right-14 -top-24 h-48 w-48 origin-top-right -rotate-3 stroke-[0.33] duration-300 group-hover/card:scale-50 dark:text-white/10",
         shadow: "purple",
       },
-     
+      {
+        title: "Computer Organization",
+        difficulty: "BCA",
+        comments: 55,
+        likes: 110,
+        author: "DataNode",
+        date: "1 week ago",
+        description:
+          "Revise Important topics of Computer Organization, one night before your exam",
+        url: "/guides/computer-organization",
+        BackgroundIcon1: Clock,
+        BackgroundIcon2: Clock,
+        icon1Color:
+          "dark:group-hover/card:text-[#d8b4fe] absolute -right-4 -top-10 h-24 w-24 stroke-[0.5] duration-500 group-hover/card:-translate-x-4 group-hover/card:translate-y-10 group-hover/card:-rotate-[125deg] dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#d8b4fe] absolute -right-14 -top-24 h-48 w-48 origin-top-right -rotate-3 stroke-[0.33] duration-300 group-hover/card:scale-50 dark:text-white/10",
+        shadow: "purple",
+      },
     ],
   },
   {

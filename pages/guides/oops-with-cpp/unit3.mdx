@@ -1,0 +1,217 @@
+# Objects and Classes in C++
+
+## 1. Objects and Classes
+
+### 1.1. A Simple Class
+A class is a user-defined data type in C++ that can have both variables (data members) and functions (member functions).
+```cpp
+class Car {
+  public:
+    string brand;
+    int year;
+
+    void start() {
+        cout << "Car started!" << endl;
+    }
+};
+```
+
+### 1.2. Classes and Objects
+An **object** is an instance of a class. You can create objects of a class using the class name.
+```cpp
+Car myCar;
+myCar.brand = "Toyota";
+myCar.year = 2021;
+myCar.start();
+```
+
+### 1.3. Specifying a Class
+A class is defined using the `class` keyword. By default, all members are `private`. You can make them accessible using the `public` keyword.
+```cpp
+class Box {
+  private:
+    double length;
+  public:
+    void setLength(double len) {
+        length = len;
+    }
+
+    double getLength() {
+        return length;
+    }
+};
+```
+
+### 1.4. Using a Class
+Once a class is defined, you can create objects and use its members.
+```cpp
+Box box1;
+box1.setLength(10.0);
+cout << "Length: " << box1.getLength();
+```
+
+### 1.5. C++ Objects as Physical Objects
+Objects can represent physical entities in the real world. For example, a `Car` class could represent an actual car.
+```cpp
+class Car {
+  public:
+    string model;
+    double speed;
+    void accelerate() {
+        speed += 10;
+    }
+};
+```
+
+### 1.6. C++ Objects as Data Types
+Objects can also represent more abstract data types. For example, an object of class `Vector` could represent a mathematical vector.
+
+---
+
+## 2. Constructors
+Constructors are special functions that are automatically called when an object is created. They initialize the object's data members.
+```cpp
+class Box {
+  public:
+    double length;
+    Box(double len) {
+        length = len;
+    }
+};
+```
+**Example**:
+```cpp
+Box box1(10.0);
+cout << "Length: " << box1.length;
+```
+
+---
+
+## 3. Objects as Function Arguments
+You can pass objects as arguments to functions.
+```cpp
+void printBox(Box box) {
+    cout << "Box length: " << box.length << endl;
+}
+```
+
+### 3.1. Returning Objects from Functions
+A function can return an object.
+```cpp
+Box getBox(double len) {
+    Box b(len);
+    return b;
+}
+```
+
+---
+
+# Arrays in C++
+
+## 1. Array Fundamentals
+An array is a collection of elements of the same data type stored in contiguous memory locations.
+```cpp
+int numbers[5] = {1, 2, 3, 4, 5};
+```
+
+### 1.1. Defining an Array
+An array is defined with a type, name, and size.
+```cpp
+int arr[10];
+```
+
+### 1.2. Accessing Array Elements
+You can access array elements using the index.
+```cpp
+cout << arr[0];  // First element
+```
+
+### 1.3. Initializing Arrays
+You can initialize arrays during declaration.
+```cpp
+int arr[5] = {10, 20, 30, 40, 50};
+```
+
+### 1.4. Multidimensional Arrays
+Arrays can have more than one dimension.
+```cpp
+int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+```
+
+---
+
+## 2. Passing Arrays to Functions
+You can pass arrays as arguments to functions.
+```cpp
+void printArray(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+}
+```
+
+---
+
+## 3. Array of Objects
+You can also create an array of objects.
+```cpp
+class Student {
+  public:
+    string name;
+    int age;
+};
+
+Student students[3] = {{"John", 20}, {"Anna", 22}, {"Mike", 21}};
+```
+
+---
+
+## 4. Strings in C++
+
+### 4.1. String Variables
+Strings in C++ can be defined using character arrays or the `string` class.
+```cpp
+string name = "John";
+```
+
+### 4.2. Avoiding Buffer Overflow
+Buffer overflow occurs when the program writes data beyond the bounds of a fixed-size buffer (e.g., a character array).
+```cpp
+char name[5];
+strcpy(name, "Hello"); // Buffer overflow
+```
+
+### 4.3. String Constants
+A string constant is a sequence of characters enclosed in double quotes.
+```cpp
+const char* greeting = "Hello, World!";
+```
+
+---
+
+## 5. Array of Strings
+An array of strings is an array where each element is a string.
+```cpp
+string colors[3] = {"Red", "Green", "Blue"};
+```
+
+### 5.1. Strings as Class Members
+A string can be a member of a class.
+```cpp
+class Person {
+  public:
+    string name;
+    Person(string n) {
+        name = n;
+    }
+};
+```
+
+### 5.2. Standard C++ String Class
+C++ provides the `string` class, which makes working with strings easier compared to character arrays.
+```cpp
+string str1 = "Hello";
+string str2 = "World";
+string result = str1 + " " + str2; // Concatenation
+```
+
