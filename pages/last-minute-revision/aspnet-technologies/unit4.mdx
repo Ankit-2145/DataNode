@@ -1,0 +1,238 @@
+# ASP.NET Web Forms: List Control
+
+ASP.NET **List Controls** are used to display lists of items in various formats, either as a simple list or a more complex template-based list.
+
+## 1. Simple List Controls
+
+Simple list controls provide basic list functionality for displaying options, allowing users to select single or multiple items.
+
+- **DropDownList**: Displays a dropdown list of items, allowing a single selection.
+  
+  **Example**:
+  ```aspx
+  <asp:DropDownList ID="DropDownList1" runat="server">
+      <asp:ListItem Text="Option 1" Value="1"></asp:ListItem>
+      <asp:ListItem Text="Option 2" Value="2"></asp:ListItem>
+  </asp:DropDownList>
+  ```
+
+- **ListBox**: Displays a list of items, allowing multiple selections.
+
+  **Example**:
+  ```aspx
+  <asp:ListBox ID="ListBox1" runat="server" SelectionMode="Multiple">
+      <asp:ListItem Text="Option 1" Value="1"></asp:ListItem>
+      <asp:ListItem Text="Option 2" Value="2"></asp:ListItem>
+  </asp:ListBox>
+  ```
+
+- **RadioButtonList**: Displays a group of radio buttons, where only one can be selected.
+  
+  **Example**:
+  ```aspx
+  <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+      <asp:ListItem Text="Option 1" Value="1"></asp:ListItem>
+      <asp:ListItem Text="Option 2" Value="2"></asp:ListItem>
+  </asp:RadioButtonList>
+  ```
+
+- **CheckBoxList**: Displays a group of checkboxes, where multiple selections are allowed.
+  
+  **Example**:
+  ```aspx
+  <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+      <asp:ListItem Text="Option 1" Value="1"></asp:ListItem>
+      <asp:ListItem Text="Option 2" Value="2"></asp:ListItem>
+  </asp:CheckBoxList>
+  ```
+
+---
+
+## 2. Template List Controls
+
+Template list controls allow for a more customizable display of list items using templates to define the appearance and behavior of each item.
+
+- **Repeater**: Displays a repeated list of items using templates without built-in paging or sorting capabilities.
+
+  **Example**:
+  ```aspx
+  <asp:Repeater ID="Repeater1" runat="server">
+      <ItemTemplate>
+          <div><%# Eval("ItemName") %></div>
+      </ItemTemplate>
+  </asp:Repeater>
+  ```
+
+- **DataList**: Similar to the Repeater, but allows for a table-based layout with more built-in features like paging and selection.
+
+  **Example**:
+  ```aspx
+  <asp:DataList ID="DataList1" runat="server">
+      <ItemTemplate>
+          <div><%# Eval("ItemName") %></div>
+      </ItemTemplate>
+  </asp:DataList>
+  ```
+
+- **GridView**: Displays tabular data with features like sorting, paging, and editing.
+
+  **Example**:
+  ```aspx
+  <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="True">
+  </asp:GridView>
+  ```
+
+---
+
+# ASP.NET Validation Controls
+
+Validation controls ensure that user inputs meet specified criteria before submitting data to the server. These controls validate the input on both the client and server sides.
+
+## 1. Definition
+
+Validation controls are server controls used to check user inputs, ensuring they are correct and valid before processing further.
+
+---
+
+## 2. Properties and Methods of Validation Controls
+
+All validation controls inherit from the base **BaseValidator** class and share common properties:
+
+- **ControlToValidate**: The ID of the control to validate.
+- **ErrorMessage**: The error message to display if validation fails.
+- **IsValid**: Returns `True` if validation is successful.
+- **ValidationGroup**: Groups validation controls together.
+
+**Methods**:
+- **Validate()**: Triggers the validation process.
+- **IsValid()**: Returns whether the control passes the validation.
+
+---
+
+## 3. Types of Validation Controls
+
+- **RequiredFieldValidator**: Ensures that the associated input control is not empty.
+
+  **Example**:
+  ```aspx
+  <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="This field is required." />
+  ```
+
+- **CompareValidator**: Compares the value of the input control with another value or control.
+
+  **Example**:
+  ```aspx
+  <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="TextBox1" ControlToCompare="TextBox2" Operator="Equal" ErrorMessage="Values do not match." />
+  ```
+
+- **RangeValidator**: Ensures that the input value is within a specified range.
+
+  **Example**:
+  ```aspx
+  <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox1" MinimumValue="1" MaximumValue="10" Type="Integer" ErrorMessage="Value must be between 1 and 10." />
+  ```
+
+- **RegularExpressionValidator**: Validates the input based on a regular expression pattern.
+
+  **Example**:
+  ```aspx
+  <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox1" ValidationExpression="\d{3}-\d{2}-\d{4}" ErrorMessage="Invalid format." />
+  ```
+
+- **CustomValidator**: Allows custom server-side validation logic.
+
+  **Example**:
+  ```aspx
+  <asp:CustomValidator ID="CustomValidator1" runat="server" ControlToValidate="TextBox1" OnServerValidate="ValidateInput" ErrorMessage="Custom validation failed." />
+  ```
+
+  **Code-behind**:
+  ```csharp
+  protected void ValidateInput(object source, ServerValidateEventArgs args) {
+      args.IsValid = args.Value.Length > 5;
+  }
+  ```
+
+- **ValidationSummary**: Displays a summary of validation errors in one place.
+
+  **Example**:
+  ```aspx
+  <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+  ```
+
+---
+
+# ASP.NET User Controls
+
+User controls in ASP.NET are reusable page components, encapsulating the markup and code for a specific functionality, like a login form or a navigation bar.
+
+---
+
+## 1. Definition
+
+A **User Control** is a reusable container of markup and server-side code, encapsulated into a `.ascx` file. User controls are typically used to modularize parts of a web application that are repeated across multiple pages.
+
+---
+
+## 2. Markup-Only User Control
+
+A simple user control can contain only markup, which is placed in a `.ascx` file. For example, a header or footer section can be implemented as a markup-only user control.
+
+**Example**:
+```aspx
+<!-- Header.ascx -->
+<div>
+    <h1>Website Header</h1>
+</div>
+```
+
+---
+
+## 3. Custom Properties in User Controls
+
+User controls can expose custom properties that allow pages to pass data to the user control.
+
+**Example**:
+```aspx
+<!-- UserControl.ascx -->
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UserControl.ascx.cs" Inherits="MyApp.UserControl" %>
+<div>
+    <h2><%= Title %></h2>
+</div>
+```
+
+**Code-behind**:
+```csharp
+public partial class UserControl : System.Web.UI.UserControl {
+    public string Title { get; set; }
+}
+```
+
+---
+
+## 4. Handling Events in User Controls
+
+User controls can also raise events that the hosting page can handle.
+
+**Example**:
+```csharp
+public event EventHandler ButtonClicked;
+
+protected void Button_Click(object sender, EventArgs e) {
+    ButtonClicked?.Invoke(this, EventArgs.Empty);
+}
+```
+
+---
+
+## 5. Loading User Controls Dynamically
+
+User controls can be loaded dynamically at runtime using the `LoadControl` method.
+
+**Example**:
+```csharp
+protected void Page_Load(object sender, EventArgs e) {
+    Control userControl = LoadControl("UserControl.ascx");
+    PlaceHolder1.Controls.Add(userControl);
+}
+```

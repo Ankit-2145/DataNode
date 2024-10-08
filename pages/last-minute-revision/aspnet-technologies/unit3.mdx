@@ -1,0 +1,221 @@
+# ASP.NET Web Forms Overview
+
+**ASP.NET Web Forms** is a web development framework by Microsoft, used to build dynamic, data-driven web applications. Web Forms allow developers to create websites with rich user interfaces by providing a drag-and-drop environment for UI controls and a powerful event-driven programming model.
+
+
+## 1. Web Forms Code Model
+
+ASP.NET Web Forms follow a **code-behind** model, which separates the presentation layer (HTML markup) from the logic (C# or VB.NET code).
+
+- **In-page format**: The server-side code is embedded directly in the `.aspx` page.
+  
+**Example**:
+```aspx
+<asp:Button ID="Button1" runat="server" Text="Click Me" OnClick="Button1_Click" />
+```
+
+- **Code-behind format**: The server-side code is placed in a separate file with the `.aspx.cs` or `.aspx.vb` extension.
+
+**Example**:
+```csharp
+protected void Button1_Click(object sender, EventArgs e) {
+    Label1.Text = "Button Clicked!";
+}
+```
+
+---
+
+## 2. Web Form Object Life Cycle
+
+The **life cycle** of a web form includes the following stages:
+
+1. **Page Request**: The page request is sent to the server.
+2. **Start**: Page properties are initialized.
+3. **Initialization**: Controls on the page are initialized.
+4. **Load**: The page and controls are loaded with their data.
+5. **Postback Event Handling**: Handles postback events (e.g., button clicks).
+6. **Rendering**: The page is rendered into HTML and sent to the client.
+7. **Unload**: Cleans up resources used by the page.
+
+---
+
+## 3. Handling Client-Side Events on the Server
+
+ASP.NET Web Forms allow for handling client-side events, such as button clicks, on the server. These events trigger a **postback** to the server, which processes the event and sends the response back to the client.
+
+---
+
+## 4. Web Form Event Handling
+
+In Web Forms, events like button clicks, dropdown changes, and text input can be handled in the server-side code. The event-handling mechanism relies on delegates and event handlers.
+
+**Example**:
+```csharp
+protected void Button1_Click(object sender, EventArgs e) {
+    // Event handling logic
+}
+```
+
+---
+
+## 5. AutoPostBack Property
+
+The **AutoPostBack** property allows a control to automatically post back to the server when its value changes. For example, a dropdown list can be set to post back to the server when the user selects a new item.
+
+**Example**:
+```aspx
+<asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+    <asp:ListItem Text="Item 1" Value="1"></asp:ListItem>
+    <asp:ListItem Text="Item 2" Value="2"></asp:ListItem>
+</asp:DropDownList>
+```
+
+---
+
+## 6. Automatic State Management with Web Forms
+
+ASP.NET Web Forms provide **ViewState** for automatic state management. ViewState preserves the state of controls across postbacks.
+
+- **ViewState** stores values in a hidden field on the page.
+
+**Example**:
+```csharp
+ViewState["Counter"] = 1; // Store value
+int counter = (int)ViewState["Counter"]; // Retrieve value
+```
+
+---
+
+# HTML Server Controls
+
+HTML server controls are standard HTML elements that are enhanced to run on the server. These controls include attributes like `runat="server"` that allow them to be manipulated in the server-side code.
+
+## 1. Definition
+- HTML server controls are basic HTML elements that are processed by the server before being rendered to the client.
+
+## 2. RunAt Server Attribute
+
+The `runat="server"` attribute tells ASP.NET to treat the HTML element as a server-side control.
+
+**Example**:
+```html
+<form runat="server">
+    <input type="text" id="TextBox1" runat="server" />
+</form>
+```
+
+---
+
+## 3. HTML Control Class
+
+All HTML server controls inherit from the **HtmlControl** class, which provides properties and methods for managing HTML controls on the server.
+
+---
+
+## 4. General HTML Server Controls
+
+- **Anchor** (`<a>`) – Server-side hyperlink control.
+- **Image** (`<img>`) – Displays images.
+- **Form** (`<form>`) – Encapsulates form elements.
+- **Division** (`<div>`) – Server-side division block.
+- **Span** (`<span>`) – Inline division block.
+- **Table** (`<table>`) – Defines a table structure.
+- **Input Controls** – Includes text boxes, buttons, etc.
+
+**Example**:
+```html
+<a href="https://www.example.com" runat="server" id="Anchor1">Visit Example</a>
+```
+
+---
+
+# Web Server Controls
+
+ASP.NET Web Forms provide **web server controls** that offer a higher level of functionality compared to HTML server controls. These controls are rendered as HTML elements but provide additional features such as data binding and event handling.
+
+## 1. Web Control Class
+
+All web server controls inherit from the **WebControl** class, which defines common properties like `ID`, `CssClass`, and `ToolTip`.
+
+---
+
+## 2. General Web Server Controls
+
+### HyperLink
+- A server-side link control that allows dynamic modification of the URL.
+
+**Example**:
+```aspx
+<asp:HyperLink ID="HyperLink1" runat="server" Text="Visit Google" NavigateUrl="https://www.google.com" />
+```
+
+### LinkButton
+- A button control that appears as a hyperlink.
+
+**Example**:
+```aspx
+<asp:LinkButton ID="LinkButton1" runat="server" Text="Click Me" OnClick="LinkButton1_Click" />
+```
+
+### Image
+- Displays images dynamically, using server-side properties.
+
+**Example**:
+```aspx
+<asp:Image ID="Image1" runat="server" ImageUrl="~/images/logo.png" />
+```
+
+### Label
+- Displays text that can be modified dynamically on the server.
+
+**Example**:
+```aspx
+<asp:Label ID="Label1" runat="server" Text="Hello World!" />
+```
+
+### Panel
+- A container control that groups other controls together.
+
+**Example**:
+```aspx
+<asp:Panel ID="Panel1" runat="server" CssClass="panel-class">
+    <asp:Label ID="Label2" runat="server" Text="Inside a Panel" />
+</asp:Panel>
+```
+
+---
+
+## 3. Form Controls
+
+ASP.NET provides a variety of server-side form controls, including:
+
+- **TextBox**: A text input control.
+- **Button**: A clickable button that triggers server-side events.
+- **CheckBox**: A server-side checkbox control.
+  
+**Example**:
+```aspx
+<asp:TextBox ID="TextBox1" runat="server" />
+<asp:Button ID="Button1" runat="server" Text="Submit" />
+```
+
+---
+
+## 4. Table Controls
+
+ASP.NET offers server-side table controls to build dynamic tables with ease.
+
+- **Table**: Represents an HTML table.
+- **TableRow**: Represents a row in a table.
+- **TableCell**: Represents a cell in a table row.
+
+**Example**:
+```aspx
+<asp:Table ID="Table1" runat="server">
+    <asp:TableRow>
+        <asp:TableCell>Row 1, Cell 1</asp:TableCell>
+        <asp:TableCell>Row 1, Cell 2</asp:TableCell>
+    </asp:TableRow>
+</asp:Table>
+```
+
