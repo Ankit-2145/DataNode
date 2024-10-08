@@ -9,8 +9,8 @@
     "type": "page",
     "display": "hidden"
   },
-  "guides": {
-    "title": "guides",
+  "last-minute-revision": {
+    "title": "Last Minute Revision",
     "type": "page",
     "display": "hidden"
   }
