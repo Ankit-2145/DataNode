@@ -319,7 +319,7 @@ export const academicsSections: SectionData[] = [
         date: "1 week ago",
         description:
           "Revise Important topics of C language, one night before your exam",
-        url: "/guides/c-programming",
+        url: "/last-minute-revision/c-programming",
         BackgroundIcon1: Clock,
         BackgroundIcon2: Clock,
         icon1Color:
@@ -337,7 +337,7 @@ export const academicsSections: SectionData[] = [
         date: "1 week ago",
         description:
           "Revise Important topics of OOPS with C++, one night before your exam",
-        url: "/guides/oops-with-cpp",
+        url: "/last-minute-revision/oops-with-cpp",
         BackgroundIcon1: Clock,
         BackgroundIcon2: Clock,
         icon1Color:
@@ -355,7 +355,7 @@ export const academicsSections: SectionData[] = [
         date: "1 week ago",
         description:
           "Revise Important topics of Computer Fundamentals, one night before your exam",
-        url: "/guides/computer-fundamentals",
+        url: "/last-minute-revision/computer-fundamentals",
         BackgroundIcon1: Clock,
         BackgroundIcon2: Clock,
         icon1Color:
@@ -373,7 +373,7 @@ export const academicsSections: SectionData[] = [
         date: "1 week ago",
         description:
           "Revise Important topics of Computer Organization, one night before your exam",
-        url: "/guides/computer-organization",
+        url: "/last-minute-revision/computer-organization",
         BackgroundIcon1: Clock,
         BackgroundIcon2: Clock,
         icon1Color:
@@ -391,7 +391,7 @@ export const academicsSections: SectionData[] = [
         date: "1 week ago",
         description:
           "Revise Important topics of Operating System, one night before your exam",
-        url: "/guides/operating-system",
+        url: "/last-minute-revision/operating-system",
         BackgroundIcon1: Clock,
         BackgroundIcon2: Clock,
         icon1Color:
@@ -409,7 +409,7 @@ export const academicsSections: SectionData[] = [
         date: "1 week ago",
         description:
           "Revise Important topics of ASP.net Technologies, one night before your exam",
-        url: "/guides/operating-system",
+        url: "/last-minute-revision/aspnet-technologies",
         BackgroundIcon1: Clock,
         BackgroundIcon2: Clock,
         icon1Color:
