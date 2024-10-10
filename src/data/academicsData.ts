@@ -421,20 +421,20 @@ export const academicsSections: SectionData[] = [
     ],
   },
   {
-    title: "Exam Busters",
+    title: "Questions Asked in Exams",
     otherClasses: "dark:bg-red-300 dark:from-red-300 dark:to-red-100",
     buttonClasses:
       "bg-red-500/10 text-red-700 hover:text-red-700 dark:text-red-300 dark:bg-red-300/10 hover:bg-red-500/20 dark:hover:bg-red-300/20",
     cardData: [
       {
-        title: "C Quiz!",
-        difficulty: "Advanced",
+        title: "C Programming",
+        difficulty: "BCA",
         comments: 60,
         likes: 120,
-        author: "ExamPro",
+        author: "DataNode",
         date: "1 month ago",
-        description: "Think You Know C? Prove It!",
-        url: "/papers/2022-finals",
+        description: "Crack the Code: C Programming Exam Hits! from MCQs, short Answers and long Answers",
+        url: "/questions-asked-in-exams/c-exams",
         BackgroundIcon1: Plus,
         BackgroundIcon2: Plus,
         icon1Color:
@@ -442,75 +442,7 @@ export const academicsSections: SectionData[] = [
         icon2Color:
           "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
         shadow: "red",
-      },
-      {
-        title: "2022 Final Exam Papers",
-        difficulty: "Advanced",
-        comments: 60,
-        likes: 120,
-        author: "ExamPro",
-        date: "1 month ago",
-        description: "Collection of all 2022 final exam papers",
-        url: "/papers/2022-finals",
-        BackgroundIcon1: Plus,
-        BackgroundIcon2: Plus,
-        icon1Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-        icon2Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-        shadow: "red",
-      },
-      {
-        title: "2022 Final Exam Papers",
-        difficulty: "Advanced",
-        comments: 60,
-        likes: 120,
-        author: "ExamPro",
-        date: "1 month ago",
-        description: "Collection of all 2022 final exam papers",
-        url: "/papers/2022-finals",
-        BackgroundIcon1: Plus,
-        BackgroundIcon2: Plus,
-        icon1Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-        icon2Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-        shadow: "red",
-      },
-      {
-        title: "2022 Final Exam Papers",
-        difficulty: "Advanced",
-        comments: 60,
-        likes: 120,
-        author: "ExamPro",
-        date: "1 month ago",
-        description: "Collection of all 2022 final exam papers",
-        url: "/papers/2022-finals",
-        BackgroundIcon1: Plus,
-        BackgroundIcon2: Plus,
-        icon1Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-        icon2Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-        shadow: "red",
-      },
-      {
-        title: "2022 Final Exam Papers",
-        difficulty: "Advanced",
-        comments: 60,
-        likes: 120,
-        author: "ExamPro",
-        date: "1 month ago",
-        description: "Collection of all 2022 final exam papers",
-        url: "/papers/2022-finals",
-        BackgroundIcon1: Plus,
-        BackgroundIcon2: Plus,
-        icon1Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
-        icon2Color:
-          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
-        shadow: "red",
-      },
+      }
       // Add more exam preparation guide cards here...
     ],
   },

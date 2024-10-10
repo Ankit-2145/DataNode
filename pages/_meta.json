@@ -13,5 +13,10 @@
     "title": "Last Minute Revision",
     "type": "page",
     "display": "hidden"
+  },
+  "questions-asked-in-exams": {
+    "title": "Questions Asked in Exams",
+    "type": "page",
+    "display": "hidden"
   }
 }
