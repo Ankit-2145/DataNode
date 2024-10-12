@@ -12,7 +12,7 @@ const Footer = () => {
     {
       title: 'Resources',
       links: [
-        { name: 'Academics', href: '/BCA/getting-started' },
+        { name: 'Academics', href: '/academics' },
         { name: 'BCA Syllabus', href: '/BCA/semesters/Syllabus-1' },
         { name: 'BCA Semesters', href: '/BCA/semesters/Semester-1' },
         { name: 'BCA Community', href: 'https://bcacommunity.netlify.app/', external: true },
@@ -38,7 +38,6 @@ const Footer = () => {
   const socialLinks = [
     { name: 'Twitter', href: 'https://x.com/Ankit__46', icon: FaSquareXTwitter },
     { name: 'GitHub', href: 'https://github.com/Ankit-2145/DataNode', icon: FaGithub },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/ankit-sharma-03a680218/', icon: FaLinkedin },
   ]
 
   return (
@@ -77,7 +76,7 @@ const Footer = () => {
                 <h2 className="mb-6 text-base font-medium">{section.title}</h2>
                 <ul className="text-sm font-normal">
                   {section.links.map((link) => (
-                    <li key={link.name} className="mb-4 font-medium text-gray-500 hover:text-white transition-all duration-150">
+                    <li key={link.name} className="mb-4 font-medium text-muted-foreground transition-all duration-150">
                       <Link
                         href={link.href}
                         className="transition-all duration-300 relative group"
@@ -94,7 +93,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <div className="flex flex-col sm:flex-row items-center sm:justify-between">
+        <div className="flex flex-col sm:flex-row items-center sm:justify-between text-muted-foreground">
           <span className="text-sm text-center sm:text-left">
             DataNode © {currentYear} | All rights reserved
           </span>

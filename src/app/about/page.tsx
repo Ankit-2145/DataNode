@@ -14,7 +14,7 @@ export default function About() {
             {" "}
             About DataNode{" "}
           </h1>{" "}
-          <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-gray-500">
+          <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-muted-foreground">
             {" "}
             Empowering Students with Knowledge and Innovation: Our Mission,
             Vision, and Journey{" "}
@@ -22,7 +22,7 @@ export default function About() {
         </div>{" "}
         <div className="max-w-4xl mx-auto pb-14">
           {" "}
-          <p className="text-gray-500 px-4 md:px-0 md:tracking-wider text-left text-sm md:text-base">
+          <p className="text-muted-foreground px-4 md:px-0 md:tracking-wider text-left text-sm md:text-base">
             {" "}
             <LinkPreview
               url="https://data-node.vercel.app"

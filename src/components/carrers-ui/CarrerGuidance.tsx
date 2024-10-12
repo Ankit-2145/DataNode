@@ -34,7 +34,7 @@ export default function CareerGuidance() {
         transition={{ duration: 0.3 }}
         className="space-y-6"
       >
-        <p className="text-base text-gray-500 text-center max-w-3xl mx-auto">
+        <p className="text-base text-muted-foreground text-center max-w-3xl mx-auto">
           {categories.find((cat) => cat.id === activeCategory)?.description}
         </p>
 

@@ -53,9 +53,9 @@ const AccordionItem = memo<AccordionItemProps>(
           onClick={onClick}
           aria-expanded={isOpen}
         >
-          <span className="text-gray-500 font-medium text-base">{question}</span>
+          <span className="text-muted-foreground font-medium text-base">{question}</span>
           <ChevronDown
-            className={`w-5 h-5 transition-transform duration-300 text-gray-500 ${
+            className={`w-5 h-5 transition-transform duration-300 text-muted-foreground ${
               isOpen ? "transform rotate-180" : ""
             }`}
           />
@@ -101,7 +101,7 @@ export default function FAQs() {
         </span>{" "}
         Questions
       </h4>
-      <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-gray-500">
+      <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-muted-foreground">
         Find answers to common questions and get the information you need to
         make the most of our platform.
       </p>

@@ -33,7 +33,7 @@ const AccessAnywhere = ({ className }: { className?: string }) => {
               Reach!
             </span>
           </h4>
-          <p className="text-base tracking-wider leading-8 mt-5 mb-10 text-gray-500">
+          <p className="text-base tracking-wider leading-8 mt-5 mb-10 text-muted-foreground">
             No matter where you are or what time it is, DataNode makes learning
             accessible. With our platform, you can dive into valuable resources,
             study notes, and tech trends from any device, whenever you need

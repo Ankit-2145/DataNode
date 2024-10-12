@@ -12,7 +12,7 @@ export default function Masters() {
           <h1 className="text-4xl md:text-6xl leading-normal mt-28 pb-2 text-transparent bg-clip-text bg-custom-gradient tracking-tight text-center font-semibold">
             Master&apos;s Programs
           </h1>
-          <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-gray-500">
+          <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-muted-foreground">
             A master&apos;s degree enhances specialization and career
             opportunities in computer science.
           </p>

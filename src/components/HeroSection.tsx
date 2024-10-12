@@ -41,7 +41,7 @@ export default function HeroSection() {
             <br />
             Node at a time
           </h1>
-          <p className="text-gray-500 text-center md:tracking-wider leading-8 mb-4 text-base">
+          <p className="text-muted-foreground text-center md:tracking-wider leading-8 mb-4 text-base">
             Get the latest insights on emerging tech trends, detailed syllabus
             notes, past papers, and expert tips to give you a competitive edge.
             Stay informed, stay ahead!

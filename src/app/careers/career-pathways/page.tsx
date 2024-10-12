@@ -12,7 +12,7 @@ export default function CareerPathways() {
           <h1 className="text-4xl md:text-6xl leading-normal mt-28 text-transparent bg-clip-text bg-custom-gradient tracking-tight text-center font-semibold">
             Careers Pathways
           </h1>
-          <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-gray-500">
+          <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-muted-foreground">
             From Student to Professional: We&apos;re With You All the Way
           </p>
         </div>

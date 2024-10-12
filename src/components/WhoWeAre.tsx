@@ -16,7 +16,7 @@ const WhoWeAre = () => {
             </span>{" "}
             team
           </h4>
-          <p className="text-base max-w-7xl tracking-wider mt-5 mb-10 mx-auto text-gray-500 text-center">
+          <p className="text-base max-w-7xl tracking-wider mt-5 mb-10 mx-auto text-muted-foreground text-center">
             At DataNode, we&apos;re mentors and problem-solvers dedicated to
             empowering future tech professionals. Inspired by our own
             experiences, we built DataNode to provide the support we wish we
