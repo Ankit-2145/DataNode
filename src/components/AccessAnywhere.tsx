@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { AnimatedList } from "@/components/magicui/animated-list";
 import MagicButton from "@/components/ui/MagicButton";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import Link from "next/link";
 
 const AccessAnywhere = ({ className }: { className?: string }) => {
   return (
@@ -40,11 +41,13 @@ const AccessAnywhere = ({ className }: { className?: string }) => {
             them. Whether you&apos;re on the go or at your desk, we ensure that your
             academic journey remains uninterrupted.
           </p>
+          <Link href="/academics">
           <MagicButton
-            title="Read More"
+            title="Start Learning"
             icon={<FaArrowRight />}
             position="right"
           />
+          </Link>
         </div>
         <div
           className={cn(
@@ -75,22 +78,22 @@ interface Item {
 
 let notifications = [
   {
-    name: "High paying jobs",
+    name: "Academics Notes Added",
     description: "DataNode",
     time: "15m ago",
 
-    icon: "💸",
+    icon: "📝",
     color: "#00C9A7",
   },
   {
-    name: "New user enrolled",
+    name: "PYQs Added",
     description: "DataNode",
     time: "10m ago",
-    icon: "👤",
+    icon: "📄",
     color: "#FFB800",
   },
   {
-    name: "New courses Added",
+    name: "New Subjects Added",
     description: "DataNode",
     time: "5m ago",
     icon: "📚",

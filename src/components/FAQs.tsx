@@ -72,7 +72,7 @@ const AccordionItem = memo<AccordionItemProps>(
               }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              <div className="px-6 py-4 mx-3 text-gray-100 bg-custom-gradient text-base rounded-md">
+              <div className="px-6 py-4 mx-3 text-muted-foreground text-base rounded-md">
                 {answer}
               </div>
             </motion.div>

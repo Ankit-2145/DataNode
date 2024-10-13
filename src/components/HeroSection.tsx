@@ -6,10 +6,11 @@ import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { FaLocationArrow } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="p-5 my-20 md:my-0 md:p-24">
+    <section className="p-5 mt-20 md:my-0 md:p-24">
       {" "}
       <div>
         <Spotlight
@@ -24,9 +25,7 @@ export default function HeroSection() {
             as="button"
             className="bg-dark text-white flex items-center"
           >
-            <span className="text-xs tracking-wider">
-              ⭐ Star us on Github
-            </span>
+            <span className="text-xs tracking-wider">⭐ Star us on Github</span>
           </HoverBorderGradient>
 
           <h1 className="text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
@@ -46,12 +45,14 @@ export default function HeroSection() {
             notes, past papers, and expert tips to give you a competitive edge.
             Stay informed, stay ahead!
           </p>
-          <MagicButton
-            title="Get Started"
-            icon={<FaLocationArrow />}
-            position="right"
-            otherClasses="mt-14"
-          />
+          <Link href="/academics">
+            <MagicButton
+              title="Get Started"
+              icon={<FaLocationArrow />}
+              position="right"
+              otherClasses="mt-14"
+            />
+          </Link>
         </div>
       </div>
       <ShootingStars />

@@ -250,6 +250,18 @@ export default function Navbar() {
                   ))}
                 </div>
                 <Link
+                  href="/about"
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-primary",
+                    pathname === "/about"
+                      ? "text-primary"
+                      : "text-muted-foreground"
+                  )}
+                  onClick={() => setIsOpen(false)}
+                >
+                  About Us
+                </Link>
+                <Link
                   href="/contact"
                   className={cn(
                     "text-sm font-medium transition-colors hover:text-primary",
