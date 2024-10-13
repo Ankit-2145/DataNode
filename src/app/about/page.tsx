@@ -72,6 +72,9 @@ export default function About() {
             everything you need to thrive in your academic and professional
             journey. <br /> <br /> Join us on this exciting journey. Together,
             we&apos;ll learn, grow, and shape the future of technology.{" "}
+            <br/>
+            <br/>
+            Team DataNode
           </p>{" "}
         </div>
       </div>

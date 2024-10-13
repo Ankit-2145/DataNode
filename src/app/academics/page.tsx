@@ -15,7 +15,7 @@ export default function Academics() {
         <h1 className="text-4xl md:text-6xl leading-normal mt-28 text-transparent bg-clip-text bg-custom-gradient tracking-tight text-center font-semibold">
           Academics
         </h1>
-        <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-gray-500">
+        <p className="text-base text-center max-w-sm md:max-w-xl tracking-wider leading-8 mt-2.5 mb-10 text-muted-foreground">
           Access syllabus notes, past papers, study guides and more to help you
           excel in your exams.
         </p>
