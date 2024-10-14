@@ -94,13 +94,13 @@ export default function FAQs() {
 
   return (
     <div className="w-full max-w-3xl mx-auto px-4 py-12">
-      <h4 className="text-4xl lg:leading-tight mt-5 max-w-5xl text-white mx-auto text-center tracking-tight font-semibold">
+      <h2 className="text-4xl lg:leading-tight mt-5 max-w-5xl text-white mx-auto text-center tracking-tight font-semibold">
         Frequently{" "}
         <span className="text-transparent bg-clip-text bg-custom-gradient">
           Asked
         </span>{" "}
         Questions
-      </h4>
+      </h2>
       <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-muted-foreground">
         Find answers to common questions and get the information you need to
         make the most of our platform.

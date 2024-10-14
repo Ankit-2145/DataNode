@@ -6,12 +6,12 @@ export default function Feedbacks() {
   return (
     <>
       <div className="h-[32rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex flex-col items-center justify-center">
-      <h4 className="text-4xl lg:leading-tight mt-5 max-w-5xl text-white mx-auto text-center tracking-tight font-semibold">
+      <h2 className="text-4xl lg:leading-tight mt-5 max-w-5xl text-white mx-auto text-center tracking-tight font-semibold">
             Happy{" "}
             <span className="text-transparent bg-clip-text bg-custom-gradient">
               shoutouts
             </span>
-          </h4>
+          </h2>
         <p className="text-base max-w-2xl mx-auto font-medium text-center py-2 px-3 text-muted-foreground">
           Hear from our satisfied users and see how DataNode has made a
           difference in their educational journey.

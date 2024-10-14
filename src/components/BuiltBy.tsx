@@ -20,12 +20,12 @@ const BuiltBy = () => {
               Developers
             </span>
           </HoverBorderGradient>
-          <h4 className="text-4xl leading-normal mt-5 text-white tracking-tight font-semibold">
+          <h2 className="text-4xl leading-normal mt-5 text-white tracking-tight font-semibold">
             Built with Real <br />
             <span className="text-transparent bg-clip-text bg-custom-gradient">
               Developer Experience
             </span>
-          </h4>
+          </h2>
           <p className="text-base text-left tracking-wider leading-8 mt-5 mb-10 text-muted-foreground">
             At DataNode, we&apos;ve walked the developer&apos;s path. Crafted by
             developers for developers, offers the tools, tips, and insights to

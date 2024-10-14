@@ -23,7 +23,7 @@ const AccessAnywhere = ({ className }: { className?: string }) => {
               Anywhere
             </span>
           </HoverBorderGradient>
-          <h4 className="text-4xl leading-normal mt-5 text-white tracking-tight font-semibold">
+          <h2 className="text-4xl leading-normal mt-5 text-white tracking-tight font-semibold">
             Your{" "}
             <span className="text-transparent bg-clip-text bg-custom-gradient">
               Learning,{" "}
@@ -33,7 +33,7 @@ const AccessAnywhere = ({ className }: { className?: string }) => {
             <span className="text-transparent bg-clip-text bg-custom-gradient">
               Reach!
             </span>
-          </h4>
+          </h2>
           <p className="text-base tracking-wider leading-8 mt-5 mb-10 text-muted-foreground">
             No matter where you are or what time it is, DataNode makes learning
             accessible. With our platform, you can dive into valuable resources,

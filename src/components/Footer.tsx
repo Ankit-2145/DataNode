@@ -24,6 +24,7 @@ const Footer = () => {
       links: [
         { name: 'About Us', href: '/about' },
         { name: 'Contact Us', href: '/contact' },
+        { name: 'Support DataNode', href: '/support-datanode' },
       ],
     },
     {

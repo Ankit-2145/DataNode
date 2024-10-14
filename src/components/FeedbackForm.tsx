@@ -12,12 +12,12 @@ export default function FeedbackForm() {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_80%,black)]"></div>
         <div className="flex flex-col justify-center items-center py-8 sm:py-10 md:py-12 lg:py-14">
           <div className="px-4 sm:px-6 md:px-8 lg:px-10 w-full">
-            <h4 className="text-2xl sm:text-3xl md:text-4xl lg:leading-tight text-white mx-auto text-center tracking-tight font-semibold">
+            <h2 className="text-4xl lg:leading-tight mt-5 max-w-5xl text-white mx-auto text-center tracking-tight font-semibold">
               We Value Your{" "}
               <span className="text-transparent bg-clip-text bg-custom-gradient">
                 Feedback!
               </span>{" "}
-            </h4>
+            </h2>
             <p className="text-base tracking-wider my-6 sm:my-8 md:my-10 mx-4 sm:mx-8 md:mx-16 lg:mx-28 text-muted-foreground text-center">
               Your experience on DataNode matters to us. We&apos;re constantly
               looking to improve, and your suggestions play a crucial role in
