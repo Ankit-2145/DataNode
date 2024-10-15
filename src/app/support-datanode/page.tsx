@@ -77,7 +77,7 @@ export default function SupportPage() {
               </CardHeader>
               <CardContent>
                 <p>
-                  If you're unable to contribute financially, you can still
+                  If you&apos;re unable to contribute financially, you can still
                   help! Share DataNode with your friends, classmates, or on
                   social media. Every mention helps us reach more students.
                 </p>
@@ -148,10 +148,10 @@ export default function SupportPage() {
           >
             <AccordionItem value="item-1">
               <AccordionTrigger>
-                What's the difference between contributing and donating?
+                What&apos;s the difference between contributing and donating?
               </AccordionTrigger>
               <AccordionContent>
-                Contributions to DataNode support the platform's development and
+                Contributions to DataNode support the platform&apos;s development and
                 educational goals, but they are not considered donations since
                 Pinnacle Smart Solutions is a for-profit entity. Your
                 contributions help keep DataNode free and improve its resources.
