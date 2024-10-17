@@ -180,7 +180,7 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent side="left" className="w-[300px] sm:w-[400px]">
               <SheetHeader>
-                <SheetTitle>Navigation</SheetTitle>
+                <SheetTitle>DataNode</SheetTitle>
                 <SheetDescription>Access all pages from here.</SheetDescription>
               </SheetHeader>
               <nav className="flex flex-col space-y-4 mt-4">
