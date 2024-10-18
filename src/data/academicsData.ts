@@ -433,7 +433,7 @@ export const academicsSections: SectionData[] = [
         likes: 120,
         author: "DataNode",
         date: "1 month ago",
-        description: "Crack the Code: C Programming Exam Hits! from MCQs, short Answers and long Answers",
+        description: "C Programming Exam Hits! from MCQs, short Answers and long Answers",
         url: "/questions-asked-in-exams/c-exams",
         BackgroundIcon1: Plus,
         BackgroundIcon2: Plus,
@@ -442,8 +442,92 @@ export const academicsSections: SectionData[] = [
         icon2Color:
           "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
         shadow: "red",
-      }
-      // Add more exam preparation guide cards here...
+      },
+      {
+        title: "Operating System",
+        difficulty: "BCA",
+        comments: 60,
+        likes: 120,
+        author: "DataNode",
+        date: "1 month ago",
+        description: "Operating System Exam Hits! from MCQs, short Answers and long Answers",
+        url: "/questions-asked-in-exams/os-exams",
+        BackgroundIcon1: Plus,
+        BackgroundIcon2: Plus,
+        icon1Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+        shadow: "red",
+      },
+      {
+        title: "Computer Fundamentals",
+        difficulty: "BCA",
+        comments: 60,
+        likes: 120,
+        author: "DataNode",
+        date: "1 month ago",
+        description: "Computer Fundamentals Exam Hits! from MCQs, short Answers and long Answers",
+        url: "/questions-asked-in-exams/computer-fundamentals-exams",
+        BackgroundIcon1: Plus,
+        BackgroundIcon2: Plus,
+        icon1Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+        shadow: "red",
+      },
+      {
+        title: "ASP.net Technologies",
+        difficulty: "BCA",
+        comments: 60,
+        likes: 120,
+        author: "DataNode",
+        date: "1 month ago",
+        description: "ASP.net Technologies Exam Hits! from MCQs, short Answers and long Answers",
+        url: "/questions-asked-in-exams/aspnet-exams",
+        BackgroundIcon1: Plus,
+        BackgroundIcon2: Plus,
+        icon1Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+        shadow: "red",
+      },
+      {
+        title: "OOPs with C++",
+        difficulty: "BCA",
+        comments: 60,
+        likes: 120,
+        author: "DataNode",
+        date: "1 month ago",
+        description: "OOPs with C++ Exam Hits! from MCQs, short Answers and long Answers",
+        url: "/questions-asked-in-exams/oops-exams",
+        BackgroundIcon1: Plus,
+        BackgroundIcon2: Plus,
+        icon1Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+        shadow: "red",
+      },
+      {
+        title: "Computer Organization",
+        difficulty: "BCA",
+        comments: 60,
+        likes: 120,
+        author: "DataNode",
+        date: "1 month ago",
+        description: "Computer Organization Exam Hits! from MCQs, short Answers and long Answers",
+        url: "/questions-asked-in-exams/computer-organization-exams",
+        BackgroundIcon1: Plus,
+        BackgroundIcon2: Plus,
+        icon1Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+        shadow: "red",
+      },
     ],
   },
 ];
