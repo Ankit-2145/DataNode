@@ -1,60 +1,39 @@
 # Short Answer Questions
 
-In this guide, you'll find a collection of essential C language short answer questions and their concise, exam-focused answers. These cover important questions asked in previous held exams and important questions from exam point of view.
+In this guide, you'll find a collection of essential operating system short answer questions and their concise, exam-focused answers. These cover important questions asked in previous held exams and important questions from exam point of view.
 
 ---
 
-### Question: Why is C called a structured language?
+### Question: Write short note on simple monitor.
 
-Answer: C is called a structured language because it promotes a systematic approach to program design using functions, loops, and conditionals. This organization allows developers to break down complex problems into manageable modules, facilitating code reusability and maintainability. Structured programming avoids the use of `goto` statements, providing clearer control flow, which enhances program readability.
-
-#### Example:
-
-```c
-#include <stdio.h>
-
-void displayMessage() {
-    printf("Hello, world!\n");
-}
-
-int main() {
-    displayMessage();
-    return 0;
-}
-```
-
-This program demonstrates how a function is used to structure the code.
+A **simple monitor** helps control how multiple programs or threads use shared resources, like memory or files, at the same time. It ensures that only one process or thread uses the resource at a time, preventing errors. Think of it like a traffic signal that allows only one car to pass at a time.
 
 ---
 
-### Question: What are the different symbols of a flowchart?
+### Question: Process and Thread.
 
-Answer: 
-1. **Oval (Terminator)**: Represents the Start and End points of a process.
-2. **Rectangle (Process)**: Indicates a process, action, or instruction that needs to be performed.
-3. **Diamond (Decision)**: Represents a decision point that branches the flow based on a condition (Yes/No).
-4. **Parallelogram (Input/Output)**: Used for input or output operations, like reading data or displaying results.
-5. **Arrow (Flow Line)**: Shows the direction of the flow of control between symbols.
+Answer:
+A process is a running program with its own memory and resources. A thread is a smaller unit inside a process that can run tasks. Multiple threads can run at the same time within one process, sharing memory, which makes things faster.
 
-#### Example Flowchart:
-
-```mermaid
-graph TD;
-    A[Start] --> B[Input];
-    B --> C{Decision};
-    C -->|Yes| D[Process];
-    C -->|No| E[End];
-    D --> E;
-```
-
-Flowcharts are essential for visualizing algorithms and understanding the logical flow of a program.
+Diagram: Process vs Thread
+diagram
+Copy code
+┌───────────┐ ┌───────────┐
+│ Process A │ │ Process B │
+├───────────┤ ├───────────┤
+│ Thread 1 │ │ Thread 1 │
+│ Thread 2 │ │ Thread 2 │
+└───────────┘ └───────────┘
+Threads inside the same process can share data, but different processes cannot.
 
 ---
 
 ### Question: Differentiate between constant and variable.
 
 Answer:
+
 - **Constant**: A constant is a fixed value that remains unchanged throughout the program. For example, in C, a constant can be declared using the `const` keyword:
+
   ```c
   const int maxUsers = 100;
   ```
@@ -68,7 +47,7 @@ Answer:
 #### Summary:
 
 - Constants provide stability, while variables allow for flexibility in code.
-  
+
 ```mermaid
 graph LR;
     A[Constants - Fixed] --> |Example: 100| B[Unchanged];
@@ -92,6 +71,7 @@ int result = x + y; // x and y are operands, + is the operator
 Operands can be variables, constants, or more complex expressions, while operators define the type of operation (arithmetic, relational, logical, etc.) to be performed on those operands.
 
 #### Common Operators:
+
 - **Arithmetic Operators**: `+`, `-`, `*`, `/`
 - **Relational Operators**: `==`, `!=`, `<`, `>`
 
@@ -139,6 +119,7 @@ Simultaneous declaration and initialization ensure that the array is properly se
 ### Question: What are the characteristics of C language?
 
 Answer:
+
 1. **Structured Language**: C supports breaking programs into functions, enabling modularity.
 2. **Low-Level Access**: It provides access to hardware via pointers and direct memory manipulation.
 3. **Portable**: Programs written in C can be compiled and executed on different platforms with minimal changes.
@@ -179,6 +160,7 @@ for (int i = 0; i < 10; i++) {
 ### Question: Differentiate between formal argument and actual argument.
 
 Answer:
+
 - **Formal Argument**: Variables defined in a function’s declaration, which receive values when the function is called.
 - **Actual Argument**: The real values or variables passed to a function at the time of the function call.
 
@@ -197,6 +179,7 @@ sum(5, 10);  // 5 and 10 are actual arguments
 ### Question: What are Escape Sequences?
 
 Answer: Escape sequences in C are special character combinations starting with a backslash (`\`), used to represent non-printable or special characters in a string or character. Common escape sequences include:
+
 - `\n` : Newline
 - `\t` : Tab
 - `\\` : Backslash
