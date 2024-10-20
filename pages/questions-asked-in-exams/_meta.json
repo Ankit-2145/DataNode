@@ -1,4 +1,8 @@
 {
-    "c-exams": "C programming",
-    "aspnet-exams": "ASP.net"
+  "c-exams": "C programming",
+  "aspnet-exams": "ASP.net Technologies",
+  "computer-fundamentals": "Computer Fundamentals",
+  "computer-organization": "Computer organization",
+  "oops-exams": "OOPs in C++",
+  "os-exams": "Operating System"
 }
