@@ -84,7 +84,7 @@ export default function Navbar() {
         isScrolled
           ? "bg-background/80 backdrop-blur-md shadow-sm"
           : "bg-transparent"
-      )}
+      )} aria-hidden="true"
     >
       <div className="flex h-16 items-center px-8">
         <Link href={"/"}>
@@ -289,7 +289,7 @@ export default function Navbar() {
                   href="https://github.com/Ankit-2145/DataNode"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                  className="text-muted-background transition-colors duration-300"
                 >
                 <FaGithub size={28} />
                 </Link>
@@ -308,7 +308,7 @@ export default function Navbar() {
             href="https://github.com/Ankit-2145/DataNode"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors duration-300"
+            className="text-muted-background transition-colors duration-300"
           >
           <FaGithub size={28} />
           </Link>
