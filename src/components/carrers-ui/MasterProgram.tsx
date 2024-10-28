@@ -48,12 +48,9 @@ const programs: Program[] = [
         list: [
           "NIT Trichy - Tamil Nadu",
           "NIT Warangal - Telangana",
-          "NIT Surathkal - Karnataka",
           "NIT Allahabad - Uttar Pradesh",
           "NIT Agartala - Tripura",
           "NIT Bhopal - Madhya Pradesh",
-          "NIT Durgapur - West Bengal",
-          "NIT Calicut - Kerala",
           "NIT Raipur - Chhattisgarh",
           "NIT Kurukshetra - Haryana",
           "NIT Jamshedpur - Jharkhand",
