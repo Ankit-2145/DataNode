@@ -29,22 +29,21 @@ export default function Features() {
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 min-h-[300px]">
         <h2 className="max-w-80  text-4xl leading-normal mt-5 text-white tracking-tight font-semibold">
-          Articles and Resources
+          Previous Year Question Papers
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          A collection of articles related to the course, providing insights,
-          tutorials, and explanations on various topics relevant to the
-          curriculum.
+          Access to a repository of previous year question papers, allowing
+          students to practice and prepare for exams effectively.
         </p>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="max-w-sm">
           <h2 className="max-w-sm md:max-w-lg text-4xl leading-normal mt-5 text-white tracking-tight font-semibold">
-            Previous Year Question Papers
+            Exam Questions & Revision Guides
           </h2>
           <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            Access to a repository of previous year question papers, allowing
-            students to practice and prepare for exams effectively.
+            Find important exam-asked questions and quick revision guides to boost
+            your last-minute preparation.
           </p>
         </div>
         <Image
