@@ -291,5 +291,164 @@ End Namespace
 5. **Versioning and Compatibility**
    - Namespaces in the .NET Framework are versioned, allowing multiple versions of a namespace to coexist for backward compatibility. This means that different versions of assemblies can use the same namespace without conflict, ensuring smooth upgrades and maintenance.
 
+---
 
+### Question: Explain different Web form code Models in detail.
 
+Answer: In ASP.NET, **Web Forms** use code models to organize the code behind a webpage. The two main models are:
+
+1. **Single-File Code Model**
+2. **Code-Behind Code Model**
+
+These models help keep the **UI** and **server-side logic** organized, making development easier and code easier to understand. 
+
+#### 1. Single-File Code Model
+
+The **Single-File Code Model** places both the HTML markup and the server-side code in the same `.aspx` file. This setup is useful for simpler web pages or smaller projects where all the code can be managed in one place.
+
+Features of Single-File Code Model:
+- **Single File**: Both HTML and server logic are written in the same `.aspx` file.
+- **Inline Code**: Server-side code is written within `<script runat="server">` tags.
+  
+ #### Example:
+```csharp
+<%@ Page Language="C#" %>
+<html>
+<body>
+    <form runat="server">
+        <asp:Label ID="lblGreeting" runat="server" Text="Hello"></asp:Label>
+        <asp:Button ID="btnClick" runat="server" Text="Click Me" OnClick="Button_Click" />
+    </form>
+    <script runat="server">
+        protected void Button_Click(object sender, EventArgs e)
+        {
+            lblGreeting.Text = "Hello, ASP.NET!";
+        }
+    </script>
+</body>
+</html>
+```
+
+#### Advantages:
+- **Easy for Small Projects**: Quick to set up and edit since all code is in one file.
+- **Simple for Beginners**: Easier to understand for smaller tasks or simple pages.
+
+#### Drawbacks:
+- **Less Organized**: Mixing UI and logic makes it harder to read in larger projects.
+- **Limited Scalability**: Not ideal for complex applications.
+
+#### 2. Code-Behind Code Model
+
+The **Code-Behind Code Model** separates the HTML in the `.aspx` file from the server-side logic in a `.aspx.cs` or `.aspx.vb` file. This separation improves maintainability and is widely used in larger applications.
+
+Features of Code-Behind Code Model:
+- **Separate Files**: One file contains the UI (`.aspx`), while the code-behind file (`.aspx.cs` or `.aspx.vb`) has the server-side logic.
+- **Clear Organization**: Separating logic from UI helps in making code more readable and maintainable.
+
+#### Example:
+#### .aspx File (UI):
+```csharp
+<%@ Page Language="C#" CodeFile="Example.aspx.cs" Inherits="Example" %>
+<html>
+<body>
+    <form runat="server">
+        <asp:Label ID="lblMessage" runat="server" Text="Welcome"></asp:Label>
+        <asp:Button ID="btnGreet" runat="server" Text="Greet" OnClick="btnGreet_Click" />
+    </form>
+</body>
+</html>
+```
+
+#### .aspx.cs File (Code-Behind):
+```csharp
+using System;
+public partial class Example : System.Web.UI.Page
+{
+    protected void btnGreet_Click(object sender, EventArgs e)
+    {
+        lblMessage.Text = "Hello from Code-Behind!";
+    }
+}
+```
+
+#### Advantages:
+- **Better for Larger Projects**: Separates code, making it more maintainable and organized.
+- **Easy to Debug**: Code changes can be made independently from UI changes.
+
+#### Drawbacks:
+- **More Complex**: Requires handling multiple files, which may be harder for beginners.
+
+---
+
+### Question: Explain in detail HTML Server Controls.
+
+Answer: In ASP.NET, **HTML Server Controls** are HTML elements that are enhanced to run on the server. They allow web developers to use standard HTML elements like text boxes, buttons, and divs, but with the added functionality of server-side processing, making them interactive and dynamic. These controls can be accessed and modified on the server using ASP.NET code, making it easier to manage data and respond to user actions.
+
+Key Features of HTML Server Controls:
+
+HTML Server Controls have unique properties and features that make them different from regular HTML elements:
+
+1. **Run on Server**: These controls are processed on the server, allowing the server to handle events and logic behind the scenes.
+2. **Accessed Using Server-Side Code**: You can access and manipulate these controls in server-side code using C# or VB.NET.
+3. **Use `runat="server"` Attribute**: To make an HTML element a server control, add the `runat="server"` attribute.
+
+#### Example:
+Here’s how to turn a standard HTML `<input>` element into an HTML Server Control in ASP.NET:
+
+```csharp
+<input type="text" id="txtName" runat="server" />
+<button id="btnSubmit" runat="server" onserverclick="btnSubmit_Click">Submit</button>
+```
+
+In this example:
+- `txtName` and `btnSubmit` are now HTML Server Controls and can be accessed on the server.
+- The `btnSubmit_Click` function can be defined in server-side code to process the button click event.
+
+### Common HTML Server Controls and Their Uses
+
+ASP.NET provides support for various HTML elements as server controls, each with unique purposes in web development:
+
+1. **HTML Input Controls**:
+   - Examples: `<input type="text">`, `<input type="password">`, `<input type="checkbox">`
+   - Usage: Collect user inputs such as text, passwords, or choices (checkboxes) and process them on the server.
+
+2. **HTML Button Controls**:
+   - Examples: `<button>`, `<input type="submit">`
+   - Usage: Trigger server-side events like form submission or other actions defined in the server code.
+
+3. **HTML Select Control**:
+   - Example: `<select>`
+   - Usage: Provides a dropdown menu to users. Selected options can be accessed and processed on the server.
+
+4. **HTML Table Control**:
+   - Example: `<table>`
+   - Usage: Displays tabular data that can be dynamically created or modified on the server.
+
+5. **HTML Div and Span Controls**:
+   - Examples: `<div>`, `<span>`
+   - Usage: Used to structure or style the webpage and dynamically show or hide content based on server logic.
+
+#### Example with Server-Side Code:
+```csharp
+<html>
+<body>
+    <form runat="server">
+        <input type="text" id="txtInput" runat="server" />
+        <button id="btnProcess" runat="server" onserverclick="ProcessInput">Process</button>
+    </form>
+</body>
+</html>
+```
+
+#### **Server-Side Code (.aspx.cs)**
+```csharp
+protected void ProcessInput(object sender, EventArgs e)
+{
+    string input = txtInput.Value;  // Access the text entered in txtInput
+    // Process the input as needed
+}
+```
+
+Here, the text box input is accessed using `txtInput.Value` in the server code, allowing for any custom processing or validation.
+
+---
