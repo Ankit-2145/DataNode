@@ -365,6 +365,24 @@ export const academicsSections: SectionData[] = [
         shadow: "purple",
       },
       {
+        title: "Business Practice and Management",
+        difficulty: "BCA",
+        comments: 55,
+        likes: 110,
+        author: "DataNode",
+        date: "1 day ago",
+        description:
+          "Revise Important topics of Business Practice and Management, one night before your exam",
+        url: "/last-minute-revision/business-practice-and-management",
+        BackgroundIcon1: Clock,
+        BackgroundIcon2: Clock,
+        icon1Color:
+          "dark:group-hover/card:text-[#d8b4fe] absolute -right-4 -top-10 h-24 w-24 stroke-[0.5] duration-500 group-hover/card:-translate-x-4 group-hover/card:translate-y-10 group-hover/card:-rotate-[125deg] dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#d8b4fe] absolute -right-14 -top-24 h-48 w-48 origin-top-right -rotate-3 stroke-[0.33] duration-300 group-hover/card:scale-50 dark:text-white/10",
+        shadow: "purple",
+      },
+      {
         title: "Computer Organization",
         difficulty: "BCA",
         comments: 55,
