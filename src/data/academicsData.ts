@@ -311,6 +311,24 @@ export const academicsSections: SectionData[] = [
       "bg-purple-500/10 text-purple-700 hover:text-purple-700 dark:text-purple-300 dark:bg-purple-300/10 hover:bg-purple-500/20 dark:hover:bg-purple-300/20",
     cardData: [
       {
+        title: "Business Practice and Management",
+        difficulty: "BCA",
+        comments: 55,
+        likes: 110,
+        author: "DataNode",
+        date: "1 day ago",
+        description:
+          "Revise Important topics of Business Practice and Management, one night before your exam",
+        url: "/last-minute-revision/business-practice-and-management",
+        BackgroundIcon1: Clock,
+        BackgroundIcon2: Clock,
+        icon1Color:
+          "dark:group-hover/card:text-[#d8b4fe] absolute -right-4 -top-10 h-24 w-24 stroke-[0.5] duration-500 group-hover/card:-translate-x-4 group-hover/card:translate-y-10 group-hover/card:-rotate-[125deg] dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#d8b4fe] absolute -right-14 -top-24 h-48 w-48 origin-top-right -rotate-3 stroke-[0.33] duration-300 group-hover/card:scale-50 dark:text-white/10",
+        shadow: "purple",
+      },
+      {
         title: "C Programming",
         difficulty: "BCA",
         comments: 55,
@@ -356,24 +374,6 @@ export const academicsSections: SectionData[] = [
         description:
           "Revise Important topics of Computer Fundamentals, one night before your exam",
         url: "/last-minute-revision/computer-fundamentals",
-        BackgroundIcon1: Clock,
-        BackgroundIcon2: Clock,
-        icon1Color:
-          "dark:group-hover/card:text-[#d8b4fe] absolute -right-4 -top-10 h-24 w-24 stroke-[0.5] duration-500 group-hover/card:-translate-x-4 group-hover/card:translate-y-10 group-hover/card:-rotate-[125deg] dark:text-white/10",
-        icon2Color:
-          "dark:group-hover/card:text-[#d8b4fe] absolute -right-14 -top-24 h-48 w-48 origin-top-right -rotate-3 stroke-[0.33] duration-300 group-hover/card:scale-50 dark:text-white/10",
-        shadow: "purple",
-      },
-      {
-        title: "Business Practice and Management",
-        difficulty: "BCA",
-        comments: 55,
-        likes: 110,
-        author: "DataNode",
-        date: "1 day ago",
-        description:
-          "Revise Important topics of Business Practice and Management, one night before your exam",
-        url: "/last-minute-revision/business-practice-and-management",
         BackgroundIcon1: Clock,
         BackgroundIcon2: Clock,
         icon1Color:
@@ -453,6 +453,23 @@ export const academicsSections: SectionData[] = [
         date: "1 month ago",
         description: "C Programming Exam Hits! from MCQs, short Answers and long Answers",
         url: "/questions-asked-in-exams/c-exams",
+        BackgroundIcon1: Plus,
+        BackgroundIcon2: Plus,
+        icon1Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-24 w-24 stroke-[0.5] duration-300 group-hover/card:scale-0 dark:text-white/10",
+        icon2Color:
+          "dark:group-hover/card:text-[#f87272] absolute -right-4 -top-8 h-32 w-32 stroke-[0.5] duration-500 group-hover/card:-translate-y-5 group-hover/card:translate-x-9 group-hover/card:-rotate-90 group-hover/card:scale-75 dark:text-white/10",
+        shadow: "red",
+      },
+      {
+        title: "Business Practice and Management",
+        difficulty: "BCA",
+        comments: 60,
+        likes: 120,
+        author: "DataNode",
+        date: "1 day ago",
+        description: "C Programming Exam Hits! from MCQs, short Answers and long Answers",
+        url: "/questions-asked-in-exams/bpm-exams",
         BackgroundIcon1: Plus,
         BackgroundIcon2: Plus,
         icon1Color:
