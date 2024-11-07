@@ -4,6 +4,19 @@ export default {
       titleTemplate: "%s - DataNode",
     };
   },
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        property="og:title"
+        content="Comprehensive BCA Study Notes | Academics - DataNode"
+      />
+      <meta
+        property="og:description"
+        content="Explore Datanode's BCA study notes for essential exam preparation. Find concise, easy-to-understand notes on key BCA subjects, exam-asked questions, and last-minute revision resources to help you excel."
+      />
+    </>
+  ),
   logo: <span>DataNode</span>,
   project: {
     link: "https://github.com/Ankit-2145/DataNode",
