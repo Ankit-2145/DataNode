@@ -15,6 +15,10 @@ export default {
         property="og:description"
         content="Explore Datanode's BCA study notes for essential exam preparation. Find concise, easy-to-understand notes on key BCA subjects, exam-asked questions, and last-minute revision resources to help you excel."
       />
+      <meta
+        property="og:keywords"
+        content="BCA notes, study material for BCA, BCA exam preparation, Datanode BCA resources, BCA subject notes, last-minute revision, exam questions, BCA study help"
+      />
     </>
   ),
   logo: <span>DataNode</span>,
