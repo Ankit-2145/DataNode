@@ -48,7 +48,7 @@ export const academicsSections: SectionData[] = [
         date: "2 days ago",
         description:
           "Get started with the basics of Bachelor of Computer Applications.",
-        url: "/BCA/getting-started",
+        url: "/docs/BCA/getting-started",
         BackgroundIcon1: Circle,
         BackgroundIcon2: Circle,
         icon1Color:
@@ -75,7 +75,7 @@ export const academicsSections: SectionData[] = [
         date: "3 days ago",
         description:
           "Unlock the foundation of programming with C. Learn how to write efficient code, master control structures, work with arrays, pointers, and functions, and gain a solid grasp of algorithms and problem-solving techniques. This subject sets the stage for your journey into software development, offering hands-on experience with real-world applications.",
-        url: "/c-programming",
+        url: "/docs/c-programming",
         BackgroundIcon1: Package,
         BackgroundIcon2: Package,
         icon1Color:
@@ -451,7 +451,8 @@ export const academicsSections: SectionData[] = [
         likes: 120,
         author: "DataNode",
         date: "1 month ago",
-        description: "C Programming Exam Hits! from MCQs, short Answers and long Answers",
+        description:
+          "C Programming Exam Hits! from MCQs, short Answers and long Answers",
         url: "/questions-asked-in-exams/c-exams",
         BackgroundIcon1: Plus,
         BackgroundIcon2: Plus,
@@ -468,7 +469,8 @@ export const academicsSections: SectionData[] = [
         likes: 120,
         author: "DataNode",
         date: "1 day ago",
-        description: "C Programming Exam Hits! from MCQs, short Answers and long Answers",
+        description:
+          "C Programming Exam Hits! from MCQs, short Answers and long Answers",
         url: "/questions-asked-in-exams/bpm-exams",
         BackgroundIcon1: Plus,
         BackgroundIcon2: Plus,
@@ -485,7 +487,8 @@ export const academicsSections: SectionData[] = [
         likes: 120,
         author: "DataNode",
         date: "1 month ago",
-        description: "Operating System Exam Hits! from MCQs, short Answers and long Answers",
+        description:
+          "Operating System Exam Hits! from MCQs, short Answers and long Answers",
         url: "/questions-asked-in-exams/os-exams",
         BackgroundIcon1: Plus,
         BackgroundIcon2: Plus,
@@ -502,7 +505,8 @@ export const academicsSections: SectionData[] = [
         likes: 120,
         author: "DataNode",
         date: "1 month ago",
-        description: "Computer Fundamentals Exam Hits! from MCQs, short Answers and long Answers",
+        description:
+          "Computer Fundamentals Exam Hits! from MCQs, short Answers and long Answers",
         url: "/questions-asked-in-exams/computer-fundamentals-exams",
         BackgroundIcon1: Plus,
         BackgroundIcon2: Plus,
@@ -519,7 +523,8 @@ export const academicsSections: SectionData[] = [
         likes: 120,
         author: "DataNode",
         date: "1 month ago",
-        description: "ASP.net Technologies Exam Hits! from MCQs, short Answers and long Answers",
+        description:
+          "ASP.net Technologies Exam Hits! from MCQs, short Answers and long Answers",
         url: "/questions-asked-in-exams/aspnet-exams",
         BackgroundIcon1: Plus,
         BackgroundIcon2: Plus,
@@ -536,7 +541,8 @@ export const academicsSections: SectionData[] = [
         likes: 120,
         author: "DataNode",
         date: "1 month ago",
-        description: "OOPs with C++ Exam Hits! from MCQs, short Answers and long Answers",
+        description:
+          "OOPs with C++ Exam Hits! from MCQs, short Answers and long Answers",
         url: "/questions-asked-in-exams/oops-exams",
         BackgroundIcon1: Plus,
         BackgroundIcon2: Plus,
@@ -553,7 +559,8 @@ export const academicsSections: SectionData[] = [
         likes: 120,
         author: "DataNode",
         date: "1 month ago",
-        description: "Computer Organization Exam Hits! from MCQs, short Answers and long Answers",
+        description:
+          "Computer Organization Exam Hits! from MCQs, short Answers and long Answers",
         url: "/questions-asked-in-exams/computer-organization-exams",
         BackgroundIcon1: Plus,
         BackgroundIcon2: Plus,

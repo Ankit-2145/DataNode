@@ -84,7 +84,8 @@ export default function Navbar() {
         isScrolled
           ? "bg-background/80 backdrop-blur-md shadow-sm"
           : "bg-transparent"
-      )} aria-hidden="true"
+      )}
+      aria-hidden="true"
     >
       <div className="flex h-16 items-center px-8">
         <Link href={"/"}>
@@ -96,18 +97,10 @@ export default function Navbar() {
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Home
-                </NavigationMenuLink>
-              </Link>
+              <Link href="/">Home</Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/academics" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Academics
-                </NavigationMenuLink>
-              </Link>
+              <Link href="/academics">Academics</Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-transparent">
@@ -158,11 +151,7 @@ export default function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  About Us
-                </NavigationMenuLink>
-              </Link>
+              <Link href="/about">About Us</Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
@@ -291,7 +280,7 @@ export default function Navbar() {
                   rel="noopener noreferrer"
                   className="text-muted-background transition-colors duration-300"
                 >
-                <FaGithub size={28} />
+                  <FaGithub size={28} />
                 </Link>
               </nav>
             </SheetContent>
@@ -310,7 +299,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="text-muted-background transition-colors duration-300"
           >
-          <FaGithub size={28} />
+            <FaGithub size={28} />
           </Link>
         </div>
       </div>

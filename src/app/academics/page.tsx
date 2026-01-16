@@ -109,7 +109,7 @@ export default function Academics() {
 //         date: "3 days ago",
 //         description:
 //           "Unlock the foundation of programming with C. Learn how to write efficient code, master control structures, work with arrays, pointers, and functions, and gain a solid grasp of algorithms and problem-solving techniques. This subject sets the stage for your journey into software development, offering hands-on experience with real-world applications.",
-//         url: "/c-programming",
+//         url: "/docs/c-programming",
 //         BackgroundIcon1: Award,
 //         BackgroundIcon2: Award,
 //         icon1Color:
