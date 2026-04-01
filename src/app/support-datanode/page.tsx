@@ -24,14 +24,8 @@ export default function SupportPage() {
         </div>
 
         <section className="mb-12 text-base text-muted-foreground">
-          <p className="mb-4">
-            DataNode is built by a passionate team at Pinnacle Smart Solutions
-            to provide free, high-quality educational resources for students
-            like you. With your support, we can continue to expand our offerings
-            and improve the platform to meet the academic needs of learners
-            worldwide.
-          </p>
-          <ul className="list-disc list-inside mb-4">
+          <p className="mb-4">Currently not accepting any support.</p>
+          {/* <ul className="list-disc list-inside mb-4">
             <li>Add more courses and resources.</li>
             <li>
               Maintain the platform and ensure it remains free for everyone.
@@ -40,10 +34,10 @@ export default function SupportPage() {
               Improve the user experience by adding new features and tools.
             </li>
             <li>Keep our content up-to-date and relevant.</li>
-          </ul>
+          </ul> */}
         </section>
 
-        <section className="mb-12 text-base text-muted-foreground">
+        {/* <section className="mb-12 text-base text-muted-foreground">
           <h2 className="text-4xl text-center font-semibold mb-8 text-transparent bg-clip-text bg-custom-gradient">
             How You Can Support Us
           </h2>
@@ -186,7 +180,7 @@ export default function SupportPage() {
             resource. We appreciate your contribution and your belief in our
             mission to make education more accessible for everyone.
           </p>
-        </section>
+        </section> */}
       </div>
     </div>
   );
